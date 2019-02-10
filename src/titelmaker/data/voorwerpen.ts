@@ -67,7 +67,7 @@ export const voorwerpen: Voorwerp[] =
       verkleinwoord: 'bureautje'
     },
     {
-      naam: 'kraamp',
+      naam: 'kraam',
       lidwoord: 'de',
       meervoud: 'kraampjes',
       verkleinwoord: 'kraampje'
@@ -100,7 +100,7 @@ export const voorwerpen: Voorwerp[] =
       naam: 'sprookjesboek',
       lidwoord: 'het',
       meervoud: 'sprookjesboeken',
-      verkleinwoord: 'sproojesboekje'
+      verkleinwoord: 'sprookjesboekje'
     },
     {
       naam: 'kraan',
@@ -112,7 +112,7 @@ export const voorwerpen: Voorwerp[] =
       naam: 'bolhoed',
       lidwoord: 'de',
       meervoud: 'bolhoeden',
-      verkleinwoord: 'bolhouedje'
+      verkleinwoord: 'bolhoedje'
     },
     {
       naam: 'trui',
