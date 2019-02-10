@@ -35,7 +35,7 @@ export class TitelService {
 
     if (titelConfiguratie.aantalVoorwerpen > 0) {
       const voorwerp: Voorwerp = Arrays.bepaalWillekeurigElemntUitRij<Voorwerp>(voorwerpen);
-      voorwerpString = StringMaker.voorwerpAlsString(voorwerp);
+      voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen);
     }
     if (titelConfiguratie.aantalLocaties > 0) {
       const locatie: Locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties);

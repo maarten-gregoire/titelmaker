@@ -1,483 +1,579 @@
 export const voorwerpen: Voorwerp[] =
   [
     {
-      naam: 'pilletje',
-      lidwoord: 'het',
-      meervoud: 'pilletjes'
+      naam: 'pil',
+      lidwoord: 'de',
+      meervoud: 'pilletjes',
+      verkleinwoord: 'pilletje'
     },
     {
       naam: 'cornflake',
       lidwoord: 'de',
-      meervoud: 'cornflakes'
+      meervoud: 'cornflakes',
+      verkleinwoord: 'cornflakeje'
     },
     {
       naam: 'melk',
       lidwoord: 'de',
-      meervoud: 'melk'
+      meervoud: 'melk',
+      verkleinwoord: null
     },
     {
       naam: 'kokosnoot',
       lidwoord: 'de',
-      meervoud: 'kokosnoten'
+      meervoud: 'kokosnoten',
+      verkleinwoord: 'kokosnootje'
     },
     {
       naam: 'stok',
       lidwoord: 'de',
-      meervoud: 'stokken'
+      meervoud: 'stokken',
+      verkleinwoord: 'stokje'
     },
     {
       naam: 'knuppel',
       lidwoord: 'de',
-      meervoud: 'knuppels'
+      meervoud: 'knuppels',
+      verkleinwoord: 'knuppeltje'
     },
     {
       naam: 'knuffel',
       lidwoord: 'de',
-      meervoud: 'knuffels'
+      meervoud: 'knuffels',
+      verkleinwoord: 'knuffeltje'
     },
     {
       naam: 'tafel',
       lidwoord: 'de',
-      meervoud: 'tafels'
+      meervoud: 'tafels',
+      verkleinwoord: 'tafeltje'
     },
     {
       naam: 'stoel',
       lidwoord: 'de',
-      meervoud: 'stoelen'
+      meervoud: 'stoelen',
+      verkleinwoord: 'stoeltje'
     },
     {
       naam: 'televisie',
       lidwoord: 'de',
-      meervoud: 'televisies'
+      meervoud: 'televisies',
+      verkleinwoord: 'televisietje'
     },
     {
       naam: 'bureau',
       lidwoord: 'het',
-      meervoud: 'bureaus'
+      meervoud: 'bureaus',
+      verkleinwoord: 'bureautje'
     },
     {
-      naam: 'kraampje',
-      lidwoord: 'het',
-      meervoud: 'kraampjes'
+      naam: 'kraamp',
+      lidwoord: 'de',
+      meervoud: 'kraampjes',
+      verkleinwoord: 'kraampje'
     },
     {
       naam: 'printer',
       lidwoord: 'de',
-      meervoud: 'printers'
+      meervoud: 'printers',
+      verkleinwoord: 'printertje'
     },
     {
       naam: 'appel',
       lidwoord: 'de',
-      meervoud: 'appels'
+      meervoud: 'appels',
+      verkleinwoord: 'appeltje'
     },
     {
-      naam: 'traktor',
+      naam: 'tractor',
       lidwoord: 'de',
-      meervoud: 'traktors'
+      meervoud: 'tractors',
+      verkleinwoord: 'tractortje'
     },
     {
       naam: 'hooiwagen',
       lidwoord: 'de',
-      meervoud: 'hooiwagens'
+      meervoud: 'hooiwagens',
+      verkleinwoord: 'hooiwagentje'
     },
     {
       naam: 'sprookjesboek',
       lidwoord: 'het',
-      meervoud: 'sprookjesboeken'
+      meervoud: 'sprookjesboeken',
+      verkleinwoord: 'sproojesboekje'
     },
     {
       naam: 'kraan',
       lidwoord: 'de',
-      meervoud: 'kranen'
+      meervoud: 'kranen',
+      verkleinwoord: 'kraantje'
     },
     {
       naam: 'bolhoed',
       lidwoord: 'de',
-      meervoud: 'bolhoeden'
+      meervoud: 'bolhoeden',
+      verkleinwoord: 'bolhouedje'
     },
     {
       naam: 'trui',
       lidwoord: 'de',
-      meervoud: 'truien'
+      meervoud: 'truien',
+      verkleinwoord: 'truitje'
     },
     {
       naam: 'broek',
       lidwoord: 'de',
-      meervoud: 'broeken'
+      meervoud: 'broeken',
+      verkleinwoord: 'broekje'
     },
     {
       naam: 'noot',
       lidwoord: 'de',
-      meervoud: 'noten'
+      meervoud: 'noten',
+      verkleinwoord: 'nootje'
     },
     {
       naam: 'fles',
       lidwoord: 'de',
-      meervoud: 'flessen'
+      meervoud: 'flessen',
+      verkleinwoord: 'flesje'
     },
     {
       naam: 'wandelstok',
       lidwoord: 'de',
-      meervoud: 'wandelstokken'
+      meervoud: 'wandelstokken',
+      verkleinwoord: 'wandelstokje'
     },
     {
       naam: 'steen',
       lidwoord: 'de',
-      meervoud: 'stenen'
+      meervoud: 'stenen',
+      verkleinwoord: 'steentje'
     },
     {
       naam: 'spons',
       lidwoord: 'de',
-      meervoud: 'sponsen'
+      meervoud: 'sponsen',
+      verkleinwoord: 'sponsje'
     },
     {
       naam: 'geweer',
       lidwoord: 'het',
-      meervoud: 'geweren'
+      meervoud: 'geweren',
+      verkleinwoord: 'geweertje'
     },
     {
       naam: 'kogel',
       lidwoord: 'de',
-      meervoud: 'kogels'
+      meervoud: 'kogels',
+      verkleinwoord: 'kogeltje'
     },
     {
       naam: 'bord',
       lidwoord: 'het',
-      meervoud: 'borden'
+      meervoud: 'borden',
+      verkleinwoord: 'bordje'
     },
     {
       naam: 'vork',
       lidwoord: 'de',
-      meervoud: 'vorken'
+      meervoud: 'vorken',
+      verkleinwoord: 'vorkje'
     },
     {
       naam: 'microfoon',
       lidwoord: 'de',
-      meervoud: 'microfonen'
+      meervoud: 'microfonen',
+      verkleinwoord: 'microfoontje'
     },
     {
       naam: 'vrachtwagen',
       lidwoord: 'de',
-      meervoud: 'vrachtwagens'
+      meervoud: 'vrachtwagens',
+      verkleinwoord: 'vrachtwagentje'
     },
     {
       naam: 'badkuip',
       lidwoord: 'de',
-      meervoud: '^badkuipen'
+      meervoud: 'badkuipen',
+      verkleinwoord: 'badkuipje'
     },
     {
       naam: 'boksbal',
       lidwoord: 'de',
-      meervoud: 'boksballen'
+      meervoud: 'boksballen',
+      verkleinwoord: 'boksballetje'
     },
     {
       naam: 'flesopener',
       lidwoord: 'de',
-      meervoud: 'flesopeners'
+      meervoud: 'flesopeners',
+      verkleinwoord: 'flessenopenertje'
     },
     {
       naam: 'zakdoek',
       lidwoord: 'de',
-      meervoud: 'zakdoeken'
+      meervoud: 'zakdoeken',
+      verkleinwoord: 'zakdoekje'
     },
     {
-      naam: 'snoepje',
+      naam: 'snoep',
       lidwoord: 'het',
-      meervoud: 'snoepjes'
+      meervoud: 'snoepjes',
+      verkleinwoord: 'snoepje'
     },
     {
       naam: 'chocolade',
       lidwoord: 'de',
-      meervoud: 'chocolade'
+      meervoud: 'chocolade',
+      verkleinwoord: null
     },
     {
       naam: 'kaas',
       lidwoord: 'de',
-      meervoud: 'kaas'
+      meervoud: 'kaas',
+      verkleinwoord: null
     },
     {
       naam: 'onderbroek',
       lidwoord: 'de',
-      meervoud: 'onderbroeken'
+      meervoud: 'onderbroeken',
+      verkleinwoord: 'onderbroekje'
     },
     {
       naam: 'bikini',
       lidwoord: 'de',
-      meervoud: 'bikini\'s'
+      meervoud: 'bikini\'s',
+      verkleinwoord: 'bikinitje'
     },
     {
       naam: 'krijt',
       lidwoord: 'het',
-      meervoud: 'krijtjes'
+      meervoud: 'krijtjes',
+      verkleinwoord: 'krijtje'
     },
     {
       naam: 'mes',
       lidwoord: 'het',
-      meervoud: 'messen'
+      meervoud: 'messen',
+      verkleinwoord: 'mesje'
     },
     {
       naam: 'aardappel',
       lidwoord: 'de',
-      meervoud: 'aardappels'
+      meervoud: 'aardappels',
+      verkleinwoord: 'aardappeltje'
     },
     {
       naam: 'tomaat',
       lidwoord: 'de',
-      meervoud: 'tomaten'
+      meervoud: 'tomaten',
+      verkleinwoord: 'tomaatje'
     },
     {
       naam: 'radijs',
       lidwoord: 'de',
-      meervoud: 'radijzen'
+      meervoud: 'radijzen',
+      verkleinwoord: 'radijsje'
     },
     {
       naam: 'schrift',
       lidwoord: 'het',
-      meervoud: 'schriften'
+      meervoud: 'schriften',
+      verkleinwoord: 'schriftje'
     },
     {
       naam: 'kleed',
       lidwoord: 'het',
-      meervoud: 'kleden'
+      meervoud: 'kleden',
+      verkleinwoord: 'kleedje'
     },
     {
       naam: 'piano',
       lidwoord: 'de',
-      meervoud: 'piano\'s'
+      meervoud: 'piano\'s',
+      verkleinwoord: 'pianootje'
     },
     {
       naam: 'toverstaf',
       lidwoord: 'de',
-      meervoud: 'toverstaffen'
+      meervoud: 'toverstaffen',
+      verkleinwoord: 'toverstafje'
     },
     {
       naam: 'muizenval',
       lidwoord: 'de',
-      meervoud: 'muizenvallen'
+      meervoud: 'muizenvallen',
+      verkleinwoord: 'muizenvalletje'
     },
     {
       naam: 'dwarsfluit',
       lidwoord: 'de',
-      meervoud: 'dwarsfluiten'
+      meervoud: 'dwarsfluiten',
+      verkleinwoord: 'dwarsfluitje'
     },
     {
       naam: 'scheerapparaat',
       lidwoord: 'het',
-      meervoud: 'scheerapparaten'
+      meervoud: 'scheerapparaten',
+      verkleinwoord: 'scheerapparaatje'
     },
     {
       naam: 'WC-borstel',
       lidwoord: 'de',
-      meervoud: 'WC-borstels'
+      meervoud: 'WC-borstels',
+      verkleinwoord: 'WC-borsteltje'
     },
     {
       naam: 'woordenboek',
       lidwoord: 'het',
-      meervoud: 'woordenboeken'
+      meervoud: 'woordenboeken',
+      verkleinwoord: 'woordenboekje'
     },
     {
       naam: 'luster',
       lidwoord: 'de',
-      meervoud: 'lusters'
+      meervoud: 'lusters',
+      verkleinwoord: 'lustertje'
     },
     {
       naam: 'schoen',
       lidwoord: 'de',
-      meervoud: 'schoenen'
+      meervoud: 'schoenen',
+      verkleinwoord: 'schoentje'
     },
     {
       naam: 'bontjas',
       lidwoord: 'de',
-      meervoud: 'bontjassen'
+      meervoud: 'bontjassen',
+      verkleinwoord: 'bontjasje'
     },
     {
       naam: 'tijmplant',
       lidwoord: 'de',
-      meervoud: 'tijmplanten'
+      meervoud: 'tijmplanten',
+      verkleinwoord: 'tijmplantje'
     },
     {
       naam: 'laptop',
       lidwoord: 'de',
-      meervoud: 'laptops'
+      meervoud: 'laptops',
+      verkleinwoord: 'laptopje'
     },
     {
       naam: 'telefoon',
       lidwoord: 'de',
-      meervoud: 'telefoons'
+      meervoud: 'telefoons',
+      verkleinwoord: 'telefoontje'
     },
     {
       naam: 'tent',
       lidwoord: 'de',
-      meervoud: 'tenten'
+      meervoud: 'tenten',
+      verkleinwoord: 'tentje'
     },
     {
       naam: 'treinabonnement',
       lidwoord: 'het',
-      meervoud: 'treinabonnementen'
+      meervoud: 'treinabonnementen',
+      verkleinwoord: 'treinabonnementje'
     },
     {
       naam: 'revolver',
       lidwoord: 'de',
-      meervoud: 'revolvers'
+      meervoud: 'revolvers',
+      verkleinwoord: 'revolvertje'
     },
     {
       naam: 'erwt',
       lidwoord: 'de',
-      meervoud: 'erwten'
+      meervoud: 'erwten',
+      verkleinwoord: 'erwtje'
     },
     {
       naam: 'schilderij',
       lidwoord: 'het',
-      meervoud: 'schilderijen'
+      meervoud: 'schilderijen',
+      verkleinwoord: 'schilderijtje'
     },
     {
       naam: 'olie',
       lidwoord: 'de',
-      meervoud: 'olie'
+      meervoud: 'olie',
+      verkleinwoord: null
     },
     {
       naam: 'brood',
       lidwoord: 'het',
-      meervoud: 'broden'
+      meervoud: 'broden',
+      verkleinwoord: 'broodje'
     },
     {
       naam: 'schroevendraaier',
       lidwoord: 'de',
-      meervoud: '^schroevendraaiers'
+      meervoud: 'schroevendraaiers',
+      verkleinwoord: 'schroevendraaiertje'
     },
     {
       naam: 'knoop',
       lidwoord: 'de',
-      meervoud: 'knopen'
+      meervoud: 'knopen',
+      verkleinwoord: 'knoopje'
     },
     {
       naam: 'winkelkar',
       lidwoord: 'de',
-      meervoud: 'winkelkarren'
+      meervoud: 'winkelkarren',
+      verkleinwoord: 'winkelkarretje'
     },
     {
       naam: 'bierblik',
       lidwoord: 'het',
-      meervoud: 'bierblikken'
+      meervoud: 'bierblikken',
+      verkleinwoord: 'bierblikje'
     },
     {
       naam: 'schatkist',
       lidwoord: 'de',
-      meervoud: 'schatkisten'
+      meervoud: 'schatkisten',
+      verkleinwoord: 'schatkistje'
     },
     {
       naam: 'schat',
       lidwoord: 'de',
-      meervoud: 'schatten'
+      meervoud: 'schatten',
+      verkleinwoord: 'schatje'
     },
     {
       naam: 'sieraad',
       lidwoord: 'het',
-      meervoud: 'sieraden'
+      meervoud: 'sieraden',
+      verkleinwoord: 'sieraadje'
     },
     {
       naam: 'juweel',
       lidwoord: 'het',
-      meervoud: 'juwelen'
+      meervoud: 'juwelen',
+      verkleinwoord: 'juweeltje'
     },
     {
       naam: 'diamant',
       lidwoord: 'de',
-      meervoud: 'diamanten'
+      meervoud: 'diamanten',
+      verkleinwoord: 'diamantje'
     },
     {
       naam: 'munt',
       lidwoord: 'de',
-      meervoud: 'munten'
+      meervoud: 'munten',
+      verkleinwoord: 'muntje'
     },
     {
       naam: 'schatkaart',
       lidwoord: 'de',
-      meervoud: 'schatkaarten'
+      meervoud: 'schatkaarten',
+      verkleinwoord: 'schatkaartje'
     },
     {
       naam: 'kompas',
       lidwoord: 'het',
-      meervoud: 'kompassen'
+      meervoud: 'kompassen',
+      verkleinwoord: 'kompasje'
     },
     {
       naam: 'ooglap',
       lidwoord: 'de',
-      meervoud: 'ooglappen'
+      meervoud: 'ooglappen',
+      verkleinwoord: 'ooglapje'
     },
     {
       naam: 'verrekijker',
       lidwoord: 'de',
-      meervoud: 'verrekijkers'
+      meervoud: 'verrekijkers',
+      verkleinwoord: 'verrekijkertje'
     },
     {
       naam: 'vlag',
       lidwoord: 'de',
-      meervoud: 'vlaggen'
+      meervoud: 'vlaggen',
+      verkleinwoord: 'vlaggetje'
     },
     {
       naam: 'doodshoofd',
       lidwoord: 'het',
-      meervoud: 'doodshoofden'
+      meervoud: 'doodshoofden',
+      verkleinwoord: 'doodshoofdje'
     },
     {
       naam: 'palmboom',
       lidwoord: 'de',
-      meervoud: 'palmbomen'
+      meervoud: 'palmbomen',
+      verkleinwoord: 'palmboompje'
     },
     {
       naam: 'motorboot',
       lidwoord: 'de',
-      meervoud: 'motorboten'
+      meervoud: 'motorboten',
+      verkleinwoord: 'motorbootje'
     },
     {
       naam: 'zeilboot',
       lidwoord: 'de',
-      meervoud: 'zeilboten'
+      meervoud: 'zeilboten',
+      verkleinwoord: 'zeilbootje'
     },
     {
       naam: 'roeiboot',
       lidwoord: 'de',
-      meervoud: 'roeiboten'
+      meervoud: 'roeiboten',
+      verkleinwoord: 'roeibootje'
     },
     {
       naam: 'kano',
       lidwoord: 'de',
-      meervoud: 'kano\'s'
+      meervoud: 'kano\'s',
+      verkleinwoord: 'kanootje'
     },
     {
       naam: 'schip',
       lidwoord: 'het',
-      meervoud: 'schepen'
+      meervoud: 'schepen',
+      verkleinwoord: 'scheepje'
     },
     {
       naam: 'roer',
       lidwoord: 'het',
-      meervoud: 'roeren'
+      meervoud: 'roeren',
+      verkleinwoord: 'roertje'
     },
     {
       naam: 'anker',
       lidwoord: 'het',
-      meervoud: 'ankers'
+      meervoud: 'ankers',
+      verkleinwoord: 'ankertje'
     },
     {
       naam: 'zeil',
       lidwoord: 'het',
-      meervoud: 'zeilen'
+      meervoud: 'zeilen',
+      verkleinwoord: 'zeiltje'
     },
     {
       naam: 'mast',
       lidwoord: 'de',
-      meervoud: 'masten'
+      meervoud: 'masten',
+      verkleinwoord: 'mastje'
     },
     {
       naam: 'haak',
       lidwoord: 'de',
-      meervoud: 'haken'
+      meervoud: 'haken',
+      verkleinwoord: 'haakje'
     },
     {
       naam: 'hengel',
       lidwoord: 'de',
-      meervoud: 'hengels'
+      meervoud: 'hengels',
+      verkleinwoord: 'hengeltje'
     }
   ];

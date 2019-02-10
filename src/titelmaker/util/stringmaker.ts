@@ -2,8 +2,17 @@ import {Vorm} from '../models/vorm';
 
 export class StringMaker {
 
-  static voorwerpAlsString(voorwerp: Voorwerp): string {
-    return (voorwerp.lidwoord ? voorwerp.lidwoord + ' ' : '') + voorwerp.naam;
+  static voorwerpAlsString(voorwerp: Voorwerp, vorm: Vorm): string {
+    let lidwoord: string;
+    let voorwerpString: string;
+    if (StringMaker.juisteVormBestaatInVoorwerp(voorwerp, vorm)) {
+      lidwoord = StringMaker.bepaalLidwoord(vorm, voorwerp.lidwoord);
+      voorwerpString = StringMaker.bepaalVoorwerpInJuisteVorm(vorm, voorwerp);
+    } else {
+      lidwoord = voorwerp.lidwoord;
+      voorwerpString = voorwerp.naam;
+    }
+    return (lidwoord ? lidwoord + ' ' : '') + voorwerpString;
   }
 
   static locatieAlsString(locatie: Locatie): string {
@@ -15,7 +24,7 @@ export class StringMaker {
   static personageAlsString(personage: Personage, vorm: Vorm): string {
     let lidwoord: string;
     let personageString: string;
-    if (StringMaker.juisteVormBestaat(personage, vorm)) {
+    if (StringMaker.juisteVormBestaatInPersonage(personage, vorm)) {
       lidwoord = StringMaker.bepaalLidwoord(vorm, personage.lidwoord);
       personageString = StringMaker.bepaalPersonageInJuisteVorm(vorm, personage);
 
@@ -27,9 +36,15 @@ export class StringMaker {
     return (lidwoord ? lidwoord + ' ' : '') + personageString;
   }
 
-  static juisteVormBestaat(personage: Personage, vorm: Vorm): boolean {
+  static juisteVormBestaatInPersonage(personage: Personage, vorm: Vorm): boolean {
     if (vorm === Vorm.MEERVOUD && !personage.meervoud) { return false; }
     if (vorm === Vorm.VERKLEINWOORD && !personage.verkleinwoord) { return false; }
+    return true;
+  }
+
+  static juisteVormBestaatInVoorwerp(voorwerp: Voorwerp, vorm: Vorm): boolean {
+    if (vorm === Vorm.MEERVOUD && !voorwerp.meervoud) { return false; }
+    if (vorm === Vorm.VERKLEINWOORD && !voorwerp.verkleinwoord) { return false; }
     return true;
   }
 
@@ -58,5 +73,11 @@ export class StringMaker {
     if (vorm === Vorm.MEERVOUD) { return personage.meervoud; }
     if (vorm === Vorm.VERKLEINWOORD) { return personage.verkleinwoord; }
     return personage.naam;
+  }
+
+  private static bepaalVoorwerpInJuisteVorm(vorm: Vorm, voorwerp: Voorwerp) {
+    if (vorm === Vorm.MEERVOUD) { return voorwerp.meervoud; }
+    if (vorm === Vorm.VERKLEINWOORD) { return voorwerp.verkleinwoord; }
+    return voorwerp.naam;
   }
 }
