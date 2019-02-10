@@ -8,6 +8,8 @@ import {Strings} from '../../util/strings';
 import {Randoms} from '../../util/randoms';
 import {personages} from '../../data/personages';
 import {personageKoppelingen, voorwerpKoppelingen} from '../../data/koppelingen';
+import {TitelConfiguratie} from '../../configuraties/titelConfiguratie';
+import {Vorm} from '../../models/vorm';
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +26,7 @@ export class TitelService {
     let locatieString: string;
     if (titelConfiguratie.aantalPersonages > 0) {
       const personage: Personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages);
-      personageString = StringMaker.personageAlsString(personage);
+      personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         const voorwerpKoppeling: Koppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
         koppelingString = StringMaker.koppelingAlsString(voorwerpKoppeling);
@@ -63,9 +65,9 @@ export class TitelService {
       ordernummerPersonages,
       ordernummerVoorwerpen,
       ordernummerLocaties: Randoms.maakRandomGetalTussenEnInbegrepen(1, 1),
-      vormPersonages: 'ENKELVOUD',
-      vormVoorwerpen: 'ENKELVOUD',
-      vormLocaties: 'ENKELVOUD'
+      vormPersonages: Randoms.bepaalRandomEnumValue(Vorm),
+      vormVoorwerpen: Randoms.bepaalRandomEnumValue(Vorm),
+      vormLocaties: Randoms.bepaalRandomEnumValue(Vorm)
     };
 
     if (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties < 1) {
@@ -88,4 +90,5 @@ export class TitelService {
 
     return configuratie;
   }
+
 }

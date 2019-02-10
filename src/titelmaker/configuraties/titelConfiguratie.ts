@@ -1,11 +1,13 @@
-class TitelConfiguratie {
+import {Vorm} from '../models/vorm';
+
+export class TitelConfiguratie {
   aantalPersonages: number;
   aantalVoorwerpen: number;
   aantalLocaties: number;
   ordernummerPersonages: number;
   ordernummerVoorwerpen: number;
   ordernummerLocaties: number;
-  vormPersonages: string;
-  vormVoorwerpen: string;
-  vormLocaties: string;
+  vormPersonages: Vorm;
+  vormVoorwerpen: Vorm;
+  vormLocaties: Vorm;
 }
