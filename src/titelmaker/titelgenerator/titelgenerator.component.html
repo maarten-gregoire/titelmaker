@@ -1,0 +1,14 @@
+<button type="button" class="btn btn-default" (click)="genereerSuggestie()">Maak titel</button>
+<button type="button" class="btn btn-default" (click)="reset()">Reset</button>
+<div *ngIf="gegenereerdeTitel">
+  <h3>Titel:</h3>
+  <h3 class="titel">{{gegenereerdeTitel}}</h3>
+</div>
+<div *ngIf="gekozenCategorie">
+  <h3>Categorie:</h3>
+  <h3 class="categorie">{{gekozenCategorie}}</h3>
+</div>
+<div *ngIf="bepaaldeDuur">
+  <h3>Duur:</h3>
+  <h3 class="duur">{{bepaaldeDuur}}</h3>
+</div>

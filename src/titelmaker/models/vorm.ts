@@ -1,0 +1,5 @@
+enum Vorm {
+  ENKELVOUD,
+  MEERVOUD,
+  VERKLEINWOORD
+}

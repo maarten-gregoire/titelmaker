@@ -1,0 +1,3 @@
+class Koppeling {
+  koppeling: string;
+}
