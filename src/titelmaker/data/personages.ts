@@ -283,10 +283,40 @@ export const personages: Personage[] =
       verkleinwoord: 'zangcoachje'
     },
     {
+      naam: 'filatelist',
+      lidwoord: 'de',
+      meervoud: 'filatelisten',
+      verkleinwoord: 'postzegelverzamelaartje'
+    },
+    {
+      naam: 'taxidermist',
+      lidwoord: 'de',
+      meervoud: 'taxidermisten',
+      verkleinwoord: 'taxidermistje'
+    },
+    {
+      naam: 'dermatoloog',
+      lidwoord: 'de',
+      meervoud: 'dermatologen',
+      verkleinwoord: 'dermatoloogje'
+    },
+    {
+      naam: 'homeopaat',
+      lidwoord: 'de',
+      meervoud: 'homeopaten',
+      verkleinwoord: 'homeopaatje'
+    },
+    {
       naam: 'nieuwslezer',
       lidwoord: 'de',
       meervoud: 'nieuwslezers',
       verkleinwoord: 'nieuwslezertje'
+    },
+    {
+      naam: 'dokter',
+      lidwoord: 'de',
+      meervoud: 'dokters',
+      verkleinwoord: 'doktertje'
     },
     {
       naam: 'brandweerman',
@@ -335,6 +365,42 @@ export const personages: Personage[] =
       lidwoord: 'de',
       meervoud: 'trollen',
       verkleinwoord: 'trolletje'
+    },
+    {
+      naam: 'heks',
+      lidwoord: 'de',
+      meervoud: 'heksen',
+      verkleinwoord: 'heksje'
+    },
+    {
+      naam: 'draak',
+      lidwoord: 'de',
+      meervoud: 'draken',
+      verkleinwoord: 'draakje'
+    },
+    {
+      naam: 'dwerg',
+      lidwoord: 'de',
+      meervoud: 'dwergen',
+      verkleinwoord: 'dwergje'
+    },
+    {
+      naam: 'zeemeermin',
+      lidwoord: 'de',
+      meervoud: 'zeemeerminnen',
+      verkleinwoord: 'zeemeerminnetje'
+    },
+    {
+      naam: 'reus',
+      lidwoord: 'de',
+      meervoud: 'reuzen',
+      verkleinwoord: 'reusje'
+    },
+    {
+      naam: 'tovenaar',
+      lidwoord: 'de',
+      meervoud: 'tovenaars',
+      verkleinwoord: 'tovenaartje'
     },
     {
       naam: 'duivel',
@@ -391,6 +457,48 @@ export const personages: Personage[] =
       verkleinwoord: 'zusje'
     },
     {
+      naam: 'dochter',
+      lidwoord: 'de',
+      meervoud: 'dochters',
+      verkleinwoord: 'dochtertje'
+    },
+    {
+      naam: 'zoon',
+      lidwoord: 'de',
+      meervoud: 'zonen',
+      verkleinwoord: 'zoontje'
+    },
+    {
+      naam: 'neef',
+      lidwoord: 'de',
+      meervoud: 'neven',
+      verkleinwoord: 'neefje'
+    },
+    {
+      naam: 'oom',
+      lidwoord: 'de',
+      meervoud: 'omen',
+      verkleinwoord: 'oompje'
+    },
+    {
+      naam: 'bompa',
+      lidwoord: 'de',
+      meervoud: 'bompa\'s',
+      verkleinwoord: 'bompaatje'
+    },
+    {
+      naam: 'oma',
+      lidwoord: 'de',
+      meervoud: 'oma\'s',
+      verkleinwoord: 'omaatje'
+    },
+    {
+      naam: 'tante',
+      lidwoord: 'de',
+      meervoud: 'tantes',
+      verkleinwoord: 'tantetje'
+    },
+    {
       naam: 'kind',
       lidwoord: 'het',
       meervoud: 'kinderen',
@@ -407,12 +515,6 @@ export const personages: Personage[] =
       lidwoord: 'de',
       meervoud: 'moeders',
       verkleinwoord: 'moedertje'
-    },
-    {
-      naam: 'zoon',
-      lidwoord: 'de',
-      meervoud: 'zonen',
-      verkleinwoord: 'zoontje'
     },
     {
       naam: 'vos',
@@ -445,10 +547,113 @@ export const personages: Personage[] =
       verkleinwoord: 'molletje'
     },
     {
-      naam: 'portugees',
+      naam: 'wolf',
+      lidwoord: 'de',
+      meervoud: 'wolven',
+      verkleinwoord: 'wolfje'
+    },
+    {
+      naam: 'merel',
+      lidwoord: 'de',
+      meervoud: 'merels',
+      verkleinwoord: 'mereltje'
+    },
+    {
+      naam: 'raaf',
+      lidwoord: 'de',
+      meervoud: 'raven',
+      verkleinwoord: 'raafje'
+    },
+    {
+      naam: 'papegaai',
+      lidwoord: 'de',
+      meervoud: 'papegaaien',
+      verkleinwoord: 'papegaaitje'
+    },
+    {
+      naam: 'hond',
+      lidwoord: 'de',
+      meervoud: 'honden',
+      verkleinwoord: 'hondje'
+    },
+    {
+      naam: 'pitbull',
+      lidwoord: 'de',
+      meervoud: 'pitbulls',
+      verkleinwoord: 'pitbulltje'
+    },
+    {
+      naam: 'chihuahua',
+      lidwoord: 'de',
+      meervoud: 'chihuahua\'s',
+      verkleinwoord: 'chihuahuatje'
+    },
+    {
+      naam: 'ezel',
+      lidwoord: 'de',
+      meervoud: 'ezels',
+      verkleinwoord: 'ezeltje'
+    },
+    {
+      naam: 'koe',
+      lidwoord: 'de',
+      meervoud: 'koeien',
+      verkleinwoord: 'koetje'
+    },
+    {
+      naam: 'stier',
+      lidwoord: 'de',
+      meervoud: 'stieren',
+      verkleinwoord: 'stiertje'
+    },
+    {
+      naam: 'geit',
+      lidwoord: 'de',
+      meervoud: 'geiten',
+      verkleinwoord: 'geitje'
+    },
+    {
+      naam: 'Portugees',
       lidwoord: 'de',
       meervoud: 'portugezen',
       verkleinwoord: 'portugeesje'
+    },
+    {
+      naam: 'Spanjaard',
+      lidwoord: 'de',
+      meervoud: 'spanjaarden',
+      verkleinwoord: 'spanjaardje'
+    },
+    {
+
+    naam: 'Palestijn',
+    lidwoord: 'de',
+    meervoud: 'Palestijnen',
+    verkleinwoord: 'Palestijntje'
+    },
+    {
+      naam: 'Antwerpenaar',
+      lidwoord: 'de',
+      meervoud: 'Antwerpenaren',
+      verkleinwoord: 'Antwerpenaartje'
+    },
+    {
+      naam: 'Amerikaan',
+      lidwoord: 'de',
+      meervoud: 'Amerikanen',
+      verkleinwoord: 'Amerikaantje'
+    },
+    {
+      naam: 'Italiaan',
+      lidwoord: 'de',
+      meervoud: 'Italianen',
+      verkleinwoord: 'Italiaantje'
+    },
+    {
+      naam: 'Nederlander',
+      lidwoord: 'de',
+      meervoud: 'Nederlanders',
+      verkleinwoord: 'Nederlandertje'
     },
     {
       naam: 'ridder',
@@ -461,6 +666,12 @@ export const personages: Personage[] =
       lidwoord: 'de',
       meervoud: 'barons',
       verkleinwoord: 'baronnetje'
+    },
+    {
+      naam: 'graaf',
+      lidwoord: 'de',
+      meervoud: 'grafen',
+      verkleinwoord: 'graafje'
     },
     {
       naam: 'koning',
@@ -481,6 +692,24 @@ export const personages: Personage[] =
       verkleinwoord: 'prinsje'
     },
     {
+      naam: 'prinses',
+      lidwoord: 'de',
+      meervoud: 'prinsessen',
+      verkleinwoord: 'prinsesje'
+    },
+    {
+      naam: 'hofnar',
+      lidwoord: 'de',
+      meervoud: 'hofnarren',
+      verkleinwoord: 'hofnarretje'
+    },
+    {
+      naam: 'troonopvolger',
+      lidwoord: 'de',
+      meervoud: 'troonopvolgers',
+      verkleinwoord: 'troonopvolgertje'
+    },
+    {
       naam: 'Tony',
       lidwoord: null,
       meervoud: null,
@@ -493,46 +722,16 @@ export const personages: Personage[] =
       verkleinwoord: 'Rudolfje'
     },
     {
-      naam: 'Lisa',
-      lidwoord: null,
-      meervoud: null,
-      verkleinwoord: 'Lisatje'
-    },
-    {
       naam: 'Romeo',
       lidwoord: null,
       meervoud: null,
       verkleinwoord: 'Romeo\'tje'
     },
     {
-      naam: 'Amber',
-      lidwoord: null,
-      meervoud: null,
-      verkleinwoord: 'Ambertje'
-    },
-    {
       naam: 'Fons',
       lidwoord: null,
       meervoud: null,
       verkleinwoord: 'Fonsje'
-    },
-    {
-      naam: 'Dana',
-      lidwoord: null,
-      meervoud: null,
-      verkleinwoord: 'Danatje'
-    },
-    {
-      naam: 'Stijn',
-      lidwoord: null,
-      meervoud: null,
-      verkleinwoord: 'Stijntje'
-    },
-    {
-      naam: 'Karolien',
-      lidwoord: null,
-      meervoud: null,
-      verkleinwoord: 'Karolientje'
     },
     {
       naam: 'Tom',
@@ -547,6 +746,102 @@ export const personages: Personage[] =
       verkleinwoord: 'Jeroentje'
     },
     {
+      naam: 'Stijn',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Stijntje'
+    },
+    {
+      naam: 'Lowie',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Lowietje'
+    },
+    {
+      naam: 'Lars',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Larsje'
+    },
+    {
+      naam: 'Samuel',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Samuelletje'
+    },
+    {
+      naam: 'Boris',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Borisje'
+    },
+    {
+      naam: 'Achmed',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Achmedje'
+    },
+    {
+      naam: 'Ringo',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Ringo\'tje'
+    },
+    {
+      naam: 'Mario',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Mario\'tje'
+    },
+    {
+      naam: 'Wim',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Wimmetje'
+    },
+    {
+      naam: 'Karolien',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Karolientje'
+    },
+    {
+      naam: 'Lisa',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Lisatje'
+    },
+    {
+      naam: 'Amber',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Ambertje'
+    },
+    {
+      naam: 'wendy',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Wendy\'tje'
+    },
+    {
+      naam: 'Dana',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Danatje'
+    },
+    {
+      naam: 'Natascha',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Natascha\'tje'
+    },
+    {
+      naam: 'Miranda',
+      lidwoord: null,
+      meervoud: null,
+      verkleinwoord: 'Miranda\'tje'
+    },
+    {
       naam: 'Karen',
       lidwoord: null,
       meervoud: null,
@@ -557,18 +852,6 @@ export const personages: Personage[] =
       lidwoord: null,
       meervoud: null,
       verkleinwoord: 'Ingetje'
-    },
-    {
-      naam: 'Lowie',
-      lidwoord: null,
-      meervoud: null,
-      verkleinwoord: 'Lowietje'
-    },
-    {
-      naam: 'Wim',
-      lidwoord: null,
-      meervoud: null,
-      verkleinwoord: 'Wimmetje'
     },
     {
       naam: 'eskimo',
@@ -601,6 +884,12 @@ export const personages: Personage[] =
       verkleinwoord: 'indiaantje'
     },
     {
+      naam: 'cowboy',
+      lidwoord: 'de',
+      meervoud: 'cowboys',
+      verkleinwoord: 'cowboytje'
+    },
+    {
       naam: 'pelgrim',
       lidwoord: 'de',
       meervoud: 'pelgrims',
@@ -617,6 +906,12 @@ export const personages: Personage[] =
       lidwoord: 'de',
       meervoud: 'vogelspotters',
       verkleinwoord: 'vogelspottertje'
+    },
+    {
+      naam: 'postzegelverzamelaar',
+      lidwoord: 'de',
+      meervoud: 'postzegelverzamelaars',
+      verkleinwoord: 'postzegelverzamelaartje'
     },
     {
       naam: 'bergbeklimmer',
