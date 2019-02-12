@@ -792,5 +792,29 @@ export const personages: Personage[] =
       meervoud: 'verleiders',
       verkleinwoord: 'verleidertje'
     },
+    {
+      naam: 'rechter',
+      lidwoord: 'de',
+      meervoud: 'rechters',
+      verkleinwoord: 'rechtertje'
+    },
+    {
+      naam: 'advocaat',
+      lidwoord: 'de',
+      meervoud: 'advocaten',
+      verkleinwoord: 'advocaatje'
+    },
+    {
+      naam: 'dief',
+      lidwoord: 'de',
+      meervoud: 'dieven',
+      verkleinwoord: 'diefje'
+    },
+    {
+      naam: 'klikspaan',
+      lidwoord: 'de',
+      meervoud: 'klikspanen',
+      verkleinwoord: 'klikspaantje'
+    }
 
   ];

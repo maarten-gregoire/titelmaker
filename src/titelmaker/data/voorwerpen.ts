@@ -575,5 +575,90 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'hengels',
       verkleinwoord: 'hengeltje'
+    },
+    {
+      naam: 'lever',
+      lidwoord: 'de',
+      meervoud: 'levers',
+      verkleinwoord: 'levertje'
+    },
+    {
+      naam: 'bloemkool',
+      lidwoord: 'de',
+      meervoud: 'bloemkolen',
+      verkleinwoord: 'bloemkooltje'
+    },
+    {
+      naam: 'doktersbriefje',
+      lidwoord: 'het',
+      meervoud: 'doktersbriefjes',
+      verkleinwoord: 'doktersbriefje'
+    },
+    {
+      naam: 'telraam',
+      lidwoord: 'het',
+      meervoud: 'telramen',
+      verkleinwoord: 'telraampje'
+    },
+    {
+      naam: 'wasbord',
+      lidwoord: 'het',
+      meervoud: 'wasborden',
+      verkleinwoord: 'wasbordje'
+    },
+    {
+      naam: 'koekendoos',
+      lidwoord: 'de',
+      meervoud: 'koekendozen',
+      verkleinwoord: 'koekendoosje'
+    },
+    {
+      naam: 'lantaarnpaal',
+      lidwoord: 'de',
+      meervoud: 'lantaarnpalen',
+      verkleinwoord: 'lantaarnpaaltje'
+    },
+    {
+      naam: 'bladwijzer',
+      lidwoord: 'de',
+      meervoud: 'bladwijzers',
+      verkleinwoord: 'bladwijzertje'
+    },
+    {
+      naam: 'slagtand',
+      lidwoord: 'de',
+      meervoud: 'slagtanden',
+      verkleinwoord: 'slagtandje'
+    },
+    {
+      naam: 'brievenbus',
+      lidwoord: 'de',
+      meervoud: 'brievenbussen',
+      verkleinwoord: 'brievenbusje'
+    },
+    {
+      naam: 'bokaal',
+      lidwoord: 'de',
+      meervoud: 'bokalen',
+      verkleinwoord: 'bokaaltje'
+    },
+    {
+      naam: 'schaar',
+      lidwoord: 'de',
+      meervoud: 'scharen',
+      verkleinwoord: 'schaartje'
+    },
+    {
+      naam: 'drinkbus',
+      lidwoord: 'de',
+      meervoud: 'drinkbussen',
+      verkleinwoord: 'drinkbusje'
+    },
+    {
+      naam: 'stopcontact',
+      lidwoord: 'het',
+      meervoud: 'stopcontacten',
+      verkleinwoord: 'stopcontactje'
     }
+
   ];

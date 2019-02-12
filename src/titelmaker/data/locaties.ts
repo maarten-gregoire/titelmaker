@@ -414,5 +414,47 @@ export const locaties: Locatie[] =
         voorzetsels: ['op', 'bij', 'aan'],
         meervoud: 'vindplaatsen'
       },
+      {
+        naam: 'gevangenis',
+        lidwoord: 'de',
+        voorzetsels: ['in', 'naast', 'bij'],
+        meervoud: 'gevangenissen'
+      },
+      {
+        naam: 'vensterbank',
+        lidwoord: 'de',
+        voorzetsels: ['naast', 'op'],
+        meervoud: 'vensterbanken'
+      },
+      {
+        naam: 'vuilnisbak',
+        lidwoord: 'de',
+        voorzetsels: ['op', 'in', 'naast'],
+        meervoud: 'vuilnisbakken'
+      },
+      {
+        naam: 'bos',
+        lidwoord: 'het',
+        voorzetsels: ['in', 'bij'],
+        meervoud: 'bossen'
+      },
+      {
+        naam: 'hol',
+        lidwoord: 'het',
+        voorzetsels: ['in'],
+        meervoud: 'hollen'
+      },
+      {
+        naam: 'hoofdkwartier',
+        lidwoord: 'het',
+        voorzetsels: ['in'],
+        meervoud: 'hoofdkwartieren'
+      },
+      {
+        naam: 'restaurant',
+        lidwoord: 'het',
+        voorzetsels: ['in'],
+        meervoud: 'restaurants'
+      }
     ];
 
