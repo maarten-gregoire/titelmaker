@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {locaties} from '../../data/locaties';
 import {voorwerpen} from '../../data/voorwerpen';
-import {StringMaker} from '../../util/stringmaker';
+import {StringMaker} from '../../util/string-maker';
 import {Arrays} from '../../util/arrays';
 import {Strings} from '../../util/strings';
 import {Randoms} from '../../util/randoms';
