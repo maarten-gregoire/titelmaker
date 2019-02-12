@@ -659,6 +659,216 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'het',
       meervoud: 'stopcontacten',
       verkleinwoord: 'stopcontactje'
+    },
+    {
+      naam: 'bankkaart',
+      lidwoord: 'de',
+      meervoud: 'bankkaarten',
+      verkleinwoord: 'bankkaartje'
+    },
+    {
+      naam: 'geldautomaat',
+      lidwoord: 'de',
+      meervoud: 'geldautomaten',
+      verkleinwoord: 'geldautomaatje'
+    },
+    {
+      naam: 'pleister',
+      lidwoord: 'de',
+      meervoud: 'pleisters',
+      verkleinwoord: 'pleistertje'
+    },
+    {
+      naam: 'oorbel',
+      lidwoord: 'de',
+      meervoud: 'oorbellen',
+      verkleinwoord: 'oorbelletje'
+    },
+    {
+      naam: 'fedora',
+      lidwoord: 'de',
+      meervoud: 'fedora\'s',
+      verkleinwoord: 'fedora\'tje'
+    },
+    {
+      naam: 'landmijn',
+      lidwoord: 'de',
+      meervoud: 'landmijnen',
+      verkleinwoord: 'landmijntje'
+    },
+    {
+      naam: 'granaat',
+      lidwoord: 'de',
+      meervoud: 'granaten',
+      verkleinwoord: 'granaatjes'
+    },
+    {
+      naam: 'kubus',
+      lidwoord: 'de',
+      meervoud: 'kubussen',
+      verkleinwoord: 'kubusje'
+    },
+    {
+      naam: 'dobbelsteen',
+      lidwoord: 'de',
+      meervoud: 'dobbelstenen',
+      verkleinwoord: 'dobbelsteentje'
+    },
+    {
+      naam: 'kaartspel',
+      lidwoord: 'het',
+      meervoud: 'kaartspellen',
+      verkleinwoord: 'kaartspelletje'
+    },
+    {
+      naam: 'hamburger',
+      lidwoord: 'de',
+      meervoud: 'hamburgers',
+      verkleinwoord: 'hamburgertje'
+    },
+    {
+      naam: 'brood',
+      lidwoord: 'het',
+      meervoud: 'broden',
+      verkleinwoord: 'broodje'
+    },
+    {
+      naam: 'pindakaas',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'muts',
+      lidwoord: 'de',
+      meervoud: 'mutsen',
+      verkleinwoord: 'mutsje'
+    },
+    {
+      naam: 'nest',
+      lidwoord: 'het',
+      meervoud: 'nesten',
+      verkleinwoord: 'nestje'
+    },
+    {
+      naam: 'kast',
+      lidwoord: 'de',
+      meervoud: 'kasten',
+      verkleinwoord: 'kastje'
+    },
+    {
+      naam: 'radio',
+      lidwoord: 'de',
+      meervoud: 'radio\'s',
+      verkleinwoord: 'radiootje'
+    },
+    {
+      naam: 'bot',
+      lidwoord: 'het',
+      meervoud: 'botten',
+      verkleinwoord: 'botje'
+    },
+    {
+      naam: 'visgraat',
+      lidwoord: 'de',
+      meervoud: 'visgraten',
+      verkleinwoord: 'visgraatje'
+    },
+    {
+      naam: 'trouwboek',
+      lidwoord: 'het',
+      meervoud: 'trouwboekjes',
+      verkleinwoord: 'trouwboekje'
+    },
+    {
+      naam: 'potlood',
+      lidwoord: 'het',
+      meervoud: 'potloden',
+      verkleinwoord: 'potloodje'
+    },
+    {
+      naam: 'kooi',
+      lidwoord: 'de',
+      meervoud: 'kooien',
+      verkleinwoord: 'kooitje'
+    },
+    {
+      naam: 'rad',
+      lidwoord: 'het',
+      meervoud: 'raderen',
+      verkleinwoord: 'radje'
+    },
+    {
+      naam: 'gat',
+      lidwoord: 'het',
+      meervoud: 'gaten',
+      verkleinwoord: 'gaatje'
+    },
+    {
+      naam: 'bril',
+      lidwoord: 'de',
+      meervoud: 'brillen',
+      verkleinwoord: 'brilletje'
+    },
+    {
+      naam: 'pincet',
+      lidwoord: 'het',
+      meervoud: 'pincetten',
+      verkleinwoord: 'pincetje'
+    },
+    {
+      naam: 'spatader',
+      lidwoord: 'de',
+      meervoud: 'spataders',
+      verkleinwoord: 'spatadertje'
+    },
+    {
+      naam: 'zonnebloemn',
+      lidwoord: 'de',
+      meervoud: 'zonnebloemen',
+      verkleinwoord: 'zonnebloemetje'
+    },
+    {
+      naam: 'pijp',
+      lidwoord: 'de',
+      meervoud: 'pijpen',
+      verkleinwoord: 'pijpje'
+    },
+    {
+      naam: 'sigaar',
+      lidwoord: 'de',
+      meervoud: 'sigaren',
+      verkleinwoord: 'sigaartje'
+    },
+    {
+      naam: 'vest',
+      lidwoord: 'de',
+      meervoud: 'vesten',
+      verkleinwoord: 'vestje'
+    },
+    {
+      naam: 'polshorloge',
+      lidwoord: 'het',
+      meervoud: 'polshorloges',
+      verkleinwoord: 'polshorlogetje'
+    },
+    {
+      naam: 'snijplank',
+      lidwoord: 'de',
+      meervoud: 'snijplanken',
+      verkleinwoord: 'snijplankje'
+    },
+    {
+      naam: 'wortel',
+      lidwoord: 'de',
+      meervoud: 'wortels',
+      verkleinwoord: 'worteltje'
+    },
+    {
+      naam: 'fopspeen',
+      lidwoord: 'de',
+      meervoud: 'fopspenen',
+      verkleinwoord: 'fopspeentje'
     }
 
   ];
