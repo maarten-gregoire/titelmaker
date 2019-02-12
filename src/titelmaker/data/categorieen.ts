@@ -1,6 +1,6 @@
 import {Categorie} from '../models/categorie';
 
-export const categorieën: Categorie[] = [
+export const categorieen: Categorie[] = [
   {
     categorie: 'Sprookje'
   },
@@ -57,5 +57,11 @@ export const categorieën: Categorie[] = [
   },
   {
     categorie: 'Actiefilm'
+  },
+  {
+    categorie: 'Ad libitum'
+  },
+  {
+    categorie: 'Emotievierkant'
   }
-]
+];
