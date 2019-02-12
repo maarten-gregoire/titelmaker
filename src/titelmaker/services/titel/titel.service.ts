@@ -28,18 +28,23 @@ export class TitelService {
     let koppelingString: string;
     let voorwerpString: string;
     let locatieString: string;
+    let voorwerpKoppeling: Koppeling
     if (titelConfiguratie.aantalPersonages > 0) {
       const personage: Personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages);
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
-        const voorwerpKoppeling: Koppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
+        voorwerpKoppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
+        if (voorwerpKoppeling.koppeling === 'zonder' && Randoms.maakRandomGetalTussenEnInbegrepen(1, 10) > 3) {
+          voorwerpKoppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
+        }
         koppelingString = StringMaker.koppelingAlsString(voorwerpKoppeling);
       }
     }
 
     if (titelConfiguratie.aantalVoorwerpen > 0) {
       const voorwerp: Voorwerp = Arrays.bepaalWillekeurigElemntUitRij<Voorwerp>(voorwerpen);
-      voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen);
+      const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
+      voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
     if (titelConfiguratie.aantalLocaties > 0) {
       const locatie: Locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties);

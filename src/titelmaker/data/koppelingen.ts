@@ -2,18 +2,26 @@ import {Koppeling} from '../models/koppeling';
 
 export const voorwerpKoppelingen: Koppeling[] = [
   {
-    koppeling: 'en'
+    koppeling: 'en',
+    isLidwoordVerboden: false
   },
   {
-    koppeling: 'met'
+    koppeling: 'met',
+    isLidwoordVerboden: false
+  },
+  {
+    koppeling: 'zonder',
+    isLidwoordVerboden: true
   }
 ];
 
 export const personageKoppelingen: Koppeling[] = [
   {
-    koppeling: 'en'
+    koppeling: 'en',
+    isLidwoordVerboden: false
   },
   {
-    koppeling: 'van'
+    koppeling: 'van',
+    isLidwoordVerboden: false
   }
 ];

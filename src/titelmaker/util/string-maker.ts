@@ -7,7 +7,7 @@ import {ZelfstandigNaamwoord} from '../models/zelfstandig-naamwoord';
 
 export class StringMaker {
 
-  static voorwerpAlsString(voorwerp: Voorwerp, vorm: Vorm): string {
+  static voorwerpAlsString(voorwerp: Voorwerp, vorm: Vorm, isLidwoordVerboden: boolean): string {
     let lidwoord: string;
     let voorwerpString: string;
     if (StringMaker.juisteVormBestaat(voorwerp, vorm)) {
@@ -16,6 +16,9 @@ export class StringMaker {
     } else {
       lidwoord = voorwerp.lidwoord;
       voorwerpString = voorwerp.naam;
+    }
+    if (isLidwoordVerboden) {
+      lidwoord = null;
     }
     return (lidwoord ? lidwoord + ' ' : '') + voorwerpString;
   }
