@@ -3,4 +3,5 @@ class Locatie {
   lidwoord: string;
   voorzetsels: string[];
   meervoud: string;
+  verkleinwoord: string;
 }
