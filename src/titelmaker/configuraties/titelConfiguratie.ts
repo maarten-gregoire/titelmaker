@@ -1,4 +1,4 @@
-import {Vorm} from '../models/vorm';
+import {Vorm} from '../enums/vorm';
 
 export class TitelConfiguratie {
   aantalPersonages: number;

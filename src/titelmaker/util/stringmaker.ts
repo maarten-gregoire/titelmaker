@@ -1,4 +1,4 @@
-import {Vorm} from '../models/vorm';
+import {Vorm} from '../enums/vorm';
 import {Voorwerp} from '../models/voorwerp';
 import {Locatie} from '../models/locatie';
 import {Personage} from '../models/personage';

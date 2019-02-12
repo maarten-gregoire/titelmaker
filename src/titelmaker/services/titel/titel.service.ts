@@ -9,7 +9,7 @@ import {Randoms} from '../../util/randoms';
 import {personages} from '../../data/personages';
 import {personageKoppelingen, voorwerpKoppelingen} from '../../data/koppelingen';
 import {TitelConfiguratie} from '../../configuraties/titelConfiguratie';
-import {Vorm} from '../../models/vorm';
+import {Vorm} from '../../enums/vorm';
 import {Personage} from '../../models/personage';
 import {Koppeling} from '../../models/koppeling';
 import {Voorwerp} from '../../models/voorwerp';
