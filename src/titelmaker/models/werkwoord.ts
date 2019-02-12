@@ -1,4 +1,4 @@
-class Werkwoord {
+export class Werkwoord {
   infinitief: string;
   voltooidDeelwoord: string;
   voltooidDeelwoordHulpwerkwoord: Werkwoord;

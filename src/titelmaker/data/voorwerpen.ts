@@ -1,3 +1,5 @@
+import {Voorwerp} from '../models/voorwerp';
+
 export const voorwerpen: Voorwerp[] =
   [
     {

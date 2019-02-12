@@ -1,3 +1,5 @@
+import {Personage} from '../models/personage';
+
 export const personages: Personage[] =
   [
     {

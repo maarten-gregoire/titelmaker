@@ -1,3 +1,3 @@
-class Koppeling {
+export class Koppeling {
   koppeling: string;
 }

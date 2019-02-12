@@ -1,3 +1,3 @@
-class Categorie {
+export class Categorie {
   categorie: string;
 }

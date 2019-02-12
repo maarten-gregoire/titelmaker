@@ -1,4 +1,4 @@
-class Locatie {
+export class Locatie {
   naam: string;
   lidwoord: string;
   voorzetsels: string[];

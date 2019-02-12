@@ -1,4 +1,8 @@
 import {Vorm} from '../models/vorm';
+import {Voorwerp} from '../models/voorwerp';
+import {Locatie} from '../models/locatie';
+import {Personage} from '../models/personage';
+import {Koppeling} from '../models/koppeling';
 
 export class StringMaker {
 

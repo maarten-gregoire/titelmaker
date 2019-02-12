@@ -1,3 +1,5 @@
+import {Categorie} from '../models/categorie';
+
 export const categorieën: Categorie[] = [
   {
     categorie: 'Sprookje'

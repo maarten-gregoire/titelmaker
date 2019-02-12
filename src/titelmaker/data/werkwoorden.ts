@@ -1,3 +1,5 @@
+import {Werkwoord} from '../models/werkwoord';
+
 export const werkwoordHebben: Werkwoord = {
   infinitief: 'hebben',
   voltooidDeelwoord: 'gehad',

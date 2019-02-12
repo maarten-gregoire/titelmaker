@@ -1,3 +1,5 @@
+import {Locatie} from '../models/locatie';
+
 export const locaties: Locatie[] =
     [
       {

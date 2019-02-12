@@ -1,3 +1,5 @@
+import {Koppeling} from '../models/koppeling';
+
 export const voorwerpKoppelingen: Koppeling[] = [
   {
     koppeling: 'en'
