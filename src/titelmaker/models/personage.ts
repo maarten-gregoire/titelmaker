@@ -1,6 +1,4 @@
-export class Personage {
-  naam: string;
-  lidwoord: string;
-  meervoud: string;
-  verkleinwoord: string;
+import {ZelfstandigNaamwoord} from './zelfstandig-naamwoord';
+
+export class Personage extends ZelfstandigNaamwoord {
 }

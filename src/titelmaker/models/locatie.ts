@@ -1,7 +1,5 @@
-export class Locatie {
-  naam: string;
-  lidwoord: string;
+import {ZelfstandigNaamwoord} from './zelfstandig-naamwoord';
+
+export class Locatie extends ZelfstandigNaamwoord{
   voorzetsels: string[];
-  meervoud: string;
-  verkleinwoord: string;
 }

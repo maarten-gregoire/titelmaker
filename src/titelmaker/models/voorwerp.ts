@@ -1,6 +1,4 @@
-export class Voorwerp {
-  naam: string;
-  lidwoord: string;
-  meervoud: string;
-  verkleinwoord: string;
+import {ZelfstandigNaamwoord} from './zelfstandig-naamwoord';
+
+export class Voorwerp extends ZelfstandigNaamwoord {
 }
