@@ -415,6 +415,12 @@ export const locaties: Locatie[] =
         meervoud: 'vindplaatsen'
       },
       {
+        naam: 'zwembad',
+        lidwoord: 'het',
+        voorzetsels: ['in', 'bij', 'aan'],
+        meervoud: 'zwembaden'
+      },
+      {
         naam: 'gevangenis',
         lidwoord: 'de',
         voorzetsels: ['in', 'naast', 'bij'],
