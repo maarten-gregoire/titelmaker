@@ -28,7 +28,7 @@ export class TitelService {
     let koppelingString: string;
     let voorwerpString: string;
     let locatieString: string;
-    let voorwerpKoppeling: Koppeling
+    let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
       const personage: Personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages);
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages);
@@ -48,7 +48,11 @@ export class TitelService {
     }
     if (titelConfiguratie.aantalLocaties > 0) {
       const locatie: Locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties);
-      locatieString = StringMaker.locatieAlsString(locatie);
+      let magBijAlsVoorzetselGebruiken = true;
+      if (titelConfiguratie.aantalVoorwerpen > 0) {
+        magBijAlsVoorzetselGebruiken = false;
+      }
+      locatieString = StringMaker.locatieAlsString(locatie, magBijAlsVoorzetselGebruiken);
     }
 
     const titel = (personageString ? personageString : '') +

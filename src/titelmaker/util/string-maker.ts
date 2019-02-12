@@ -4,6 +4,8 @@ import {Locatie} from '../models/locatie';
 import {Personage} from '../models/personage';
 import {Koppeling} from '../models/koppeling';
 import {ZelfstandigNaamwoord} from '../models/zelfstandig-naamwoord';
+import {Randoms} from './randoms';
+import {Arrays} from './arrays';
 
 export class StringMaker {
 
@@ -23,8 +25,15 @@ export class StringMaker {
     return (lidwoord ? lidwoord + ' ' : '') + voorwerpString;
   }
 
-  static locatieAlsString(locatie: Locatie): string {
-    return locatie.voorzetsels[Math.floor(Math.random() * locatie.voorzetsels.length)] +
+  static locatieAlsString(locatie: Locatie, magBijAlsVoorzetselGebruiken: boolean): string {
+    let voorzetsel: string = Arrays.bepaalWillekeurigElemntUitRij(locatie.voorzetsels);
+
+    if (!magBijAlsVoorzetselGebruiken) {
+      while (voorzetsel === 'bij') {
+        voorzetsel = Arrays.bepaalWillekeurigElemntUitRij(locatie.voorzetsels);
+      }
+    }
+    return voorzetsel +
       (locatie.lidwoord !== undefined && locatie.lidwoord !== null
       && locatie.lidwoord !== '' ? ' ' + locatie.lidwoord : '') + ' ' + locatie.naam;
   }

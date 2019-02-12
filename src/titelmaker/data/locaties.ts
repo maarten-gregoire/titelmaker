@@ -117,14 +117,14 @@ export const locaties: Locatie[] =
       {
         naam: 'orthodont',
         lidwoord: 'de',
-        voorzetsels: ['bij'],
+        voorzetsels: ['bij', 'aan'],
         meervoud: 'orthodonten',
         verkleinwoord: 'orthodontje'
       },
       {
         naam: 'waarzegger',
         lidwoord: 'de',
-        voorzetsels: ['bij'],
+        voorzetsels: ['bij', 'aan'],
         meervoud: 'waarzeggers',
         verkleinwoord: 'waarzeggertje'
       },
@@ -166,7 +166,7 @@ export const locaties: Locatie[] =
       {
         naam: 'tandarts',
         lidwoord: 'de',
-        voorzetsels: ['bij'],
+        voorzetsels: ['bij', 'aan'],
         meervoud: 'tandartsen',
         verkleinwoord: 'tandartsje'
       },

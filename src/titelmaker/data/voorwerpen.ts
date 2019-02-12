@@ -702,7 +702,7 @@ export const voorwerpen: Voorwerp[] =
       naam: 'granaat',
       lidwoord: 'de',
       meervoud: 'granaten',
-      verkleinwoord: 'granaatjes'
+      verkleinwoord: 'granaatje'
     },
     {
       naam: 'kubus',
