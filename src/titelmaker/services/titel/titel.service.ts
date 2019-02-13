@@ -72,6 +72,7 @@ export class TitelService {
     const ordernummerLocaties = Randoms.maakRandomGetalTussenEnInbegrepenVerschillendVan(
       1, 2, [ordernummerPersonages, ordernummerVoorwerpen]);
     const configuratie = {
+      aantalBijvoeglijkNaamwoorden: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
       aantalPersonages: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
       aantalVoorwerpen: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
       aantalLocaties: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
@@ -84,20 +85,20 @@ export class TitelService {
     };
 
     if (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties < 1) {
-      switch (Randoms.maakRandomGetalTussenEnInbegrepen(1, 3)) {
-        case 1: configuratie.aantalLocaties = 1; break;
-        case 2: configuratie.aantalVoorwerpen = 1; break;
-        case 3: configuratie.aantalPersonages = 1; break;
-        default: configuratie.aantalVoorwerpen = 1;
-      }
-    }
-
-    if (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties < 2) {
-      switch (Randoms.maakRandomGetalTussenEnInbegrepen(1, 3)) {
-        case 1: configuratie.aantalLocaties = 1; break;
-        case 2: configuratie.aantalVoorwerpen = 1; break;
-        case 3: configuratie.aantalPersonages = 1; break;
-        default: configuratie.aantalVoorwerpen = 1;
+      for (let i = 0; i < 2; i++) {
+        switch (Randoms.maakRandomGetalTussenEnInbegrepen(1, 3)) {
+          case 1:
+            configuratie.aantalLocaties = 1;
+            break;
+          case 2:
+            configuratie.aantalVoorwerpen = 1;
+            break;
+          case 3:
+            configuratie.aantalPersonages = 1;
+            break;
+          default:
+            configuratie.aantalVoorwerpen = 1;
+        }
       }
     }
 
