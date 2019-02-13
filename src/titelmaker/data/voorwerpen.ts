@@ -828,7 +828,7 @@ export const voorwerpen: Voorwerp[] =
       naam: 'zonnebloem',
       lidwoord: 'de',
       meervoud: 'zonnebloemen',
-      verkleinwoord: 'zonnebloemetje'
+      verkleinwoord: 'zonnebloempje'
     },
     {
       naam: 'pijp',
