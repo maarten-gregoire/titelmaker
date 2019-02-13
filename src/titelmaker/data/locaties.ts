@@ -117,14 +117,14 @@ export const locaties: Locatie[] =
       {
         naam: 'orthodont',
         lidwoord: 'de',
-        voorzetsels: ['bij', 'aan'],
+        voorzetsels: ['bij', 'vlakbij', 'aan'],
         meervoud: 'orthodonten',
         verkleinwoord: 'orthodontje'
       },
       {
         naam: 'waarzegger',
         lidwoord: 'de',
-        voorzetsels: ['bij', 'aan'],
+        voorzetsels: ['bij', 'vlakbij', 'aan'],
         meervoud: 'waarzeggers',
         verkleinwoord: 'waarzeggertje'
       },
@@ -164,9 +164,9 @@ export const locaties: Locatie[] =
         verkleinwoord: 'bibliotheekje'
       },
       {
-        naam: 'tandarts',
+        naam: 'tandartspraktijk',
         lidwoord: 'de',
-        voorzetsels: ['bij', 'aan'],
+        voorzetsels: ['bij', 'aan', 'in'],
         meervoud: 'tandartsen',
         verkleinwoord: 'tandartsje'
       },
@@ -408,13 +408,13 @@ export const locaties: Locatie[] =
         meervoud: 'schepen',
         verkleinwoord: 'scheepje'
       },
-      {
+      /*{
         naam: 'roer',
         lidwoord: 'het',
         voorzetsels: ['aan'],
         meervoud: 'roeren',
         verkleinwoord: 'roertje'
-      },
+      },*/
       {
         naam: 'kraaiennest',
         lidwoord: 'het',
