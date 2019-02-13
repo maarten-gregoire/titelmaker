@@ -471,13 +471,13 @@ export const locaties: Locatie[] =
         meervoud: 'bodems',
         verkleinwoord: 'bodempje'
       },
-      {
+     /* {
         naam: 'golf',
         lidwoord: 'de',
         voorzetsels: ['op'],
         meervoud: 'golven',
         verkleinwoord: 'golfje'
-      },
+      },*/
       {
         naam: 'vindplaats',
         lidwoord: 'de',
