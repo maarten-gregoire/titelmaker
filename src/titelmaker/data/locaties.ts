@@ -311,7 +311,7 @@ export const locaties: Locatie[] =
         verkleinwoord: 'concertzaaltje'
       },
       {
-        naam: 'voelbalveld',
+        naam: 'voetbalveld',
         lidwoord: 'het',
         voorzetsels: ['op', 'aan', 'naast'],
         meervoud: 'voetbalvelden',
