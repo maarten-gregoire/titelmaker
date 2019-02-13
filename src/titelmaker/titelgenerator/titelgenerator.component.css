@@ -10,3 +10,12 @@
   background-color: lightpink;
   color: purple;
 }
+
+.gegenereerd-item {
+  font-size: medium;
+}
+
+.tile-left {
+  opacity: 0.2;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
