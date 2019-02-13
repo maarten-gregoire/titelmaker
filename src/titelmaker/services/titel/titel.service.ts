@@ -34,10 +34,13 @@ export class TitelService {
     let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
       const personage: Personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages);
-      const bijvoeglijkNaamwoord: BijvoeglijkNaamwoord =
-        Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(
-          bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
-           t === WoordSoort.ZNW_PERSONAGE).length >= 1));
+      let bijvoeglijkNaamwoord: BijvoeglijkNaamwoord;
+      if (titelConfiguratie.aantalBijvoeglijkNaamwoorden > 0) {
+          bijvoeglijkNaamwoord =
+            Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(
+              bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
+                t === WoordSoort.ZNW_PERSONAGE).length >= 1));
+        }
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         voorwerpKoppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);

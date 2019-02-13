@@ -5,14 +5,14 @@ export const locaties: Locatie[] =
       {
         naam: 'kast',
         lidwoord: 'de',
-        voorzetsels: ['in', 'op', 'voor', 'naast', 'bij', 'onder'],
+        voorzetsels: ['in', 'op', 'naast', 'bij', 'onder'],
         meervoud: 'kasten',
         verkleinwoord: 'kastje'
       },
       {
         naam: 'huis',
         lidwoord: 'het',
-        voorzetsels: ['in', 'op', 'voor', 'naast', 'bij'],
+        voorzetsels: ['in', 'op', 'naast', 'bij'],
         meervoud: 'huizen',
         verkleinwoord: 'huisje'
       },
@@ -40,7 +40,7 @@ export const locaties: Locatie[] =
       {
         naam: 'brouwerij',
         lidwoord: 'de',
-        voorzetsels: ['in', 'bij', 'voor'],
+        voorzetsels: ['in', 'bij'],
         meervoud: 'brouwerijen',
         verkleinwoord: 'brouwerijtje'
       },
@@ -54,42 +54,42 @@ export const locaties: Locatie[] =
       {
         naam: 'hoenderhok',
         lidwoord: 'het',
-        voorzetsels: ['in', 'op', 'bij', 'voor', 'naast'],
+        voorzetsels: ['in', 'op', 'bij', 'naast'],
         meervoud: 'hoenderhokken',
         verkleinwoord: 'hoenderhokje'
       },
       {
         naam: 'kerk',
         lidwoord: 'de',
-        voorzetsels: ['in', 'op', 'bij', 'voor', 'naast'],
+        voorzetsels: ['in', 'op', 'bij', 'naast'],
         meervoud: 'kerken',
         verkleinwoord: 'kerkje'
       },
       {
         naam: 'ijssalon',
         lidwoord: 'het',
-        voorzetsels: ['in', 'bij', 'voor', 'naast'],
+        voorzetsels: ['in', 'bij', 'naast'],
         meervoud: 'ijssalons',
         verkleinwoord: 'ijssalonnetje'
       },
       {
         naam: 'meubelwinkel',
         lidwoord: 'de',
-        voorzetsels: ['in', 'bij', 'voor', 'naast'],
+        voorzetsels: ['in', 'bij', 'naast'],
         meervoud: 'meubelwinkels',
         verkleinwoord: 'meubelwinkeltje'
       },
       {
         naam: 'drukkerij',
         lidwoord: 'de',
-        voorzetsels: ['in', 'bij', 'voor', 'naast'],
+        voorzetsels: ['in', 'bij', 'naast'],
         meervoud: 'drukkerijen',
         verkleinwoord: 'drukkerijtje'
       },
       {
         naam: 'boerderij',
         lidwoord: 'de',
-        voorzetsels: ['in', 'bij', 'voor', 'naast'],
+        voorzetsels: ['in', 'bij', 'naast'],
         meervoud: 'boerderijen',
         verkleinwoord: 'boerderijtje'
       },
@@ -110,21 +110,21 @@ export const locaties: Locatie[] =
       {
         naam: 'bruidsboetiek',
         lidwoord: 'de',
-        voorzetsels: ['in', 'voor', 'naast', 'bij'],
+        voorzetsels: ['in',  'naast', 'bij'],
         meervoud: 'bruidsboetieken',
         verkleinwoord: 'bruidsboetiekje'
       },
       {
         naam: 'orthodont',
         lidwoord: 'de',
-        voorzetsels: ['bij', 'vlakbij', 'aan'],
+        voorzetsels: ['bij', 'vlakbij'],
         meervoud: 'orthodonten',
         verkleinwoord: 'orthodontje'
       },
       {
         naam: 'waarzegger',
         lidwoord: 'de',
-        voorzetsels: ['bij', 'vlakbij', 'aan'],
+        voorzetsels: ['bij', 'vlakbij'],
         meervoud: 'waarzeggers',
         verkleinwoord: 'waarzeggertje'
       },
@@ -138,7 +138,7 @@ export const locaties: Locatie[] =
       {
         naam: 'ziekenhuis',
         lidwoord: 'het',
-        voorzetsels: ['in', 'bij', 'achter', 'voor', 'naast'],
+        voorzetsels: ['in', 'bij', 'achter', 'naast'],
         meervoud: 'ziekenhuizen',
         verkleinwoord: 'ziekenhuisje'
       },
@@ -159,7 +159,7 @@ export const locaties: Locatie[] =
       {
         naam: 'bibliotheek',
         lidwoord: 'de',
-        voorzetsels: ['in', 'bij', 'voor', 'naast'],
+        voorzetsels: ['in', 'bij', 'naast'],
         meervoud: 'bibliotheken',
         verkleinwoord: 'bibliotheekje'
       },
@@ -184,13 +184,13 @@ export const locaties: Locatie[] =
         meervoud: 'koelkasten',
         verkleinwoord: 'koelkastje'
       },
-      {
+     /* {
         naam: 'boek',
         lidwoord: 'het',
         voorzetsels: ['in', 'op', 'naast', 'bij', 'onder'],
         meervoud: 'boeken',
         verkleinwoord: 'boekje'
-      },
+      },*/
       {
         naam: 'combi',
         lidwoord: 'de',
@@ -362,7 +362,7 @@ export const locaties: Locatie[] =
       {
         naam: 'discotheek',
         lidwoord: 'de',
-        voorzetsels: ['in', 'voor', 'naast', 'achter'],
+        voorzetsels: ['in', 'naast', 'achter'],
         meervoud: 'discotheken',
         verkleinwoord: 'discotheekje'
       },
@@ -376,7 +376,7 @@ export const locaties: Locatie[] =
       {
         naam: 'motorboot',
         lidwoord: 'de',
-        voorzetsels: ['in'],
+        voorzetsels: ['op'],
         meervoud: 'motorboten',
         verkleinwoord: 'motorbootje'
       },

@@ -52,16 +52,8 @@ export class StringMaker {
       personageString = personage.naam;
     }
 
-    switch (lidwoord) {
-      case 'de':
-        bijvoeglijkNaamwoordString = bijvoeglijkNaamwoord.tweedeVorm;
-        break;
-      case 'het':
-        bijvoeglijkNaamwoord = null;
-        // bijvoeglijkNaamwoordString = bijvoeglijkNaamwoord.woord;
-        break;
-      default:
-        bijvoeglijkNaamwoord = null;
+    if (bijvoeglijkNaamwoord && lidwoord) {
+      bijvoeglijkNaamwoordString = bijvoeglijkNaamwoord.tweedeVorm;
     }
 
     return (lidwoord ? lidwoord + ' ' : '') +

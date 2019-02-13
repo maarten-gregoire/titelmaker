@@ -783,6 +783,12 @@ export const voorwerpen: Voorwerp[] =
       verkleinwoord: 'trouwboekje'
     },
     {
+      naam: 'boek',
+      lidwoord: 'het',
+      meervoud: 'boeken',
+      verkleinwoord: 'boekje'
+    },
+    {
       naam: 'potlood',
       lidwoord: 'het',
       meervoud: 'potloden',
