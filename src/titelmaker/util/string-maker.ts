@@ -6,6 +6,7 @@ import {Koppeling} from '../models/koppeling';
 import {ZelfstandigNaamwoord} from '../models/zelfstandig-naamwoord';
 import {Randoms} from './randoms';
 import {Arrays} from './arrays';
+import {BijvoeglijkNaamwoord} from '../models/bijvoeglijk-naamwoord';
 
 export class StringMaker {
 
@@ -38,9 +39,10 @@ export class StringMaker {
       && locatie.lidwoord !== '' ? ' ' + locatie.lidwoord : '') + ' ' + locatie.naam;
   }
 
-  static personageAlsString(personage: Personage, vorm: Vorm): string {
+  static personageAlsString(personage: Personage, vorm: Vorm, bijvoeglijkNaamwoord: BijvoeglijkNaamwoord): string {
     let lidwoord: string;
     let personageString: string;
+    let bijvoeglijkNaamwoordString: string;
     if (StringMaker.juisteVormBestaat(personage, vorm)) {
       lidwoord = StringMaker.bepaalLidwoord(vorm, personage.lidwoord);
       personageString = StringMaker.bepaalZelfstandigNaamwoordInJuisteVorm(vorm, personage);
@@ -50,7 +52,21 @@ export class StringMaker {
       personageString = personage.naam;
     }
 
-    return (lidwoord ? lidwoord + ' ' : '') + personageString;
+    switch (lidwoord) {
+      case 'de':
+        bijvoeglijkNaamwoordString = bijvoeglijkNaamwoord.tweedeVorm;
+        break;
+      case 'het':
+        bijvoeglijkNaamwoord = null;
+        // bijvoeglijkNaamwoordString = bijvoeglijkNaamwoord.woord;
+        break;
+      default:
+        bijvoeglijkNaamwoord = null;
+    }
+
+    return (lidwoord ? lidwoord + ' ' : '') +
+      (bijvoeglijkNaamwoordString ? bijvoeglijkNaamwoordString + ' ' : '') +
+      personageString;
   }
 
   static juisteVormBestaat(zelfstandigNaamwoord: ZelfstandigNaamwoord, vorm: Vorm): boolean {

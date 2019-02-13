@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {locaties} from '../../data/locaties';
 import {voorwerpen} from '../../data/voorwerpen';
@@ -7,13 +7,16 @@ import {Arrays} from '../../util/arrays';
 import {Strings} from '../../util/strings';
 import {Randoms} from '../../util/randoms';
 import {personages} from '../../data/personages/personages';
-import {personageKoppelingen, voorwerpKoppelingen} from '../../data/koppelingen';
+import {voorwerpKoppelingen} from '../../data/koppelingen';
 import {TitelConfiguratie} from '../../configuraties/titelConfiguratie';
 import {Vorm} from '../../enums/vorm';
 import {Personage} from '../../models/personage';
 import {Koppeling} from '../../models/koppeling';
 import {Voorwerp} from '../../models/voorwerp';
 import {Locatie} from '../../models/locatie';
+import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
+import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
+import {WoordSoort} from '../../enums/woordsoort';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +34,11 @@ export class TitelService {
     let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
       const personage: Personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages);
-      personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages);
+      const bijvoeglijkNaamwoord: BijvoeglijkNaamwoord =
+        Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(
+          bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
+           t === WoordSoort.ZNW_PERSONAGE).length >= 1));
+      personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         voorwerpKoppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
         if (voorwerpKoppeling.koppeling === 'zonder' && Randoms.maakRandomGetalTussenEnInbegrepen(1, 10) > 3) {

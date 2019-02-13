@@ -66,7 +66,7 @@ export const bijvoeglijkNaamwoorden = [
   {
     woord: 'donker',
     tweedeVorm: 'donkere',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+    toepasbaarOp: [WoordSoort.ZNW_LOCATIE]
   },
   {
     woord: 'gruwelijk',
@@ -82,11 +82,6 @@ export const bijvoeglijkNaamwoorden = [
     woord: 'verlaten',
     tweedeVorm: 'verlaten',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
-  },
-  {
-    woord: 'moeilijk',
-    tweedeVorm: 'moeilijke',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
     woord: 'leergierig',
@@ -116,17 +111,17 @@ export const bijvoeglijkNaamwoorden = [
   {
     woord: 'blauw',
     tweedeVorm: 'blauwe',
-    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
     woord: 'rood',
     tweedeVorm: 'rode',
-    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
     woord: 'groen',
     tweedeVorm: 'groene',
-    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
     woord: 'groot',
