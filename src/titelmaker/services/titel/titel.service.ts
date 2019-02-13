@@ -6,7 +6,7 @@ import {StringMaker} from '../../util/string-maker';
 import {Arrays} from '../../util/arrays';
 import {Strings} from '../../util/strings';
 import {Randoms} from '../../util/randoms';
-import {personages} from '../../data/personages';
+import {personages} from '../../data/personages/personages';
 import {personageKoppelingen, voorwerpKoppelingen} from '../../data/koppelingen';
 import {TitelConfiguratie} from '../../configuraties/titelConfiguratie';
 import {Vorm} from '../../enums/vorm';
