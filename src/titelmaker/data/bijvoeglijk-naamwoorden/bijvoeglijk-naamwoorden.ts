@@ -1,6 +1,8 @@
-import {WoordSoort} from '../enums/woordsoort';
+import {WoordSoort} from '../../enums/woordsoort';
+import {emoties} from './emoties';
 
 export const bijvoeglijkNaamwoorden = [
+  ...emoties,
   {
     woord: 'mooi',
     tweedeVorm: 'mooie',
@@ -34,16 +36,6 @@ export const bijvoeglijkNaamwoorden = [
   {
     woord: 'lief',
     tweedeVorm: 'lieve',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
-  },
-  {
-    woord: 'blij',
-    tweedeVorm: 'blije',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
-  },
-  {
-    woord: 'vrolijk',
-    tweedeVorm: 'vrolijke',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
@@ -82,11 +74,6 @@ export const bijvoeglijkNaamwoorden = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
-    woord: 'angstig',
-    tweedeVorm: 'angstige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
-  },
-  {
     woord: 'voorzichtig',
     tweedeVorm: 'voorzichtige',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
@@ -95,16 +82,6 @@ export const bijvoeglijkNaamwoorden = [
     woord: 'verlaten',
     tweedeVorm: 'verlaten',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
-  },
-  {
-    woord: 'gelukkig',
-    tweedeVorm: 'gelukkige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
-  },
-  {
-    woord: 'ongelukkig',
-    tweedeVorm: 'ongelukkige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
     woord: 'moeilijk',
@@ -125,11 +102,6 @@ export const bijvoeglijkNaamwoorden = [
     woord: 'net',
     tweedeVorm: 'nette',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
-  },
-  {
-    woord: 'achterdochtig',
-    tweedeVorm: 'achterdochtige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
     woord: 'braaf',
@@ -202,11 +174,6 @@ export const bijvoeglijkNaamwoorden = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
   },
   {
-    woord: 'achterdochtig',
-    tweedeVorm: 'achterdochtige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
-  },
-  {
     woord: 'overspelig',
     tweedeVorm: 'overspelige',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
@@ -219,11 +186,6 @@ export const bijvoeglijkNaamwoorden = [
   {
     woord: 'machtig',
     tweedeVorm: 'machtige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
-  },
-  {
-    woord: 'jaloers',
-    tweedeVorm: 'jaloerse',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
@@ -300,15 +262,5 @@ export const bijvoeglijkNaamwoorden = [
     woord: 'lachwekkend',
     tweedeVorm: 'lachwekkende',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
-  },
-  {
-    woord: 'verdrietig',
-    tweedeVorm: 'verdrietige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
-  },
-  {
-    woord: 'euforisch',
-    tweedeVorm: 'euforische',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   }
 ];
