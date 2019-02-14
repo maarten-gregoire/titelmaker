@@ -94,8 +94,8 @@ export class TitelService {
       vormLocaties: Randoms.bepaalRandomEnumValue(Vorm)
     };
 
-    if (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties < 1) {
-      for (let i = 0; i < 4; i++) {
+    if (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties < 2) {
+      for (let i = 0; i < 2; i++) {
         switch (Randoms.maakRandomGetalTussenEnInbegrepen(1, 3)) {
           case 1:
             configuratie.aantalLocaties = 1;
