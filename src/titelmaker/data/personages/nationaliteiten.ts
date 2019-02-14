@@ -42,6 +42,30 @@ export const volkeren: Personage[] = [
     lidwoord: 'de',
     meervoud: 'Nederlanders',
     verkleinwoord: 'Nederlandertje'
+  },
+  {
+    naam: 'Aboriginal',
+    lidwoord: 'de',
+    meervoud: 'Aboriginals',
+    verkleinwoord: 'Aboriginalletje'
+  },
+  {
+    naam: 'Aarlenaar',
+    lidwoord: 'de',
+    meervoud: 'Aarlenaren',
+    verkleinwoord: 'Aarlenaartje'
+  },
+  {
+    naam: 'Afghaan',
+    lidwoord: 'de',
+    meervoud: 'Afghanen',
+    verkleinwoord: 'Afghaantje'
+  },
+  {
+    naam: 'B-acteur',
+    lidwoord: 'de',
+    meervoud: 'B-acteurs',
+    verkleinwoord: 'B-acteurtje'
   }
 ];
 

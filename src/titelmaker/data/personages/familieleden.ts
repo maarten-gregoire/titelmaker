@@ -56,7 +56,7 @@ export const familieleden = [
   {
     naam: 'oom',
     lidwoord: 'de',
-    meervoud: 'omen',
+    meervoud: 'ooms',
     verkleinwoord: 'oompje'
   },
   {

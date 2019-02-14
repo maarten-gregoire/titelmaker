@@ -56,11 +56,21 @@ export const bijvoeglijkNaamwoorden = [
   {
     woord: 'stevig',
     tweedeVorm: 'stevige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
     woord: 'slap',
     tweedeVorm: 'slappe',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'zwak',
+    tweedeVorm: 'zwakke',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'sterk',
+    tweedeVorm: 'sterke',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
@@ -106,7 +116,7 @@ export const bijvoeglijkNaamwoorden = [
   {
     woord: 'zorgwekkend',
     tweedeVorm: 'zorgwekkende',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
   },
   {
     woord: 'blauw',
@@ -141,7 +151,47 @@ export const bijvoeglijkNaamwoorden = [
   {
     woord: 'dun',
     tweedeVorm: 'dunne',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'mager',
+    tweedeVorm: 'magere',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'trouw',
+    tweedeVorm: 'trouwe',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'slank',
+    tweedeVorm: 'slanke',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'vriendelijk',
+    tweedeVorm: 'vriendelijke',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'brutaal',
+    tweedeVorm: 'brutale',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'gemeen',
+    tweedeVorm: 'gemene',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'hardwerkend',
+    tweedeVorm: 'hardwerkende',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'naief',
+    tweedeVorm: 'naïeve',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
     woord: 'lang',

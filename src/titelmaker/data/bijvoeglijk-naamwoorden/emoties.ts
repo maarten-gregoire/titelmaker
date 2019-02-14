@@ -81,5 +81,15 @@ export const emoties: BijvoeglijkNaamwoord[] = [
     woord: 'vrolijk',
     tweedeVorm: 'vrolijke',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'hoopvol',
+    tweedeVorm: 'hoopvolle',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'depressief',
+    tweedeVorm: 'depressieve',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   }
 ];

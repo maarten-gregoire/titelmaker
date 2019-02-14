@@ -877,6 +877,18 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'fopspenen',
       verkleinwoord: 'fopspeentje'
+    },
+    {
+      naam: 'F-16',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'pop',
+      lidwoord: 'de',
+      meervoud: 'poppen',
+      verkleinwoord: 'poppetje'
     }
 
   ];

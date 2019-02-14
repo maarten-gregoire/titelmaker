@@ -540,6 +540,13 @@ export const locaties: Locatie[] =
         voorzetsels: ['in'],
         meervoud: 'restaurants',
         verkleinwoord: 'restaurantje'
+      },
+      {
+        naam: 'Absurdistan',
+        lidwoord: null,
+        voorzetsels: ['in'],
+        meervoud: null,
+        verkleinwoord: null
       }
     ];
 

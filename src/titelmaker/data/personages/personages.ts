@@ -273,6 +273,53 @@ export const personages: Personage[] =
       lidwoord: 'de',
       meervoud: 'klikspanen',
       verkleinwoord: 'klikspaantje'
+    },
+    {
+      naam: 'dorpsgek',
+      lidwoord: 'de',
+      meervoud: 'dorpsgekken',
+      verkleinwoord: 'dorpsgekje'
+    },
+    {
+      naam: 'zot',
+      lidwoord: 'de',
+      meervoud: 'zotten',
+      verkleinwoord: 'zotje'
+    },
+    {
+      naam: 'rover',
+      lidwoord: 'de',
+      meervoud: 'rovers',
+      verkleinwoord: 'rovertje'
+    },
+    {
+      naam: 'wijnkenner',
+      lidwoord: 'de',
+      meervoud: 'wijnkenners',
+      verkleinwoord: 'wijnkennertje'
+    },
+    {
+      naam: 'buurman',
+      lidwoord: 'de',
+      meervoud: 'buurmannen',
+      verkleinwoord: 'buurmannetje'
+    },
+    {
+      naam: 'buurvrouw',
+      lidwoord: 'de',
+      meervoud: 'buurvrouwen',
+      verkleinwoord: 'buurvrouwtje'
+    },
+    {
+      naam: '80-jarige',
+      lidwoord: 'de',
+      meervoud: '80-jarigen',
+      verkleinwoord: null
+    },
+    {
+      naam: 'ADHD-kind',
+      lidwoord: 'de',
+      meervoud: 'ADHD-kinderen',
+      verkleinwoord: 'ADHD-kindje'
     }
-
   ];
