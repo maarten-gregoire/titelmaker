@@ -254,12 +254,6 @@ export const beroepen: Personage[] = [
     verkleinwoord: 'winkeliertje'
   },
   {
-    naam: 'dierenverzorger',
-    lidwoord: 'de',
-    meervoud: 'dierenverzorgers',
-    verkleinwoord: 'dierenverzorgertje'
-  },
-  {
     naam: 'bouwvakker',
     lidwoord: 'de',
     meervoud: 'bouwvakkers',
