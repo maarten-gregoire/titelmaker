@@ -6,12 +6,20 @@ import { TitelmakerComponent } from './titelmaker.component';
 import { TitelgeneratorComponent } from './paginas/titelgenerator/titelgenerator.component';
 import {ServicesModule} from './services/services.module';
 import {WoordenspammerComponent} from './paginas/woordenspammer/woordenspammer.component';
+import { FeedbackComponent } from './paginas/feedback/feedback.component';
+import { SuggereerderComponent } from './paginas/suggereerder/suggereerder.component';
+import { BulkGeneratorComponent } from './paginas/bulk-generator/bulk-generator.component';
+import { OverDezeAppComponent } from './paginas/over-deze-app/over-deze-app.component';
 
 @NgModule({
   declarations: [
     TitelmakerComponent,
     TitelgeneratorComponent,
-    WoordenspammerComponent
+    WoordenspammerComponent,
+    FeedbackComponent,
+    SuggereerderComponent,
+    BulkGeneratorComponent,
+    OverDezeAppComponent
   ],
   imports: [
     BrowserModule,
