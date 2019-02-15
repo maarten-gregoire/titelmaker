@@ -318,7 +318,7 @@ export const personages: Personage[] =
     },
     {
       naam: 'ADHD-kind',
-      lidwoord: 'de',
+      lidwoord: 'het',
       meervoud: 'ADHD-kinderen',
       verkleinwoord: 'ADHD-kindje'
     }
