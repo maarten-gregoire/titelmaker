@@ -24,11 +24,11 @@ import {LaatstGebruikteWoordenLijst} from './laatst-gebruikte-woorden-lijst';
 })
 export class TitelService {
 
-  recenteLocaties: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
+ /* recenteLocaties: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
   recenteVoorwerpen: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
   recentePersonages: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
   recenteBijvoeglijkNaamwoorden: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
-
+*/
   constructor() { }
 
   maaktitel(): Observable<string> {
@@ -39,26 +39,26 @@ export class TitelService {
     let locatieString: string;
     let personage: Personage;
     let bijvoeglijkNaamwoord: BijvoeglijkNaamwoord;
-    let voorwerp: Voorwerp
+    let voorwerp: Voorwerp;
     let locatie: Locatie;
     let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
       personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages
-        .filter(p => !this.recentePersonages.zitWoordInLijst(p))
+       // .filter(p => !this.recentePersonages.zitWoordInLijst(p))
       );
-      if (!personage) {
+    /*  if (!personage) {
         this.recentePersonages.maakLeeg();
-      }
+      }*/
       if (titelConfiguratie.aantalBijvoeglijkNaamwoorden > 0) {
           bijvoeglijkNaamwoord =
             Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(
               bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
                 t === WoordSoort.ZNW_PERSONAGE).length >= 1)
-                .filter(b => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(b))
+               // .filter(b => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(b))
             );
-          if (!bijvoeglijkNaamwoord) {
+        /*  if (!bijvoeglijkNaamwoord) {
             this.recenteBijvoeglijkNaamwoorden.maakLeeg();
-          }
+          }*/
       }
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
@@ -72,20 +72,21 @@ export class TitelService {
 
     if (titelConfiguratie.aantalVoorwerpen > 0) {
       voorwerp = Arrays.bepaalWillekeurigElemntUitRij<Voorwerp>(voorwerpen
-        .filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
-      if (!voorwerp) {
+ //       .filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v))
+             );
+    /*  if (!voorwerp) {
         this.recenteVoorwerpen.maakLeeg();
-      }
+      }*/
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
     if (titelConfiguratie.aantalLocaties > 0) {
       locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
-        .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
+    //    .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
       );
-      if (!locatie) {
+   /*   if (!locatie) {
         this.recenteLocaties.maakLeeg();
-      }
+      }*/
       let magBijAlsVoorzetselGebruiken = true;
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         magBijAlsVoorzetselGebruiken = false;
@@ -93,7 +94,7 @@ export class TitelService {
       locatieString = StringMaker.locatieAlsString(locatie, magBijAlsVoorzetselGebruiken);
     }
 
-    this.updateRecenteWoorden(locatie, personage, bijvoeglijkNaamwoord, voorwerp);
+   // this.updateRecenteWoorden(locatie, personage, bijvoeglijkNaamwoord, voorwerp);
 
     const titel = (personageString ? personageString : '') +
       (personageString && koppelingString ? ' ' : '') +
@@ -140,10 +141,10 @@ export class TitelService {
     return configuratie;
   }
 
-  private updateRecenteWoorden(locatie: Locatie, personage: Personage, bijvoeglijkNaamwoord: BijvoeglijkNaamwoord, voorwerp: Voorwerp) {
+ /* private updateRecenteWoorden(locatie: Locatie, personage: Personage, bijvoeglijkNaamwoord: BijvoeglijkNaamwoord, voorwerp: Voorwerp) {
     this.recenteLocaties.voegWoordToe(locatie);
     this.recenteVoorwerpen.voegWoordToe(voorwerp);
     this.recentePersonages.voegWoordToe(personage);
     this.recenteBijvoeglijkNaamwoorden.voegWoordToe(bijvoeglijkNaamwoord);
-  }
+  }*/
 }
