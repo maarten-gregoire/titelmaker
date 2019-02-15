@@ -1,4 +1,4 @@
-import {Voorwerp} from '../models/voorwerp';
+import {Voorwerp} from '../../models/voorwerp';
 
 export const voorwerpen: Voorwerp[] =
   [
