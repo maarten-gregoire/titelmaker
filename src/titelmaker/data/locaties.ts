@@ -547,6 +547,55 @@ export const locaties: Locatie[] =
         voorzetsels: ['in'],
         meervoud: null,
         verkleinwoord: null
+      },
+      {
+        naam: 'lichtstad',
+        lidwoord: 'de',
+        voorzetsels: ['in'],
+        meervoud: null,
+        verkleinwoord: null
+      },
+      {
+        naam: 'liedjesfestival',
+        lidwoord: 'het',
+        voorzetsels: ['op'],
+        meervoud: 'liedjesfestivallen',
+        verkleinwoord: 'liedjesfestivalletje'
+      },
+      {
+        naam: 'liedjesprogramma',
+        lidwoord: 'het',
+        voorzetsels: ['in'],
+        meervoud: 'liedjesprogramma\'s',
+        verkleinwoord: 'liedjesprogrammaatje'
+      },
+      {
+        naam: 'pensenkermis',
+        lidwoord: 'de',
+        voorzetsels: ['op'],
+        meervoud: 'pensenkermissen',
+        verkleinwoord: 'pensenkermisje'
+      },
+      {
+        naam: 'perron',
+        lidwoord: 'het',
+        voorzetsels: ['op'],
+        meervoud: 'perronnen',
+        verkleinwoord: 'perronnetje'
+      },
+      {
+        naam: 'piramide',
+        lidwoord: 'de',
+        voorzetsels: ['in'],
+        meervoud: 'piramides',
+        verkleinwoord: 'piramidetje'
+      },
+      {
+        naam: 'petroleumbron',
+        lidwoord: 'de',
+        voorzetsels: ['bij'],
+        meervoud: 'petroleumbronnen',
+        verkleinwoord: 'petroleumbronnetje'
       }
     ];
 
