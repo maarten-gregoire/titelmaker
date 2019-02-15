@@ -1,4 +1,6 @@
-export class Werkwoord {
+import {Woord} from './woord';
+
+export class Werkwoord extends Woord {
   infinitief: string;
   voltooidDeelwoord: string;
   voltooidDeelwoordHulpwerkwoord: Werkwoord;
