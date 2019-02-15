@@ -92,6 +92,12 @@ export const dieren: Personage[] = [
     verkleinwoord: 'stiertje'
   },
   {
+    naam: 'lieveheersbeestje',
+    lidwoord: 'het',
+    meervoud: 'lieveheersbeestjes',
+    verkleinwoord: null
+  },
+  {
     naam: 'geit',
     lidwoord: 'de',
     meervoud: 'geiten',

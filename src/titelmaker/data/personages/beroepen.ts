@@ -14,6 +14,24 @@ export const beroepen: Personage[] = [
     verkleinwoord: 'orthodontje'
   },
   {
+    naam: 'pianostemmer',
+    lidwoord: 'de',
+    meervoud: 'pianostemmers',
+    verkleinwoord: 'pianostemmertje'
+  },
+  {
+    naam: 'personeelsdirecteur',
+    lidwoord: 'de',
+    meervoud: 'personeelsdirecteurs',
+    verkleinwoord: 'personeelsdirecteurtje'
+  },
+  {
+    naam: 'piloot',
+    lidwoord: 'de',
+    meervoud: 'piloten',
+    verkleinwoord: 'pilootje'
+  },
+  {
     naam: 'tandarts',
     lidwoord: 'de',
     meervoud: 'tandartsen',

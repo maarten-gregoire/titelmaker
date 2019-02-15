@@ -321,5 +321,120 @@ export const personages: Personage[] =
       lidwoord: 'het',
       meervoud: 'ADHD-kinderen',
       verkleinwoord: 'ADHD-kindje'
+    },
+    {
+      naam: 'levensgezel',
+      lidwoord: 'de',
+      meervoud: 'levensgezellen',
+      verkleinwoord: 'levensgezelletje'
+    },
+    {
+      naam: 'levensgezellin',
+      lidwoord: 'de',
+      meervoud: 'levensgezellinnen',
+      verkleinwoord: 'levensgezellinnetje'
+    },
+    {
+      naam: 'levensgenieter',
+      lidwoord: 'de',
+      meervoud: 'levensgenieters',
+      verkleinwoord: 'levensgenietertje'
+    },
+    {
+      naam: 'lezer',
+      lidwoord: 'de',
+      meervoud: 'lezers',
+      verkleinwoord: 'lezertje'
+    },
+    {
+      naam: 'lezeres',
+      lidwoord: 'de',
+      meervoud: 'lezeressen',
+      verkleinwoord: 'lezeresje'
+    },
+    {
+      naam: 'lezerspanel',
+      lidwoord: 'het',
+      meervoud: 'lezerspanels',
+      verkleinwoord: 'lezerspaneltje'
+    },
+    {
+      naam: 'liberaal',
+      lidwoord: 'de',
+      meervoud: 'liberalen',
+      verkleinwoord: 'liberaaltje'
+    },
+    {
+      naam: 'lief',
+      lidwoord: 'het',
+      meervoud: 'liefje',
+      verkleinwoord: null
+    },
+    {
+      naam: 'lieveling',
+      lidwoord: 'de',
+      meervoud: 'lievelingen',
+      verkleinwoord: 'lievelingetje'
+    },
+    {
+      naam: 'lievelingsacteur',
+      lidwoord: 'de',
+      meervoud: 'lievelingsacteurs',
+      verkleinwoord: 'lievelingsacteurtje'
+    },
+    {
+      naam: 'lievelingsschrijver',
+      lidwoord: 'de',
+      meervoud: 'lievelingsschrijvers',
+      verkleinwoord: 'lievelingsschrijvertje'
+    },
+    {
+      naam: 'lievelingszoon',
+      lidwoord: 'de',
+      meervoud: 'lievelingszonen',
+      verkleinwoord: 'lievelingszoontje'
+    },
+    {
+      naam: 'lieverd',
+      lidwoord: 'de',
+      meervoud: 'lieverds',
+      verkleinwoord: 'lieverdje'
+    },
+    {
+      naam: 'perronchef',
+      lidwoord: 'de',
+      meervoud: 'perronchefs',
+      verkleinwoord: 'perronchefje'
+    },
+    {
+      naam: 'peuter',
+      lidwoord: 'de',
+      meervoud: 'peuters',
+      verkleinwoord: 'peutertje'
+    },
+    {
+      naam: 'kleuter',
+      lidwoord: 'de',
+      meervoud: 'kleuters',
+      verkleinwoord: 'kleutertje'
+    },
+    {
+      naam: 'pianospeler',
+      lidwoord: 'de',
+      meervoud: 'pianospelers',
+      verkleinwoord: 'pianospelertje'
+    },
+    {
+      naam: 'persoon',
+      lidwoord: 'de',
+      meervoud: 'personen',
+      verkleinwoord: 'persoontje'
+    },
+    {
+      naam: 'personeelslid',
+      lidwoord: 'het',
+      meervoud: 'personeelsleden',
+      verkleinwoord: 'personeelslidje'
     }
+
   ];
