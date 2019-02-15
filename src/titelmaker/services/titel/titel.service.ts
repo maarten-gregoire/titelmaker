@@ -46,6 +46,9 @@ export class TitelService {
       personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages
         .filter(p => !this.recentePersonages.zitWoordInLijst(p))
       );
+      if (!personage) {
+        this.recentePersonages.maakLeeg();
+      }
       if (titelConfiguratie.aantalBijvoeglijkNaamwoorden > 0) {
           bijvoeglijkNaamwoord =
             Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(
@@ -53,7 +56,10 @@ export class TitelService {
                 t === WoordSoort.ZNW_PERSONAGE).length >= 1)
                 .filter(b => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(b))
             );
-        }
+          if (!bijvoeglijkNaamwoord) {
+            this.recenteBijvoeglijkNaamwoorden.maakLeeg();
+          }
+      }
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         voorwerpKoppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
@@ -67,6 +73,9 @@ export class TitelService {
     if (titelConfiguratie.aantalVoorwerpen > 0) {
       voorwerp = Arrays.bepaalWillekeurigElemntUitRij<Voorwerp>(voorwerpen
         .filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
+      if (!voorwerp) {
+        this.recenteVoorwerpen.maakLeeg();
+      }
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
@@ -74,6 +83,9 @@ export class TitelService {
       locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
         .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
       );
+      if (!locatie) {
+        this.recenteLocaties.maakLeeg();
+      }
       let magBijAlsVoorzetselGebruiken = true;
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         magBijAlsVoorzetselGebruiken = false;
@@ -90,6 +102,9 @@ export class TitelService {
       (voorwerpString ? voorwerpString : '') +
       ((voorwerpString && locatieString) || (personageString && locatieString) ? ' ' : '') +
       (locatieString ? locatieString : '');
+    if (!titel || titel === '') {
+      return of('Er gaat iets mis');
+    }
     return of(Strings.maakHoofdletterVanEersteLetter(titel));
   }
 

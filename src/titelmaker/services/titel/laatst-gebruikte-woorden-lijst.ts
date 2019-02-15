@@ -26,7 +26,7 @@ export class LaatstGebruikteWoordenLijst {
     }
   }
 
-  private maakLeeg() {
+  maakLeeg() {
     this.woordenLijst = [];
   }
 
