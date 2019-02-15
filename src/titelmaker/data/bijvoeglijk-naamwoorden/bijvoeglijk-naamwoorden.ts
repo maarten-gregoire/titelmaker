@@ -100,9 +100,19 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
-    woord: 'boos',
-    tweedeVorm: 'boze',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+    woord: 'obscuur',
+    tweedeVorm: 'obscure',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'legendarisch',
+    tweedeVorm: 'legendarische',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'berucht',
+    tweedeVorm: 'beruchte',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
     woord: 'net',
