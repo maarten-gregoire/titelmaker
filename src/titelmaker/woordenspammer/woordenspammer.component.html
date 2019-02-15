@@ -1,0 +1,35 @@
+<div class="container container-fluid">
+  <main class="main-content p-5" role="main">
+    <div class="row">
+      <h2>Woordenspammer</h2>
+    </div>
+    <div class="row">
+      <h3>Voor een rafale</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-12 mb-4">
+          <div class="color-controls-1">
+            <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerSuggestie()"><span class="gradient">Genereer woord</span></button>
+              <button type="button" class="btn btn-outline-blue-grey" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="row col-md-12">
+          <div class="col-md-12 mb-4" *ngIf="gegenereerdWoord">
+            <div class="card bg-danger bg-gradient mb-3 text-center">
+              <div class="card-body">
+                <div class="tile-left">
+                  <i class="batch-icon batch-icon-speech-bubble-left-tip batch-icon-xxl"></i>
+                </div>
+                <p class="gegenereerd-item">{{gegenereerdWoord}}</p>
+                <footer>Woord</footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
