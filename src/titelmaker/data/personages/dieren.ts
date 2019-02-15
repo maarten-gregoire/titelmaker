@@ -8,10 +8,58 @@ export const dieren: Personage[] = [
     verkleinwoord: 'vosje'
   },
   {
+    naam: 'kip',
+    lidwoord: 'de',
+    meervoud: 'kippen',
+    verkleinwoord: 'kipje'
+  },
+  {
+    naam: 'haan',
+    lidwoord: 'de',
+    meervoud: 'hanen',
+    verkleinwoord: 'haantje'
+  },
+  {
+    naam: 'paard',
+    lidwoord: 'het',
+    meervoud: 'paarden',
+    verkleinwoord: 'paardje'
+  },
+  {
+    naam: 'hert',
+    lidwoord: 'het',
+    meervoud: 'herten',
+    verkleinwoord: 'hertje'
+  },
+  {
+    naam: 'schaap',
+    lidwoord: 'het',
+    meervoud: 'schapen',
+    verkleinwoord: 'schaapje'
+  },
+  {
+    naam: 'aap',
+    lidwoord: 'de',
+    meervoud: 'apen',
+    verkleinwoord: 'aapje'
+  },
+  {
     naam: 'vlinder',
     lidwoord: 'de',
     meervoud: 'vlinders',
     verkleinwoord: 'vlindertje'
+  },
+  {
+    naam: 'konijn',
+    lidwoord: 'het',
+    meervoud: 'konijnen',
+    verkleinwoord: 'konijntje'
+  },
+  {
+    naam: 'krokodil',
+    lidwoord: 'de',
+    meervoud: 'krokodillen',
+    verkleinwoord: 'krokodillen'
   },
   {
     naam: 'gorilla',
