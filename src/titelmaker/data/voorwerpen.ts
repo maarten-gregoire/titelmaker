@@ -889,6 +889,167 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'poppen',
       verkleinwoord: 'poppetje'
+    },
+    {
+      naam: 'levenselixir',
+      lidwoord: 'het',
+      meervoud: 'levenselixiren',
+      verkleinwoord: 'levenselixirtje'
+    },
+    {
+      naam: 'levensmiddel',
+      lidwoord: 'het',
+      meervoud: 'levensmiddelen',
+      verkleinwoord: 'levensmiddeltje'
+    },
+    {
+      naam: 'lichaam',
+      lidwoord: 'het',
+      meervoud: 'lichamen',
+      verkleinwoord: 'lichaampje'
+    },
+    {
+      naam: 'lichtknop',
+      lidwoord: 'de',
+      meervoud: 'lichtknoppen',
+      verkleinwoord: 'lichtknopje'
+    },
+    {
+      naam: 'lidkaart',
+      lidwoord: 'de',
+      meervoud: 'lidkaarten',
+      verkleinwoord: 'lidkaartje'
+    },
+    {
+      naam: 'lidgeld',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'lied',
+      lidwoord: 'het',
+      meervoud: 'liedjes',
+      verkleinwoord: 'liedje'
+    },
+    {
+      naam: 'lievelingsboek',
+      lidwoord: 'het',
+      meervoud: 'lievelingsboeken',
+      verkleinwoord: 'lievelingsboekje'
+    },
+    {
+      naam: 'lievelingsdier',
+      lidwoord: 'het',
+      meervoud: 'lievelingsdieren',
+      verkleinwoord: 'lievelingsdiertje'
+    },
+    {
+      naam: 'lievelingseten',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'lievelingsfilm',
+      lidwoord: 'de',
+      meervoud: 'lievelingsfilms',
+      verkleinwoord: 'lievelingsfilmpje'
+    },
+    {
+      naam: 'lievelingskleur',
+      lidwoord: 'de',
+      meervoud: 'lievelingskleuren',
+      verkleinwoord: 'lievelingskleurtje'
+    },
+    {
+      naam: 'lievelingslied',
+      lidwoord: 'het',
+      meervoud: 'lievelingsliedjes',
+      verkleinwoord: 'lievelingsliedje'
+    },
+    {
+      naam: 'penseel',
+      lidwoord: 'het',
+      meervoud: 'penselen',
+      verkleinwoord: 'penseeltje'
+    },
+    {
+      naam: 'pensioenaanvraag',
+      lidwoord: 'de',
+      meervoud: 'pensioenaanvragen',
+      verkleinwoord: 'pensioenaanvraagje'
+    },
+    {
+      naam: 'peperkoek',
+      lidwoord: 'de',
+      meervoud: 'peperkoeken',
+      verkleinwoord: 'peperkoekje'
+    },
+    {
+      naam: 'perenbooom',
+      lidwoord: 'de',
+      meervoud: 'perenbomen',
+      verkleinwoord: 'perenboompje'
+    },
+    {
+      naam: 'pergola',
+      lidwoord: 'de',
+      meervoud: 'pergola\'s',
+      verkleinwoord: 'pergolaatje'
+    },
+    {
+      naam: 'periscoop',
+      lidwoord: 'de',
+      meervoud: 'periscopen',
+      verkleinwoord: 'periscoopje'
+    },
+    {
+      naam: 'persboycot',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'pistachenoot',
+      lidwoord: 'de',
+      meervoud: 'pistachenoten',
+      verkleinwoord: 'pistachenootje'
+    },
+    {
+      naam: 'piercing',
+      lidwoord: 'de',
+      meervoud: 'piercings',
+      verkleinwoord: 'piercinkje'
+    },
+    {
+      naam: 'pijl',
+      lidwoord: 'de',
+      meervoud: 'pijlen',
+      verkleinwoord: 'pijltje'
+    },
+    {
+      naam: 'peuk',
+      lidwoord: 'de',
+      meervoud: 'peuken',
+      verkleinwoord: 'peukje'
+    },
+    {
+      naam: 'perzikenboom',
+      lidwoord: 'de',
+      meervoud: 'perzikenbomen',
+      verkleinwoord: 'perzikenboompje'
+    },
+    {
+      naam: 'perzikpit',
+      lidwoord: 'de',
+      meervoud: 'perzikpitten',
+      verkleinwoord: 'perzikpitje'
+    },
+    {
+      naam: 'persoonlijkheidsstoornis',
+      lidwoord: 'de',
+      meervoud: 'persoonlijkheidsstoornissen',
+      verkleinwoord: 'persoonlijkheidsstoornisje'
     }
-
   ];
