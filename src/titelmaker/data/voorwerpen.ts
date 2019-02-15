@@ -1051,5 +1051,17 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'persoonlijkheidsstoornissen',
       verkleinwoord: 'persoonlijkheidsstoornisje'
+    },
+    {
+      naam: 'ding',
+      lidwoord: 'de',
+      meervoud: 'dingen',
+      verkleinwoord: 'dingetje'
+    },
+    {
+      naam: 'kalender',
+      lidwoord: 'de',
+      meervoud: 'kalenders',
+      verkleinwoord: 'kalendertje'
     }
   ];
