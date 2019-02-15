@@ -367,8 +367,8 @@ export const personages: Personage[] =
     {
       naam: 'lief',
       lidwoord: 'het',
-      meervoud: 'liefje',
-      verkleinwoord: null
+      meervoud: null,
+      verkleinwoord: 'liefje'
     },
     {
       naam: 'lieveling',
