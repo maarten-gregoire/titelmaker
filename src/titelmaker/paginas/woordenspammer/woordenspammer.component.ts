@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {TitelService} from '../services/titel/titel.service';
-import {CategorieService} from '../services/categorie/categorie.service';
-import {Randoms} from '../util/randoms';
-import {WoordService} from '../services/woord/woord.service';
+import {TitelService} from '../../services/titel/titel.service';
+import {CategorieService} from '../../services/categorie/categorie.service';
+import {Randoms} from '../../util/randoms';
+import {WoordService} from '../../services/woord/woord.service';
 
 @Component({
   selector: 'tm-woordenspammer',

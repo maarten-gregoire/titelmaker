@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { TitelmakerRoutingModule } from './titelmaker-routing.module';
 import { TitelmakerComponent } from './titelmaker.component';
-import { TitelgeneratorComponent } from './titelgenerator/titelgenerator.component';
+import { TitelgeneratorComponent } from './paginas/titelgenerator/titelgenerator.component';
 import {ServicesModule} from './services/services.module';
-import {WoordenspammerComponent} from './woordenspammer/woordenspammer.component';
+import {WoordenspammerComponent} from './paginas/woordenspammer/woordenspammer.component';
 
 @NgModule({
   declarations: [

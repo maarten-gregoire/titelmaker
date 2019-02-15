@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {TitelmakerComponent} from './titelmaker.component';
-import {TitelgeneratorComponent} from './titelgenerator/titelgenerator.component';
-import {WoordenspammerComponent} from './woordenspammer/woordenspammer.component';
+import {TitelgeneratorComponent} from './paginas/titelgenerator/titelgenerator.component';
+import {WoordenspammerComponent} from './paginas/woordenspammer/woordenspammer.component';
 
 const routes: Routes = [
   {path: '', component: TitelgeneratorComponent},

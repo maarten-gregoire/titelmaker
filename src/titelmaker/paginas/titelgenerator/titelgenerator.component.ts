@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {TitelService} from '../services/titel/titel.service';
-import {CategorieService} from '../services/categorie/categorie.service';
-import {Randoms} from '../util/randoms';
+import {TitelService} from '../../services/titel/titel.service';
+import {CategorieService} from '../../services/categorie/categorie.service';
+import {Randoms} from '../../util/randoms';
 
 @Component({
   selector: 'tm-titelgenerator',
