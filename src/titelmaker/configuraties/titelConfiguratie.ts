@@ -7,4 +7,5 @@ export class TitelConfiguratie {
   aantalLocaties: number;
   vormPersonages: Vorm;
   vormVoorwerpen: Vorm;
+  vormLocaties: Vorm;
 }

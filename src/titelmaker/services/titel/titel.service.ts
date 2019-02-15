@@ -76,19 +76,11 @@ export class TitelService {
   }
 
   maakWillekeurigeTitelConfiguratie() {
-    const ordernummerPersonages: number = Randoms.maakRandomGetalTussenEnInbegrepen(1, 3);
-    const ordernummerVoorwerpen = Randoms.maakRandomGetalTussenEnInbegrepenVerschillendVan(
-      1, 2, [ordernummerPersonages]);
-    const ordernummerLocaties = Randoms.maakRandomGetalTussenEnInbegrepenVerschillendVan(
-      1, 2, [ordernummerPersonages, ordernummerVoorwerpen]);
-    const configuratie = {
+    const configuratie: TitelConfiguratie = {
       aantalBijvoeglijkNaamwoorden: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
       aantalPersonages: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
       aantalVoorwerpen: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
       aantalLocaties: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
-      ordernummerPersonages,
-      ordernummerVoorwerpen,
-      ordernummerLocaties: Randoms.maakRandomGetalTussenEnInbegrepen(1, 1),
       vormPersonages: Randoms.bepaalRandomEnumValue(Vorm),
       vormVoorwerpen: Randoms.bepaalRandomEnumValue(Vorm),
       vormLocaties: Randoms.bepaalRandomEnumValue(Vorm)
