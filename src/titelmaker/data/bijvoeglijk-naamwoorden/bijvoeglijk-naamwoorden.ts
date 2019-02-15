@@ -1,7 +1,8 @@
 import {WoordSoort} from '../../enums/woordsoort';
 import {emoties} from './emoties';
+import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 
-export const bijvoeglijkNaamwoorden = [
+export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
   ...emoties,
   {
     woord: 'mooi',
@@ -307,5 +308,41 @@ export const bijvoeglijkNaamwoorden = [
     woord: 'lachwekkend',
     tweedeVorm: 'lachwekkende',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'levensecht',
+    tweedeVorm: 'levensechte',
+    toepasbaarOp: [WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'kritisch',
+    tweedeVorm: 'kritische',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'vettig',
+    tweedeVorm: 'vettige',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'levensgevaarlijk',
+    tweedeVorm: 'levensgevaarlijke',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'lichtbruin',
+    tweedeVorm: 'lichtbruine',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'lichtgevoelig',
+    tweedeVorm: 'lichtgevoelige',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+
+  },
+  {
+    woord: 'lieftallig',
+    tweedeVorm: 'lieftallige',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   }
 ];
