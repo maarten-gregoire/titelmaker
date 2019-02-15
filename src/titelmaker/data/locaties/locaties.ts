@@ -599,3 +599,4 @@ export const locaties: Locatie[] =
     }
   ];
 
+// NOOIT ENKEL BIJ ALS VOORZETSEN GEBRUIKEN, totdat het systeem hiermee om kan gaan
