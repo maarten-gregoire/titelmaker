@@ -17,11 +17,17 @@ import {Locatie} from '../../models/locatie';
 import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
 import {WoordSoort} from '../../enums/woordsoort';
+import {LaatstGebruikteWoordenLijst} from './laatst-gebruikte-woorden-lijst';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TitelService {
+
+  recenteLocaties: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
+  recenteVoorwerpen: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
+  recentePersonages: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
+  recenteBijvoeglijkNaamwoorden: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
 
   constructor() { }
 
@@ -31,15 +37,22 @@ export class TitelService {
     let koppelingString: string;
     let voorwerpString: string;
     let locatieString: string;
+    let personage: Personage;
+    let bijvoeglijkNaamwoord: BijvoeglijkNaamwoord;
+    let voorwerp: Voorwerp
+    let locatie: Locatie;
     let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
-      const personage: Personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages);
-      let bijvoeglijkNaamwoord: BijvoeglijkNaamwoord;
+      personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages
+        .filter(p => !this.recentePersonages.zitWoordInLijst(p))
+      );
       if (titelConfiguratie.aantalBijvoeglijkNaamwoorden > 0) {
           bijvoeglijkNaamwoord =
             Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(
               bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
-                t === WoordSoort.ZNW_PERSONAGE).length >= 1));
+                t === WoordSoort.ZNW_PERSONAGE).length >= 1)
+                .filter(b => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(b))
+            );
         }
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
@@ -52,18 +65,23 @@ export class TitelService {
     }
 
     if (titelConfiguratie.aantalVoorwerpen > 0) {
-      const voorwerp: Voorwerp = Arrays.bepaalWillekeurigElemntUitRij<Voorwerp>(voorwerpen);
+      voorwerp = Arrays.bepaalWillekeurigElemntUitRij<Voorwerp>(voorwerpen
+        .filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
     if (titelConfiguratie.aantalLocaties > 0) {
-      const locatie: Locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties);
+      locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
+        .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
+      );
       let magBijAlsVoorzetselGebruiken = true;
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         magBijAlsVoorzetselGebruiken = false;
       }
       locatieString = StringMaker.locatieAlsString(locatie, magBijAlsVoorzetselGebruiken);
     }
+
+    this.updateRecenteWoorden(locatie, personage, bijvoeglijkNaamwoord, voorwerp);
 
     const titel = (personageString ? personageString : '') +
       (personageString && koppelingString ? ' ' : '') +
@@ -107,4 +125,10 @@ export class TitelService {
     return configuratie;
   }
 
+  private updateRecenteWoorden(locatie: Locatie, personage: Personage, bijvoeglijkNaamwoord: BijvoeglijkNaamwoord, voorwerp: Voorwerp) {
+    this.recenteLocaties.voegWoordToe(locatie);
+    this.recenteVoorwerpen.voegWoordToe(voorwerp);
+    this.recentePersonages.voegWoordToe(personage);
+    this.recenteBijvoeglijkNaamwoorden.voegWoordToe(bijvoeglijkNaamwoord);
+  }
 }
