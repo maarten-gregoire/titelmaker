@@ -117,7 +117,7 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
   {
     woord: 'zorgwekkend',
     tweedeVorm: 'zorgwekkende',
-    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_PERSONAGE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP]
   },
   {
     woord: 'blauw',
