@@ -78,6 +78,6 @@ export const fantasieFiguren: Personage[] =
       naam: 'engel',
       lidwoord: 'de',
       meervoud: 'engels',
-      verkleinwoord: 'engetlje'
+      verkleinwoord: 'engeltje'
     }
   ];
