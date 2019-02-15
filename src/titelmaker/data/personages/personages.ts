@@ -401,12 +401,6 @@ export const personages: Personage[] =
       verkleinwoord: 'lieverdje'
     },
     {
-      naam: 'perronchef',
-      lidwoord: 'de',
-      meervoud: 'perronchefs',
-      verkleinwoord: 'perronchefje'
-    },
-    {
       naam: 'peuter',
       lidwoord: 'de',
       meervoud: 'peuters',
