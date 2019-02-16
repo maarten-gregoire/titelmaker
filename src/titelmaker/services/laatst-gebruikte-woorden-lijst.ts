@@ -1,4 +1,4 @@
-import {Woord} from '../../models/woord';
+import {Woord} from '../models/woord';
 
 export class LaatstGebruikteWoordenLijst {
 

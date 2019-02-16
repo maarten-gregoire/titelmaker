@@ -17,7 +17,7 @@ import {Locatie} from '../../models/locatie';
 import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
 import {WoordSoort} from '../../enums/woordsoort';
-import {LaatstGebruikteWoordenLijst} from './laatst-gebruikte-woorden-lijst';
+import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
 
 @Injectable({
   providedIn: 'root'
