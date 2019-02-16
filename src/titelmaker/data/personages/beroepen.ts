@@ -561,7 +561,7 @@ export const beroepen: Personage[] = [
   },
   {
     naam: 'model',
-    lidwoord: 'de',
+    lidwoord: 'het',
     meervoud: ' modellen',
     verkleinwoord: 'modelletje'
   },
