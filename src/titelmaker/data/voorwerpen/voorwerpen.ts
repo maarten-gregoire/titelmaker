@@ -1053,6 +1053,12 @@ export const voorwerpen: Voorwerp[] =
       verkleinwoord: 'persoonlijkheidsstoornisje'
     },
     {
+      naam: 'ei',
+      lidwoord: 'eitje',
+      meervoud: 'eieren',
+      verkleinwoord: 'eitje'
+    },
+    {
       naam: 'ding',
       lidwoord: 'het',
       meervoud: 'dingen',
@@ -1063,5 +1069,239 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'kalenders',
       verkleinwoord: 'kalendertje'
+    },
+    {
+      naam: 'toverdrank',
+      lidwoord: 'de',
+      meervoud: 'toverdrankjes',
+      verkleinwoord: 'toverdrankje'
+    },
+    {
+      naam: 'paddestoel',
+      lidwoord: 'de',
+      meervoud: 'paddestoelen',
+      verkleinwoord: 'paddestoeltje'
+    },
+    {
+      naam: 'koek',
+      lidwoord: 'de',
+      meervoud: 'koeken',
+      verkleinwoord: 'koekje'
+    },
+    {
+      naam: 'bloem',
+      lidwoord: 'de',
+      meervoud: 'bloemen',
+      verkleinwoord: 'bloempje'
+    },
+    {
+      naam: 'ketel',
+      lidwoord: 'de',
+      meervoud: 'ketels',
+      verkleinwoord: 'keteltje'
+    },
+    {
+      naam: 'pannenkoek',
+      lidwoord: 'de',
+      meervoud: 'pannenkoeken',
+      verkleinwoord: 'pannenkoekje'
+    },
+    {
+      naam: 'spaghettisaus',
+      lidwoord: 'de',
+      meervoud: 'spaghettisauzen',
+      verkleinwoord: 'spaghettisausje'
+    },
+    {
+      naam: 'voedsel',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'staart',
+      lidwoord: 'de',
+      meervoud: 'staarten',
+      verkleinwoord: 'staartje'
+    },
+    {
+      naam: 'slurf',
+      lidwoord: 'de',
+      meervoud: 'slurfen',
+      verkleinwoord: 'slurfje'
+    },
+    {
+      naam: 'sneaker',
+      lidwoord: 'de',
+      meervoud: 'sneakers',
+      verkleinwoord: 'sneakertje'
+    },
+    {
+      naam: 'sportschoen',
+      lidwoord: 'de',
+      meervoud: 'sportschoenen',
+      verkleinwoord: 'sportschoentje'
+    },
+    {
+      naam: 'joggingbroek',
+      lidwoord: 'de',
+      meervoud: 'joggingbroeken',
+      verkleinwoord: 'joggingbroekje'
+    },
+    {
+      naam: 'platenspeler',
+      lidwoord: 'de',
+      meervoud: 'platenspelers',
+      verkleinwoord: 'platenspelertje'
+    },
+    {
+      naam: 'waterkan',
+      lidwoord: 'de',
+      meervoud: 'waterkannen',
+      verkleinwoord: 'waterkannetje'
+    },
+    {
+      naam: 'cassetterecorder',
+      lidwoord: 'de',
+      meervoud: 'cassetterecorders',
+      verkleinwoord: 'cassetterecordertje'
+    },
+    {
+      naam: 'zweetband',
+      lidwoord: 'de',
+      meervoud: 'zweetbanden',
+      verkleinwoord: 'zweetbandje'
+    },
+    {
+      naam: 'haarnetje',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'plant',
+      lidwoord: 'de',
+      meervoud: 'planten',
+      verkleinwoord: 'plantje'
+    },
+    {
+      naam: 'touw',
+      lidwoord: 'de',
+      meervoud: 'touwen',
+      verkleinwoord: 'touwtje'
+    },
+    {
+      naam: 'emmer',
+      lidwoord: 'de',
+      meervoud: 'emmers',
+      verkleinwoord: 'emmertje'
+    },
+    {
+      naam: 'aanhangwagen',
+      lidwoord: 'de',
+      meervoud: 'aanhangwagens',
+      verkleinwoord: 'aanhangwagentje'
+    },
+    {
+      naam: 'gieter',
+      lidwoord: 'de',
+      meervoud: 'gieters',
+      verkleinwoord: 'gietertje'
+    },
+    {
+      naam: 'kaktus',
+      lidwoord: 'het',
+      meervoud: 'kaktussen',
+      verkleinwoord: 'kaktusje'
+    },
+    {
+      naam: 'gras',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'regenjas',
+      lidwoord: 'de',
+      meervoud: 'regenjassen',
+      verkleinwoord: 'regenjasje'
+    },
+    {
+      naam: 'schuurmachine',
+      lidwoord: 'de',
+      meervoud: 'schurmachines',
+      verkleinwoord: 'schuurmachinetje'
+    },
+    {
+      naam: 'snavel',
+      lidwoord: 'de',
+      meervoud: 'snavels',
+      verkleinwoord: 'snaveltje'
+    },
+    {
+      naam: 'pot',
+      lidwoord: 'de',
+      meervoud: 'potten',
+      verkleinwoord: 'potje'
+    },
+    {
+      naam: 'plaat',
+      lidwoord: 'de',
+      meervoud: 'platen',
+      verkleinwoord: 'plaatje'
+    },
+    {
+      naam: 'wasmand',
+      lidwoord: 'de',
+      meervoud: 'wasmanden',
+      verkleinwoord: 'wasmandje'
+    },
+    {
+      naam: 'camera',
+      lidwoord: 'de',
+      meervoud: 'camera\'s',
+      verkleinwoord: 'cameraatje'
+    },
+    {
+      naam: 'pet',
+      lidwoord: 'de',
+      meervoud: 'petten',
+      verkleinwoord: 'petje'
+    },
+    {
+      naam: 'hoed',
+      lidwoord: 'de',
+      meervoud: 'hoeden',
+      verkleinwoord: 'hoedje'
+    },
+    {
+      naam: 'boormachine',
+      lidwoord: 'de',
+      meervoud: 'boormachines',
+      verkleinwoord: 'boormachinetje'
+    },
+    {
+      naam: 'hemd',
+      lidwoord: 'het',
+      meervoud: 'hemden',
+      verkleinwoord: 'hemdje'
+    },
+    {
+      naam: 'pluim',
+      lidwoord: 'de',
+      meervoud: 'pluimen',
+      verkleinwoord: 'pluimpje'
+    },
+    {
+      naam: 'haarband',
+      lidwoord: 'de',
+      meervoud: 'haardbanden',
+      verkleinwoord: 'haarbandje'
+    },
+    {
+      naam: 'elastiek',
+      lidwoord: 'de',
+      meervoud: 'elastieken',
+      verkleinwoord: 'elastiekje'
     }
   ];

@@ -596,6 +596,104 @@ export const locaties: Locatie[] =
       voorzetsels: ['in'],
       meervoud: null,
       verkleinwoord: null
+    },
+    {
+      naam: 'speelplaats',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: null,
+      verkleinwoord: 'speelplaatsje'
+    },
+    {
+      naam: 'speeltuin',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: 'speeltuintje'
+    },
+    {
+      naam: 'jungle',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: 'jugnletje'
+    },
+    {
+      naam: 'maan',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'afrika',
+      lidwoord: null,
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'boom',
+      lidwoord: 'de',
+      voorzetsels: ['in', 'bij'],
+      meervoud: 'bomen',
+      verkleinwoord: 'boompje'
+    },
+    {
+      naam: 'waterput',
+      lidwoord: 'de',
+      voorzetsels: ['in', 'bij'],
+      meervoud: 'waterputten',
+      verkleinwoord: 'waterputje'
+    },
+    {
+      naam: 'straat',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: 'straten',
+      verkleinwoord: 'straatje'
+    },
+    {
+      naam: 'snelweg',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: 'snelwegen',
+      verkleinwoord: 'snelwegje'
+    },
+    {
+      naam: 'trein',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'treinen',
+      verkleinwoord: 'treintje'
+    },
+    {
+      naam: 'spoor',
+      lidwoord: 'het',
+      voorzetsels: ['op'],
+      meervoud: 'sporen',
+      verkleinwoord: 'spoortje'
+    },
+    {
+      naam: 'wei',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'weien',
+      verkleinwoord: 'weitje'
+    },
+    {
+      naam: 'kruispunt',
+      lidwoord: 'het',
+      voorzetsels: ['op'],
+      meervoud: 'kruispunten',
+      verkleinwoord: 'kruispuntje'
+    },
+    {
+      naam: 'grasveld',
+      lidwoord: 'het',
+      voorzetsels: ['op'],
+      meervoud: 'grasvelden',
+      verkleinwoord: 'grasveldje'
     }
   ];
 

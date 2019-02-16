@@ -407,6 +407,12 @@ export const personages: Personage[] =
       verkleinwoord: 'foetelaartje'
     },
     {
+      naam: 'kanibaal',
+      lidwoord: 'de',
+      meervoud: 'kanibalen',
+      verkleinwoord: 'kanibaaltje'
+    },
+    {
       naam: 'hippie',
       lidwoord: 'de',
       meervoud: 'hippies',

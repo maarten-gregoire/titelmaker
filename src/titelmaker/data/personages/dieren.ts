@@ -26,6 +26,12 @@ export const dieren: Personage[] = [
     verkleinwoord: 'paardje'
   },
   {
+    naam: 'vinvis',
+    lidwoord: 'de',
+    meervoud: 'vinvissen',
+    verkleinwoord: 'vinvisje'
+  },
+  {
     naam: 'hert',
     lidwoord: 'het',
     meervoud: 'herten',
@@ -150,5 +156,17 @@ export const dieren: Personage[] = [
     lidwoord: 'de',
     meervoud: 'geiten',
     verkleinwoord: 'geitje'
+  },
+  {
+    naam: 'olifant',
+    lidwoord: 'de',
+    meervoud: 'olifanten',
+    verkleinwoord: 'olifantje'
+  },
+  {
+    naam: 'vogelbekdier',
+    lidwoord: 'het',
+    meervoud: 'vogelbekdieren',
+    verkleinwoord: 'vogelbekdiertje'
   }
 ];
