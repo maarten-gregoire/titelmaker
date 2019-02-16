@@ -8,38 +8,45 @@
 
   <div class="navbar-collapse collapse" id="navbarSupportedContent-3" style="">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item" [ngClass]="activeIfPageIs('titelmaker')">
         <a class="nav-link waves-effect waves-light" routerLink="/"
+           (click)="setChosenPage('titelmaker')"
            data-toggle="tooltip" data-placement="bottom" title="Genereer titels met een categorie en duur">
           Titelmaker
-          <span class="sr-only">(current)</span></a>
+          <span *ngIf="chosenPageIs('titelmaker')" class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [ngClass]="activeIfPageIs('woordenspammer')">
         <a class="nav-link waves-effect waves-light" routerLink="/woordenspammer"
+           (click)="setChosenPage('woordenspammer')"
            data-toggle="tooltip" data-placement="bottom" title="Genereer woorden voor een rafale">
           Woordenspammer
-        </a>
+          <span *ngIf="chosenPageIs('woordenspammer')" class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [ngClass]="activeIfPageIs('suggereerder')">
         <a class="nav-link waves-effect waves-light" routerLink="/suggereerder"
+           (click)="setChosenPage('suggereerder')"
            data-toggle="tooltip" data-placement="bottom" title="Genereer suggesties voor personages, voorwerpen, emoties en locaties">
           Suggereerder
-        </a>
+          <span *ngIf="chosenPageIs('suggereerder')" class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [ngClass]="activeIfPageIs('bulkgenerator')">
         <a class="nav-link waves-effect waves-light" routerLink="/bulkgenerator"
+           (click)="setChosenPage('bulkgenerator')"
            data-toggle="tooltip" data-placement="bottom" title="Genereer grote aantallen titels tegelijk">
           Bulkgenerator
-        </a>
+          <span *ngIf="chosenPageIs('bulkgenerator')" class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [ngClass]="activeIfPageIs('overdezeapp')">
         <a class="nav-link waves-effect waves-light" routerLink="/overdezeapp"
+           (click)="setChosenPage('overdezeapp')"
            data-toggle="tooltip" data-placement="bottom" title="Krijg informatie over de app">
           Over deze app
-        </a>
+          <span *ngIf="chosenPageIs('overdezeapp')" class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/feedback" data-toggle="tooltip" data-placement="bottom" title="Geef feedback over de app">Feedback</a>
+      <li class="nav-item" [ngClass]="activeIfPageIs('feedback')">
+        <a class="nav-link waves-effect waves-light" routerLink="/feedback" data-toggle="tooltip" data-placement="bottom"
+           (click)="setChosenPage('feedback')" title="Geef feedback over de app">Feedback
+          <span *ngIf="chosenPageIs('feedback')" class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>

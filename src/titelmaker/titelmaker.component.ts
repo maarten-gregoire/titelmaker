@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class TitelmakerComponent {
   title = 'titelmaker';
+  chosenPage = 'titelmaker';
+
+  private chosenPageIs(page: string) {
+    return page === this.chosenPage;
+  }
+
+  setChosenPage(page: string) {
+    this.chosenPage = page;
+  }
+
+  activeIfPageIs(page: string): string {
+    return this.chosenPageIs(page) ? 'active' : '';
+  }
 }
