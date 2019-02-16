@@ -1,63 +1,47 @@
-<nav class="navbar-sidebar-horizontal navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
-    Impro App
+    improapp.be
   </a>
-  <button class="hamburger hamburger--slider" type="button" data-target=".sidebar-horizontal" aria-controls="sidebar-horizontal" aria-expanded="false" aria-label="Toggle Main Menu">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
 
-
-</nav>
-<div class="right-column">
-<nav class="sidebar-horizontal navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="navbar-collapse" id="navbar-header-menu-outer">
-    <ul class="navbar-nav navbar-header-menu mr-auto">
-      <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/">
-          <i class="batch-icon batch-icon-browser-alt"></i>
-          Impro App
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/">
-          <i class="batch-icon batch-icon-star"></i>
+  <div class="navbar-collapse collapse" id="navbarSupportedContent-3" style="">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-effect waves-light" routerLink="/"
+           data-toggle="tooltip" data-placement="bottom" title="Genereer titels met een categorie en duur">
           Titelmaker
-        </a>
+          <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/woordenspammer">
-          <i class="batch-icon batch-icon-star"></i>
+        <a class="nav-link waves-effect waves-light" routerLink="/woordenspammer"
+           data-toggle="tooltip" data-placement="bottom" title="Genereer woorden voor een rafale">
           Woordenspammer
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/suggereerder">
-          <i class="batch-icon batch-icon-star"></i>
+        <a class="nav-link waves-effect waves-light" routerLink="/suggereerder"
+           data-toggle="tooltip" data-placement="bottom" title="Genereer suggesties voor personages, voorwerpen, emoties en locaties">
           Suggereerder
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/bulkgenerator">
-          <i class="batch-icon batch-icon-star"></i>
+        <a class="nav-link waves-effect waves-light" routerLink="/bulkgenerator"
+           data-toggle="tooltip" data-placement="bottom" title="Genereer grote aantallen titels tegelijk">
           Bulkgenerator
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/overdezeapp">
-          <i class="batch-icon batch-icon-star"></i>
+        <a class="nav-link waves-effect waves-light" routerLink="/overdezeapp"
+           data-toggle="tooltip" data-placement="bottom" title="Krijg informatie over de app">
           Over deze app
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-effect waves-light" routerLink="/feedback">
-          <i class="batch-icon batch-icon-star"></i>
-          Feedback
-        </a>
+        <a class="nav-link waves-effect waves-light" routerLink="/feedback" data-toggle="tooltip" data-placement="bottom" title="Geef feedback over de app">Feedback</a>
       </li>
     </ul>
   </div>
 </nav>
 <router-outlet></router-outlet>
-</div>
