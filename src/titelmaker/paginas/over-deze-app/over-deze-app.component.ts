@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-over-deze-app',
+  selector: 'tm-over-deze-app',
   templateUrl: './over-deze-app.component.html',
   styleUrls: ['./over-deze-app.component.css']
 })

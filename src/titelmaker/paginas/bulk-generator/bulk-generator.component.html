@@ -2,11 +2,46 @@
   <main class="main-content p-5" role="main">
     <div class="row">
       <h2>Bulk-generator</h2>
+      <h3>voor improscenes</h3>
     </div>
     <div class="row">
-      <p>
-        Binnenkort komt hier de bulk-generator, die een afdrukbare lijst met meerdere titels in 1 keer kan genereren.
-      </p>
+      <div class="col-md-12 mb-4">
+        <div class="color-controls-1">
+          <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
+            <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerTitels()"><span class="gradient">Genereer 100 titels</span></button>
+            <button type="button" class="btn btn-outline-blue-grey" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="titelCombinaties && titelCombinaties.length > 0">
+      <table>
+        <thead>
+          <td><b>Nr</b></td>
+          <td><b>Titel</b></td>
+          <td><b>Categorie</b></td>
+          <td><b>Speelduur</b></td>
+        </thead>
+        <tbody>
+        <tr *ngFor="let titelCombinatie of titelCombinaties; let i = index">
+          <td>
+            {{i+1}}
+          </td>
+          <td>
+            {{titelCombinatie.titel}}
+          </td>
+          <td>
+            {{titelCombinatie.categorie}}
+          </td>
+          <td>
+            {{titelCombinatie.speelduur}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+
+
     </div>
   </main>
 </div>
