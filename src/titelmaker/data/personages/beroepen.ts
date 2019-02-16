@@ -260,6 +260,102 @@ export const beroepen: Personage[] = [
     verkleinwoord: 'bouwvakkertje'
   },
   {
+    naam: 'wijkagent',
+    lidwoord: 'de',
+    meervoud: 'wijkagenten',
+    verkleinwoord: 'wijkagentje'
+  },
+  {
+    naam: 'kunstschilder',
+    lidwoord: 'de',
+    meervoud: 'kunstschilders',
+    verkleinwoord: 'kunstschildertje'
+  },
+  {
+    naam: 'bloemenverkoper',
+    lidwoord: 'de',
+    meervoud: 'bloemenverkopers',
+    verkleinwoord: 'bloemenverkopertje'
+  },
+  {
+    naam: 'fruitplukker',
+    lidwoord: 'de',
+    meervoud: 'fruitplukkers',
+    verkleinwoord: 'fruitplukkertje'
+  },
+  {
+    naam: 'regisseur',
+    lidwoord: 'de',
+    meervoud: 'regisseurs',
+    verkleinwoord: 'regisseurtje'
+  },
+  {
+    naam: 'manager',
+    lidwoord: 'de',
+    meervoud: 'managers',
+    verkleinwoord: 'managartje'
+  },
+  {
+    naam: 'mijnwerker',
+    lidwoord: 'de',
+    meervoud: 'mijnwerkers',
+    verkleinwoord: 'mijnwerkertje'
+  },
+  {
+    naam: 'arts',
+    lidwoord: 'de',
+    meervoud: 'artsen',
+    verkleinwoord: 'artsje'
+  },
+  {
+    naam: 'behanger',
+    lidwoord: 'de',
+    meervoud: 'behangers',
+    verkleinwoord: 'behangertje'
+  },
+  {
+    naam: 'citroenenkweker',
+    lidwoord: 'de',
+    meervoud: 'citroenenkwekers',
+    verkleinwoord: 'citroenenkwekertje'
+  },
+  {
+    naam: 'dakwerker',
+    lidwoord: 'de',
+    meervoud: 'dakwerkers',
+    verkleinwoord: 'dakwerkertje'
+  },
+  {
+    naam: 'egyptoloog',
+    lidwoord: 'de',
+    meervoud: 'egyptologen',
+    verkleinwoord: 'egyptoloogje'
+  },
+  {
+    naam: 'fitness instructeur',
+    lidwoord: 'de',
+    meervoud: 'fitness instructeurs',
+    verkleinwoord: 'fitness instructeurtje'
+  },
+  {
+    naam: 'goudsmit',
+    lidwoord: 'de',
+    meervoud: ' goudsmeden',
+    verkleinwoord: 'goudsmidje'
+  },
+  {
+    naam: 'houtbewerker',
+    lidwoord: 'de',
+    meervoud: ' houtbewerkers',
+    verkleinwoord: 'houtbewerkertje'
+  },
+  {
+    naam: 'ijsverkoper',
+    lidwoord: 'de',
+    meervoud: ' ijsverkopers',
+    verkleinwoord: 'ijsverkopertje'
+  },
+  {
     naam: 'imker',
     lidwoord: 'de',
     meervoud: 'imkers',

@@ -25,6 +25,11 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
+    woord: 'verschikkelijk',
+    tweedeVorm: 'verschrikkelijke',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
     woord: 'onverschillig',
     tweedeVorm: 'onverschillige',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
