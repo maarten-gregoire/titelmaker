@@ -11,16 +11,16 @@
       <li class="nav-item" [ngClass]="activeIfPageIs('titelmaker')">
         <a class="nav-link waves-effect waves-light" routerLink="/"
            (click)="setChosenPage('titelmaker')"
-           data-toggle="tooltip" data-placement="bottom" title="Genereer titels met een categorie en duur">
+           title="Genereer titels met een categorie en duur">
           Titelmaker
-          <span *ngIf="chosenPageIs('titelmaker')" class="sr-only">(current)</span></a>
+        </a>
       </li>
       <li class="nav-item" [ngClass]="activeIfPageIs('woordenspammer')">
         <a class="nav-link waves-effect waves-light" routerLink="/woordenspammer"
            (click)="setChosenPage('woordenspammer')"
-           data-toggle="tooltip" data-placement="bottom" title="Genereer woorden voor een rafale">
+           title="Genereer woorden voor een rafale">
           Woordenspammer
-          <span *ngIf="chosenPageIs('woordenspammer')" class="sr-only">(current)</span></a>
+        </a>
       </li>
       <!--
       <li class="nav-item" [ngClass]="activeIfPageIs('suggereerder')">
@@ -40,14 +40,14 @@
       <li class="nav-item" [ngClass]="activeIfPageIs('overdezeapp')">
         <a class="nav-link waves-effect waves-light" routerLink="/overdezeapp"
            (click)="setChosenPage('overdezeapp')"
-           data-toggle="tooltip" data-placement="bottom" title="Krijg informatie over de app">
+         title="Krijg informatie over de app">
           Over deze app
-          <span *ngIf="chosenPageIs('overdezeapp')" class="sr-only">(current)</span></a>
+        </a>
       </li>
       <li class="nav-item" [ngClass]="activeIfPageIs('feedback')">
-        <a class="nav-link waves-effect waves-light" routerLink="/feedback" data-toggle="tooltip" data-placement="bottom"
+        <a class="nav-link waves-effect waves-light" routerLink="/feedback"
            (click)="setChosenPage('feedback')" title="Geef feedback over de app">Feedback
-          <span *ngIf="chosenPageIs('feedback')" class="sr-only">(current)</span></a>
+        </a>
       </li>
     </ul>
   </div>

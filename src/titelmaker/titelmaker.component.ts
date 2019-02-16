@@ -20,4 +20,5 @@ export class TitelmakerComponent {
   activeIfPageIs(page: string): string {
     return this.chosenPageIs(page) ? 'active' : '';
   }
+
 }
