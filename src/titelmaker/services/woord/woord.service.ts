@@ -17,15 +17,29 @@ import {Locatie} from '../../models/locatie';
 import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
 import {WoordSoort} from '../../enums/woordsoort';
+import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
+import {Woord} from '../../models/woord';
+import {ZelfstandigNaamwoord} from '../../models/zelfstandig-naamwoord';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WoordService {
 
+  recenteWoorden: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(100);
+
   constructor() { }
 
   geefWillekeurigWoord(): Observable<string> {
-    return of(Arrays.bepaalWillekeurigElemntUitRij([...locaties, ...voorwerpen, ...personages]).naam);
+    let woord: ZelfstandigNaamwoord;
+    do {
+    woord = Arrays.bepaalWillekeurigElemntUitRij([...locaties, ...voorwerpen, ...personages]
+      .filter(w => !this.recenteWoorden.zitWoordInLijst(w)));
+    if (!woord) {
+      this.recenteWoorden.maakLeeg();
+    }
+    } while (!woord);
+    this.recenteWoorden.voegWoordToe(woord);
+    return of(woord.naam);
   }
 }
