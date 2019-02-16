@@ -356,6 +356,216 @@ export const beroepen: Personage[] = [
     verkleinwoord: 'ijsverkopertje'
   },
   {
+    naam: 'ambtenaar',
+    lidwoord: 'de',
+    meervoud: ' ambtenaars',
+    verkleinwoord: 'ambtenaartje'
+  },
+  {
+    naam: 'antiquair',
+    lidwoord: 'de',
+    meervoud: ' antiquairs',
+    verkleinwoord: 'antiquairtje'
+  },
+  {
+    naam: 'astronaut',
+    lidwoord: 'de',
+    meervoud: ' astronauten',
+    verkleinwoord: 'astronautje'
+  },
+  {
+    naam: 'audioloog',
+    lidwoord: 'de',
+    meervoud: ' audiologen',
+    verkleinwoord: 'audioloogje'
+  },
+  {
+    naam: 'apotheker',
+    lidwoord: 'de',
+    meervoud: ' apothekers',
+    verkleinwoord: 'apothekertje'
+  },
+  {
+    naam: 'arbeidsgeneesheer',
+    lidwoord: 'de',
+    meervoud: ' arbeidsgeneesheren',
+    verkleinwoord: 'arbeidsgeneesheertje'
+  },
+  {
+    naam: 'beiardier',
+    lidwoord: 'de',
+    meervoud: ' beiaardieren',
+    verkleinwoord: 'beiaardiertje'
+  },
+  {
+    naam: 'boomchirurg',
+    lidwoord: 'de',
+    meervoud: ' boomchirurgen',
+    verkleinwoord: 'boomchirurgje'
+  },
+  {
+    naam: 'chirurg',
+    lidwoord: 'de',
+    meervoud: ' chirurgen',
+    verkleinwoord: 'chirurgje'
+  },
+  {
+    naam: 'basketballer',
+    lidwoord: 'de',
+    meervoud: ' basketballers',
+    verkleinwoord: 'basketballertje'
+  },
+  {
+    naam: 'bierbrouwer',
+    lidwoord: 'de',
+    meervoud: ' bierbrouwers',
+    verkleinwoord: 'bierbrouwertje'
+  },
+  {
+    naam: 'bijenkorfvlechter',
+    lidwoord: 'de',
+    meervoud: ' bijenkorfvlechters',
+    verkleinwoord: 'bijenkorfvlechtertje'
+  },
+  {
+    naam: 'clown',
+    lidwoord: 'de',
+    meervoud: ' clowns',
+    verkleinwoord: 'clowntje'
+  },
+  {
+    naam: 'circusartiest',
+    lidwoord: 'de',
+    meervoud: ' circusartiesten',
+    verkleinwoord: 'circusartiestje'
+  },
+  {
+    naam: 'cardioloog',
+    lidwoord: 'de',
+    meervoud: ' cardiologen',
+    verkleinwoord: 'cardioloogje'
+  },
+  {
+    naam: 'commissaris',
+    lidwoord: 'de',
+    meervoud: ' commissarissen',
+    verkleinwoord: 'commissarisje'
+  },
+  {
+    naam: 'columnist',
+    lidwoord: 'de',
+    meervoud: ' columnisten',
+    verkleinwoord: 'columnistje'
+  },
+  {
+    naam: 'criminoloog',
+    lidwoord: 'de',
+    meervoud: ' criminilogen',
+    verkleinwoord: 'criminoloogje'
+  },
+  {
+    naam: 'grafdelver',
+    lidwoord: 'de',
+    meervoud: ' grafdelvers',
+    verkleinwoord: 'grafdelvertje'
+  },
+  {
+    naam: 'docent',
+    lidwoord: 'de',
+    meervoud: ' docenten',
+    verkleinwoord: 'docentje'
+  },
+  {
+    naam: 'drummer',
+    lidwoord: 'de',
+    meervoud: ' drummers',
+    verkleinwoord: 'drummertje'
+  },
+  {
+    naam: 'diëtist',
+    lidwoord: 'de',
+    meervoud: ' diëtisten',
+    verkleinwoord: 'diëtistje'
+  },
+  {
+    naam: 'duiker',
+    lidwoord: 'de',
+    meervoud: ' duikers',
+    verkleinwoord: 'duikertje'
+  },
+  {
+    naam: 'detective',
+    lidwoord: 'de',
+    meervoud: ' detectives',
+    verkleinwoord: 'detectivetje'
+  },
+  {
+    naam: 'dirigent',
+    lidwoord: 'de',
+    meervoud: ' dirigenten',
+    verkleinwoord: 'dirigentje'
+  },
+  {
+    naam: 'koetsier',
+    lidwoord: 'de',
+    meervoud: ' koetsiers',
+    verkleinwoord: 'koetsiertje'
+  },
+  {
+    naam: 'logopedist',
+    lidwoord: 'de',
+    meervoud: ' logopedisten',
+    verkleinwoord: 'logopedistje'
+  },
+  {
+    naam: 'loodgieter',
+    lidwoord: 'de',
+    meervoud: ' loodgieters',
+    verkleinwoord: 'loodgietertje'
+  },
+  {
+    naam: 'luchtverkeersleider',
+    lidwoord: 'de',
+    meervoud: ' luchtverkeersleiders',
+    verkleinwoord: 'luchtverkeersleidertje'
+  },
+  {
+    naam: 'landmeter',
+    lidwoord: 'de',
+    meervoud: ' landmeters',
+    verkleinwoord: 'landmetertje'
+  },
+  {
+    naam: 'modeontwerper',
+    lidwoord: 'de',
+    meervoud: ' modeontwerpers',
+    verkleinwoord: 'modeontwerpertje'
+  },
+  {
+    naam: 'gids',
+    lidwoord: 'de',
+    meervoud: ' gidsen',
+    verkleinwoord: 'gidsje'
+  },
+  {
+    naam: 'metselaar',
+    lidwoord: 'de',
+    meervoud: ' metselaars',
+    verkleinwoord: 'metselaartje'
+  },
+  {
+    naam: 'meubelmaker',
+    lidwoord: 'de',
+    meervoud: ' meubelmakers',
+    verkleinwoord: 'meubelmakertje'
+  },
+  {
+    naam: 'model',
+    lidwoord: 'de',
+    meervoud: ' modellen',
+    verkleinwoord: 'modelletje'
+  },
+  {
     naam: 'imker',
     lidwoord: 'de',
     meervoud: 'imkers',
