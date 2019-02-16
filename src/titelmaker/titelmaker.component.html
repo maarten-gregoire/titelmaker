@@ -1,9 +1,63 @@
-<nav>
-  <a routerLink="/" routerLinkActive="active">Titelmaker</a>
-  <a routerLink="/woordenspammer" routerLinkActive="active">Woordenspammer</a>
-  <a routerLink="/suggereerder" routerLinkActive="active">Suggereerder</a>
-  <a routerLink="/bulkgenerator" routerLinkActive="active">Bulkgenerator</a>
-  <a routerLink="/overdezeapp" routerLinkActive="active">Over deze app</a>
-  <a routerLink="/feedback" routerLinkActive="active">Feedback</a>
+<nav class="navbar-sidebar-horizontal navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="#">
+    Impro App
+  </a>
+  <button class="hamburger hamburger--slider" type="button" data-target=".sidebar-horizontal" aria-controls="sidebar-horizontal" aria-expanded="false" aria-label="Toggle Main Menu">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+  </button>
+
+
+</nav>
+<div class="right-column">
+<nav class="sidebar-horizontal navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar-collapse" id="navbar-header-menu-outer">
+    <ul class="navbar-nav navbar-header-menu mr-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" routerLink="/">
+          <i class="batch-icon batch-icon-browser-alt"></i>
+          Impro App
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" routerLink="/">
+          <i class="batch-icon batch-icon-star"></i>
+          Titelmaker
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" routerLink="/woordenspammer">
+          <i class="batch-icon batch-icon-star"></i>
+          Woordenspammer
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" routerLink="/suggereerder">
+          <i class="batch-icon batch-icon-star"></i>
+          Suggereerder
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" routerLink="/bulkgenerator">
+          <i class="batch-icon batch-icon-star"></i>
+          Bulkgenerator
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" routerLink="/overdezeapp">
+          <i class="batch-icon batch-icon-star"></i>
+          Over deze app
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" routerLink="/feedback">
+          <i class="batch-icon batch-icon-star"></i>
+          Feedback
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
 <router-outlet></router-outlet>
+</div>
