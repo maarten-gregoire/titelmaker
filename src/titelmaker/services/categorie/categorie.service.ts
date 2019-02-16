@@ -5,16 +5,26 @@ import {categorieen} from '../../data/categorieen';
 import {Categorie} from '../../models/categorie';
 import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 import {emoties} from '../../data/bijvoeglijk-naamwoorden/emoties';
+import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategorieService {
 
+  recenteCategorieen: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(3);
+
   constructor() { }
 
   bepaalCategorie(): Observable<string> {
-    const categorie: Categorie = Arrays.bepaalWillekeurigElemntUitRij<Categorie>(categorieen);
+    let categorie: Categorie;
+    do {
+      categorie = Arrays.bepaalWillekeurigElemntUitRij<Categorie>(categorieen.filter(c => !this.recenteCategorieen.zitWoordInLijst(c)));
+      if (!categorie) {
+        this.recenteCategorieen.maakLeeg();
+      }
+    } while (!categorie);
+    this.recenteCategorieen.voegWoordToe(categorie);
     let categorieString: string = categorie.categorie;
     if (categorieString === 'Emotievierkant') {
       categorieString = this.voegEmotiesToe(categorieString);
