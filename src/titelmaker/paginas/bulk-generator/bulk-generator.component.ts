@@ -39,7 +39,7 @@ export class BulkGeneratorComponent implements OnInit {
 
     private bepaalDuur(): string {
       const duur: number = Randoms.maakRandomGetalTussenEnInbegrepen(1, 10);
-      return  duur + ((duur !== 1) ? ' minuten' : ' minuut');
+      return  duur + '\'';
     }
 
   reset() {
