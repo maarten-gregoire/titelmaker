@@ -10,8 +10,18 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
   },
   {
+    woord: 'prachtig',
+    tweedeVorm: 'prachtige',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
     woord: 'schoon',
     tweedeVorm: 'schone',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'proper',
+    tweedeVorm: 'propere',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
   },
   {
@@ -20,8 +30,18 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
   },
   {
+    woord: 'afgrijselijk',
+    tweedeVorm: 'afgrijselijke',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
     woord: 'kwaadaardig',
     tweedeVorm: 'kwaadaardige',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'slechtgemutst',
+    tweedeVorm: 'slechtgemutste',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
@@ -30,8 +50,18 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
   },
   {
+    woord: 'indrukwekkend',
+    tweedeVorm: 'indrukwekkende',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_LOCATIE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
     woord: 'onverschillig',
     tweedeVorm: 'onverschillige',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'fantasierijk',
+    tweedeVorm: 'fantasierijke',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
@@ -40,8 +70,18 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
+    woord: 'overzelfzeker',
+    tweedeVorm: 'overzelfzekere',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
     woord: 'lief',
     tweedeVorm: 'lieve',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'schattig',
+    tweedeVorm: 'schattige',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
@@ -50,8 +90,18 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
+    woord: 'slim',
+    tweedeVorm: 'slimme',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
     woord: 'snugger',
     tweedeVorm: 'snuggere',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'geniaal',
+    tweedeVorm: 'geniale',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
@@ -60,13 +110,28 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
+    woord: 'onaantastbaar',
+    tweedeVorm: 'onaantastbare',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
     woord: 'stevig',
     tweedeVorm: 'stevige',
     toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
+    woord: 'stabiel',
+    tweedeVorm: 'stabiele',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
     woord: 'slap',
     tweedeVorm: 'slappe',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'vloeibaar',
+    tweedeVorm: 'vloeibare',
     toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
