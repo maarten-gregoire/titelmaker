@@ -101,7 +101,7 @@ export class SuggereerderComponent implements OnInit {
 
     this.gevraagdeSuggestie = 'Categorie';
     this.icoon = 'batch-icon-quill';
-    this.achtergrondkleur = 'bg-secondary';
+    this.achtergrondkleur = 'bg-primary';
   }
 
   reset() {
