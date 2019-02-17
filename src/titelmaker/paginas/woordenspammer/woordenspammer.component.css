@@ -1,14 +1,23 @@
-.titel {
-  background-color: chartreuse;
-  color: darkgreen;
-}
-.categorie {
-  background-color: aquamarine;
-  color: darkcyan;
-}
-.duur {
-  background-color: lightpink;
-  color: purple;
+.bg-woord.bg-gradient {
+  color: #FFFFFF !important;
+  background: #9e001c;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #9e001c 0%, #cfa35f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #9e001c 0%, #cfa35f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #9e001c 0%, #cfa35f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$qp-color-1, endColorstr=$qp-color-2,GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .gegenereerd-item {
