@@ -4,9 +4,38 @@
       <h2>Suggereerder</h2>
     </div>
     <div class="row">
-      <p>
-        Binnenkort komt hier de suggereerder, die op jouw vraag locaties, personages, voorwerpen of emoties kan suggereren.
-      </p>
+      <div class="col-md-12">
+        <div class="color-controls-1">
+          <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
+            <div class="row">
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerPersonage()"><span class="gradient">Geef personage</span></button>
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerLocatie()"><span class="gradient">Geef locatie</span></button>
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerEmotie()"><span class="gradient">Geef emotie</span></button>
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerVoorwerp()"><span class="gradient">Geef voorwerp</span></button>
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerBeroep()"><span class="gradient">Geef beroep</span></button>
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerDier()"><span class="gradient">Geef dier</span></button>
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerBijvoeglijkNaamwoord()"><span class="gradient">Geef bijvoeglijk naamwoord</span></button>
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerCategorie()"><span class="gradient">Geef categorie</span></button>
+              <button type="button" class="btn btn-outline-blue-grey" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12 mb-4" *ngIf="suggestie">
+            <div class="card {{achtergrondkleur}} bg-gradient mb-3 text-center">
+              <div class="card-body">
+                <div class="tile-left">
+                  <i class="batch-icon {{icoon}} batch-icon-xxl"></i>
+                </div>
+                <p class="gegenereerd-item">{{suggestie}}</p>
+                <footer>{{gevraagdeSuggestie}}</footer>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </main>
 </div>

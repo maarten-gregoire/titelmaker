@@ -18,18 +18,26 @@ export class CategorieService {
 
   bepaalCategorie(): Observable<string> {
     let categorie: Categorie;
+    categorie = this.bepaalCategorieMetVoldoendeAfwisseling(categorie);
+    this.recenteCategorieen.voegWoordToe(categorie);
+    return of(this.doeToevoegingenAanCategorie(categorie.categorie));
+  }
+
+  private bepaalCategorieMetVoldoendeAfwisseling(categorie: Categorie) {
     do {
       categorie = Arrays.bepaalWillekeurigElemntUitRij<Categorie>(categorieen.filter(c => !this.recenteCategorieen.zitWoordInLijst(c)));
       if (!categorie) {
         this.recenteCategorieen.maakLeeg();
       }
     } while (!categorie);
-    this.recenteCategorieen.voegWoordToe(categorie);
-    let categorieString: string = categorie.categorie;
+    return categorie;
+  }
+
+  private doeToevoegingenAanCategorie(categorieString: string) {
     if (categorieString === 'Emotievierkant') {
       categorieString = this.voegEmotiesToe(categorieString);
     }
-    return of(categorieString);
+    return categorieString;
   }
 
   private voegEmotiesToe(categorie: string): string {
