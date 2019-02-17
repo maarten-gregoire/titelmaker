@@ -8,8 +8,10 @@
       <div class="col-md-12 mb-4">
         <div class="color-controls-1">
           <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
-            <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerTitels()"><span class="gradient">Genereer 100 titels</span></button>
-            <button type="button" class="btn btn-outline-blue-grey" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+            <div class="row">
+              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerTitels()"><span class="gradient">Genereer 100 titels</span></button>
+              <button type="button" class="btn btn-outline-blue-grey" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -17,10 +19,12 @@
     <div class="row" *ngIf="titelCombinaties && titelCombinaties.length > 0">
       <table>
         <thead>
-          <td><b>Nr</b></td>
-          <td><b>Titel</b></td>
-          <td><b>Categorie</b></td>
-          <td><b>Speelduur</b></td>
+          <tr>
+            <th><b>Nr</b></th>
+            <th><b>Titel</b></th>
+            <th><b>Categorie</b></th>
+            <th><b>Speelduur</b></th>
+          </tr>
         </thead>
         <tbody>
         <tr *ngFor="let titelCombinatie of titelCombinaties; let i = index">
@@ -39,9 +43,6 @@
         </tr>
         </tbody>
       </table>
-
-
-
     </div>
   </main>
 </div>
