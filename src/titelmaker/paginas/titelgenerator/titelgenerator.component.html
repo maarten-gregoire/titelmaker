@@ -1,24 +1,31 @@
 <div class="container container-fluid">
   <main class="main-content p-5" role="main">
     <div class="row">
-      <h2>Titelmaker</h2>
+      <div class="col-md-12">
+        <div class="col-md-12 mb-1">
+          <div class="row">
+            <h3>Titelmaker</h3>
+          </div>
+          <div class="row">
+            <h4>Voor improscenes</h4>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row">
-      <h3>Voor improscenes</h3>
-    </div>
-    <div class="row">
-      <div class="col-md-12 mb-4">
-        <div class="color-controls-1">
-          <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
-            <div class="row">
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerSuggestie()"><span class="gradient">Maak titel</span></button>
-              <button type="button" class="btn btn-outline-blue-grey" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+      <div class="col-md-12">
+        <div class="col-md-12 mb-4 text-center">
+          <div class="color-controls-1">
+            <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
+              <div class="row">
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-6 mb-1"  (click)="genereerSuggestie()"><span class="gradient">Maak titel</span></button>
+                <button type="button" class="btn btn-outline-blue-grey col-md-6 mb-1" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="row">
       <div class="col-md-12">
         <div class="col-md-12 mb-4" *ngIf="gegenereerdeTitel">

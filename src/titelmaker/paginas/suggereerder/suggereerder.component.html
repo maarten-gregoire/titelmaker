@@ -1,41 +1,49 @@
 <div class="container container-fluid">
   <main class="main-content p-5" role="main">
     <div class="row">
-      <h2>Suggereerder</h2>
+      <div class="col-md-12">
+        <div class="col-md-12 mb-1">
+          <div class="row">
+            <h3>Suggereerder</h3>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row">
-      <div class="col-md-12 mb-4">
-        <div class="color-controls-1">
-          <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
-            <div class="row">
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerPersonage()"><span class="gradient">Geef personage</span></button>
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerLocatie()"><span class="gradient">Geef locatie</span></button>
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerEmotie()"><span class="gradient">Geef emotie</span></button>
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerVoorwerp()"><span class="gradient">Geef voorwerp</span></button>
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerBeroep()"><span class="gradient">Geef beroep</span></button>
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerDier()"><span class="gradient">Geef dier</span></button>
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerBijvoeglijkNaamwoord()"><span class="gradient">Geef bijvoeglijk naamwoord</span></button>
-              <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light" (click)="genereerCategorie()"><span class="gradient">Geef categorie</span></button>
-              <button type="button" class="btn btn-outline-blue-grey" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+      <div class="col-md-12">
+        <div class="col-md-12 mb-4 text-center">
+          <div class="color-controls-1">
+            <div class="btn-group btn-group-custom-radio simplefilter color-controls-1">
+              <div class="row">
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerPersonage()"><span class="gradient">Geef personage</span></button>
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerLocatie()"><span class="gradient">Geef locatie</span></button>
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerEmotie()"><span class="gradient">Geef emotie</span></button>
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerVoorwerp()"><span class="gradient">Geef voorwerp</span></button>
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerBeroep()"><span class="gradient">Geef beroep</span></button>
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerDier()"><span class="gradient">Geef dier</span></button>
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerBijvoeglijkNaamwoord()"><span class="gradient">Geef bijvoeglijk naamwoord</span></button>
+                <button type="button" class="btn btn-yellow btn-gradient waves-effect waves-light col-md-4 mb-1" (click)="genereerCategorie()"><span class="gradient">Geef categorie</span></button>
+                <button type="button" class="btn btn-outline-blue-grey col-md-4 mb-1" (click)="reset()"><span class="gradient">Maak leeg</span></button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-          <div class="col-md-12 mb-4" *ngIf="suggestie">
-            <div class="card {{achtergrondkleur}} bg-gradient mb-3 text-center">
-              <div class="card-body">
-                <div class="tile-left">
-                  <i class="batch-icon {{icoon}} batch-icon-xxl"></i>
-                </div>
-                <p class="gegenereerd-item">{{suggestie}}</p>
-                <footer>{{gevraagdeSuggestie}}</footer>
+      <div class="col-md-12">
+        <div class="col-md-12 mb-4" *ngIf="suggestie">
+          <div class="card {{achtergrondkleur}} bg-gradient mb-3 text-center">
+            <div class="card-body">
+              <div class="tile-left">
+                <i class="batch-icon {{icoon}} batch-icon-xxl"></i>
               </div>
+              <p class="gegenereerd-item">{{suggestie}}</p>
+              <footer>{{gevraagdeSuggestie}}</footer>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </main>
 </div>
