@@ -9,7 +9,7 @@ export class TitelmakerComponent {
   title = 'titelmaker';
   chosenPage = 'titelmaker';
 
-  private chosenPageIs(page: string) {
+  chosenPageIs(page: string) {
     return page === this.chosenPage;
   }
 
