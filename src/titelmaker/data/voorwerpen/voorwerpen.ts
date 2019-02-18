@@ -1054,7 +1054,7 @@ export const voorwerpen: Voorwerp[] =
     },
     {
       naam: 'ei',
-      lidwoord: 'eitje',
+      lidwoord: 'het',
       meervoud: 'eieren',
       verkleinwoord: 'eitje'
     },
