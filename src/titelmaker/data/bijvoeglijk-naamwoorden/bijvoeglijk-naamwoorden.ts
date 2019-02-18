@@ -70,8 +70,8 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
-    woord: 'overzelfzeker',
-    tweedeVorm: 'overzelfzekere',
+    woord: 'overmoedig',
+    tweedeVorm: 'overmoedige',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
   },
   {
