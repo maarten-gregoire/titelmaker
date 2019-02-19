@@ -4,6 +4,7 @@ import {BijvoeglijkNaamwoordService} from '../../services/bijvoeglijk-naamwoord/
 import {LocatieService} from '../../services/locatie/locatie.service';
 import {VoorwerpService} from '../../services/voorwerp/voorwerp.service';
 import {CategorieService} from '../../services/categorie/categorie.service';
+import {HandelingService} from '../../services/handeling/handeling.service';
 
 @Component({
   selector: 'tm-suggereerder',
@@ -19,7 +20,7 @@ export class SuggereerderComponent implements OnInit {
 
   constructor(private personageService: PersonageService, private bijvoeglijknaamwoordService: BijvoeglijkNaamwoordService,
               private locatieService: LocatieService, private voorwerpService: VoorwerpService,
-              private categorieService: CategorieService) { }
+              private categorieService: CategorieService, private handelingService: HandelingService) { }
 
   ngOnInit() {
   }
@@ -109,5 +110,15 @@ export class SuggereerderComponent implements OnInit {
     this.gevraagdeSuggestie = '';
     this.icoon = '';
     this.achtergrondkleur = '';
+  }
+
+  genereerHandeling() {
+    this.handelingService.geefWillekeurigeLocatie().subscribe( b => {
+      this.suggestie = b;
+    });
+
+    this.gevraagdeSuggestie = 'Handeling';
+    this.icoon = 'batch-icon-wave';
+    this.achtergrondkleur = 'bg-handeling';
   }
 }
