@@ -18,6 +18,7 @@ import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
 import {WoordSoort} from '../../enums/woordsoort';
 import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
+import {beroepen} from '../../data/personages/beroepen';
 
 @Injectable({
   providedIn: 'root'
@@ -39,7 +40,7 @@ export class TitelService {
     let locatieString: string;
     let personage: Personage;
     let bijvoeglijkNaamwoord: BijvoeglijkNaamwoord;
-    let voorwerp: Voorwerp
+    let voorwerp: Voorwerp;
     let locatie: Locatie;
     let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
@@ -79,17 +80,32 @@ export class TitelService {
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
-    if (titelConfiguratie.aantalLocaties > 0) {
-      locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
-        .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
-      );
-      if (!locatie) {
-        this.recenteLocaties.maakLeeg();
+    let magBijAlsVoorzetselGebruiken = true;
+    if (titelConfiguratie.aantalVoorwerpen > 0) {
+      magBijAlsVoorzetselGebruiken = false;
+    }
+    if (Randoms.maakRandomGetalTussenEnInbegrepen(0, 10) >= 1) {
+      if (titelConfiguratie.aantalLocaties > 1 || !magBijAlsVoorzetselGebruiken) {
+        locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
+          .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
+        );
+        if (!locatie) {
+          this.recenteLocaties.maakLeeg();
+        }
+      } else {
+        const beroep: Personage = Arrays.bepaalWillekeurigElemntUitRij(beroepen.filter(b => !this.recentePersonages.zitWoordInLijst(b)));
+        locatie = {
+
+          naam: beroep.naam,
+          lidwoord: beroep.lidwoord,
+          voorzetsels: ['bij'],
+          meervoud: beroep.meervoud,
+          verkleinwoord: beroep.verkleinwoord,
+          woordsoorten: beroep.woordsoorten
+
+        };
       }
-      let magBijAlsVoorzetselGebruiken = true;
-      if (titelConfiguratie.aantalVoorwerpen > 0) {
-        magBijAlsVoorzetselGebruiken = false;
-      }
+
       locatieString = StringMaker.locatieAlsString(locatie, magBijAlsVoorzetselGebruiken);
     }
 
