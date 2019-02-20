@@ -417,7 +417,7 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
   {
     woord: 'lichtgevoelig',
     tweedeVorm: 'lichtgevoelige',
-    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   },
   {
     woord: 'lieftallig',
