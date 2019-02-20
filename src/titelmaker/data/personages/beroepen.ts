@@ -409,7 +409,7 @@ export const beroepen: Personage[] = [
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_BEROEP]
   },
   {
-    naam: 'goudsmit',
+    naam: 'goudsmid',
     lidwoord: 'de',
     meervoud: ' goudsmeden',
     verkleinwoord: 'goudsmidje',
