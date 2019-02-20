@@ -8,10 +8,22 @@ export const beroepen: Personage[] = [
     verkleinwoord: 'bakkertje'
   },
   {
+    naam: 'inpakker',
+    lidwoord: 'de',
+    meervoud: 'inpakkers',
+    verkleinwoord: 'inpakkertje'
+  },
+  {
     naam: 'perronchef',
     lidwoord: 'de',
     meervoud: 'perronchefs',
     verkleinwoord: 'perronchefje'
+  },
+  {
+    naam: 'personeelschef',
+    lidwoord: 'de',
+    meervoud: 'personeelschefs',
+    verkleinwoord: 'personeelschefje'
   },
   {
     naam: 'orthodont',
@@ -684,5 +696,101 @@ export const beroepen: Personage[] = [
     lidwoord: 'de',
     meervoud: 'directeurs',
     verkleinwoord: 'directeurtje'
+  },
+  {
+    naam: 'leeuwentemmer',
+    lidwoord: 'de',
+    meervoud: 'leeuwentemmers',
+    verkleinwoord: 'leeuwentemmertje'
+  },
+  {
+    naam: 'brandweerchef',
+    lidwoord: 'de',
+    meervoud: 'brandweerchefs',
+    verkleinwoord: 'brandweerchefje'
+  },
+  {
+    naam: 'chef',
+    lidwoord: 'de',
+    meervoud: 'chefs',
+    verkleinwoord: 'chefje'
+  },
+  {
+    naam: 'korpschef',
+    lidwoord: 'de',
+    meervoud: 'korpschefs',
+    verkleinwoord: 'korpschefje'
+  },
+  {
+    naam: 'departementschef',
+    lidwoord: 'de',
+    meervoud: 'departementschefs',
+    verkleinwoord: 'departementschefje'
+  },
+  {
+    naam: 'ex-politiechef',
+    lidwoord: 'de',
+    meervoud: 'ex-politiechefs',
+    verkleinwoord: 'ex-politiechefje'
+  },
+  {
+    naam: 'tegelbakker',
+    lidwoord: 'de',
+    meervoud: 'tegelbakkers',
+    verkleinwoord: 'tegelbakkertje'
+  },
+  {
+    naam: 'pizzabakker',
+    lidwoord: 'de',
+    meervoud: 'pizzabakkers',
+    verkleinwoord: 'pizzabakkertje'
+  },
+  {
+    naam: 'oliebollenbakker',
+    lidwoord: 'de',
+    meervoud: 'oliebollenbakkers',
+    verkleinwoord: 'oliebollenbakkertje'
+  },
+  {
+    naam: 'banketbakker',
+    lidwoord: 'de',
+    meervoud: 'banketbakkers',
+    verkleinwoord: 'banketbakkertje'
+  },
+  {
+    naam: 'plakker',
+    lidwoord: 'de',
+    meervoud: 'plakkers',
+    verkleinwoord: 'plakkertje'
+  },
+  {
+    naam: 'dierentemmer',
+    lidwoord: 'de',
+    meervoud: 'dierentemmers',
+    verkleinwoord: 'dierentemmertje'
+  },
+  {
+    naam: 'interim-directeur',
+    lidwoord: 'de',
+    meervoud: 'interim-directeurs',
+    verkleinwoord: 'interim-directeurtje'
+  },
+  {
+    naam: 'bankdirecteur',
+    lidwoord: 'de',
+    meervoud: 'bankdirecteurs',
+    verkleinwoord: 'bankdirecteurtje'
+  },
+  {
+    naam: 'schooldirecteur',
+    lidwoord: 'de',
+    meervoud: 'schooldirecteurs',
+    verkleinwoord: 'schooldirecteurtje'
+  },
+  {
+    naam: 'programmadirecteur',
+    lidwoord: 'de',
+    meervoud: 'programmadirecteurs',
+    verkleinwoord: 'programmadirecteurtje'
   }
   ];

@@ -168,5 +168,11 @@ export const dieren: Personage[] = [
     lidwoord: 'het',
     meervoud: 'vogelbekdieren',
     verkleinwoord: 'vogelbekdiertje'
+  },
+  {
+    naam: 'duizendpoot',
+    lidwoord: 'de',
+    meervoud: 'duizendpoten',
+    verkleinwoord: 'duizendpootje'
   }
 ];

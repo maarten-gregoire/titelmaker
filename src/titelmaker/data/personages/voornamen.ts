@@ -1,6 +1,6 @@
 import {Personage} from '../../models/personage';
 
-export const voornamenMannen: Personage[] = [
+export const voornamen: Personage[] = [
   {
     naam: 'Tony',
     lidwoord: null,
@@ -90,6 +90,12 @@ export const voornamenMannen: Personage[] = [
     lidwoord: null,
     meervoud: null,
     verkleinwoord: 'Wimmetje'
+  },
+  {
+    naam: 'Jozef',
+    lidwoord: null,
+    meervoud: null,
+    verkleinwoord: 'Jozefje'
   },
   {
     naam: 'Karolien',

@@ -687,6 +687,48 @@ export const locaties: Locatie[] =
       voorzetsels: ['in'],
       meervoud: null,
       verkleinwoord: null
+    },
+    {
+      naam: 'boot',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: 'boten',
+      verkleinwoord: 'bootje'
+    },
+    {
+      naam: 'akker',
+      lidwoord: 'het',
+      voorzetsels: ['op'],
+      meervoud: 'akkers',
+      verkleinwoord: 'akkertje'
+    },
+    {
+      naam: 'veerpont',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'wedstrijdboot',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: 'wedstrijdboten',
+      verkleinwoord: 'wedstrijdbootje'
+    },
+    {
+      naam: 'speedboot',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: 'speedboten',
+      verkleinwoord: 'speedbootje'
+    },
+    {
+      naam: 'sloot',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: 'slootje'
     }
   ];
 

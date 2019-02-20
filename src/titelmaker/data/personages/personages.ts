@@ -5,7 +5,7 @@ import {familieleden} from './familieleden';
 import {dieren} from './dieren';
 import {volkeren} from './nationaliteiten';
 import {hofhouding} from './hofhouding';
-import {voornamenMannen} from './voornamen-mannen';
+import {voornamen} from './voornamen';
 
 export const personages: Personage[] =
   [
@@ -15,7 +15,7 @@ export const personages: Personage[] =
     ...dieren,
     ...volkeren,
     ...hofhouding,
-    ...voornamenMannen,
+    ...voornamen,
     {
       naam: 'eskimo',
       lidwoord: 'de',
@@ -447,6 +447,89 @@ export const personages: Personage[] =
       lidwoord: 'het',
       meervoud: 'personeelsleden',
       verkleinwoord: 'personeelslidje'
+    },
+    {
+      naam: 'klasgenoot',
+      lidwoord: 'de',
+      meervoud: 'klasgenoten',
+      verkleinwoord: 'klasgenootje'
+    },
+    {
+      naam: 'stakker',
+      lidwoord: 'de',
+      meervoud: 'stakkers',
+      verkleinwoord: 'stakkertje'
+    },
+    {
+      naam: 'wiebelkont',
+      lidwoord: 'de',
+      meervoud: 'wiebelkonten',
+      verkleinwoord: 'wiebelkontje'
+    },
+    {
+      naam: 'zwemmer',
+      lidwoord: 'de',
+      meervoud: 'zwemmers',
+      verkleinwoord: 'zwemmertje'
+    },
+    {
+      naam: 'mopperkont',
+      lidwoord: 'de',
+      meervoud: 'mopperkonten',
+      verkleinwoord: 'mopperkontje'
+    },
+    {
+      naam: 'ware Jozef',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'ploegmakker',
+      lidwoord: 'de',
+      meervoud: 'ploegmakkers',
+      verkleinwoord: 'ploegmakkertje'
+    },
+    {
+      naam: 'dorpsgenoot',
+      lidwoord: 'de',
+      meervoud: 'dorpsgenoten',
+      verkleinwoord: 'dorpsgenootje'
+    },
+    {
+      naam: 'partijgenoot',
+      lidwoord: 'de',
+      meervoud: 'partijgenoten',
+      verkleinwoord: 'partijgenootje'
+    },
+    {
+      naam: 'werkmakker',
+      lidwoord: 'de',
+      meervoud: 'werkmakkers',
+      verkleinwoord: 'werkmakkertje'
+    },
+    {
+      naam: 'psychoot',
+      lidwoord: 'de',
+      meervoud: 'psychoten',
+      verkleinwoord: 'psychootje'
+    },
+    {
+      naam: 'ja-stemmer',
+      lidwoord: 'de',
+      meervoud: 'ja-stemmers',
+      verkleinwoord: 'ja-stemmertje'
+    },
+    {
+      naam: 'strijdmakker',
+      lidwoord: 'de',
+      meervoud: 'strijdmakkers',
+      verkleinwoord: 'strijdmakkertje'
+    },
+    {
+      naam: 'B-acteur',
+      lidwoord: 'de',
+      meervoud: 'B-acteurs',
+      verkleinwoord: 'B-acteurtje'
     }
-
   ];

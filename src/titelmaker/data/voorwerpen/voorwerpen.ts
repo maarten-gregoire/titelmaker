@@ -1192,7 +1192,7 @@ export const voorwerpen: Voorwerp[] =
     },
     {
       naam: 'touw',
-      lidwoord: 'de',
+      lidwoord: 'het',
       meervoud: 'touwen',
       verkleinwoord: 'touwtje'
     },
@@ -1309,5 +1309,161 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'elastieken',
       verkleinwoord: 'elastiekje'
+    },
+    {
+      naam: 'mastodont',
+      lidwoord: 'de',
+      meervoud: 'mastodonten',
+      verkleinwoord: 'mastodontje'
+    },
+    {
+      naam: 'kont',
+      lidwoord: 'de',
+      meervoud: 'konten',
+      verkleinwoord: 'kontje'
+    },
+    {
+      naam: 'bofkont',
+      lidwoord: 'de',
+      meervoud: 'bofkonten',
+      verkleinwoord: 'bofkontje'
+    },
+    {
+      naam: 'klont',
+      lidwoord: 'de',
+      meervoud: 'klonten',
+      verkleinwoord: 'klontje'
+    },
+    {
+      naam: 'doopvont',
+      lidwoord: 'de',
+      meervoud: 'doopvonten',
+      verkleinwoord: 'doopvontje'
+    },
+    {
+      naam: 'duivenstront',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'koeienstront',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'afvalemmer',
+      lidwoord: 'de',
+      meervoud: 'afvalemmers',
+      verkleinwoord: 'afvalemmertje'
+    },
+    {
+      naam: 'virusremmer',
+      lidwoord: 'de',
+      meervoud: 'virusremmers',
+      verkleinwoord: 'virusremmertje'
+    },
+    {
+      naam: 'varkenspoot',
+      lidwoord: 'de',
+      meervoud: 'varkenspoten',
+      verkleinwoord: 'varkenspootje'
+    },
+    {
+      naam: 'kabelgoot',
+      lidwoord: 'de',
+      meervoud: 'kabelgoten',
+      verkleinwoord: 'kabelgootje'
+    },
+    {
+      naam: 'junkfood',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'apennoot',
+      lidwoord: 'de',
+      meervoud: 'apennoten',
+      verkleinwoord: 'apennootje'
+    },
+    {
+      naam: 'aardnoot',
+      lidwoord: 'de',
+      meervoud: 'aardnoten',
+      verkleinwoord: 'aardnootje'
+    },
+    {
+      naam: 'pindanoot',
+      lidwoord: 'de',
+      meervoud: 'pindanoten',
+      verkleinwoord: 'pindanootje'
+    },
+    {
+      naam: 'zwaveluitstoot',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'volkorenbrood',
+      lidwoord: 'het',
+      meervoud: 'volkorenbroden',
+      verkleinwoord: 'volkorenbroodje'
+    },
+    {
+      naam: 'wardkornbrood',
+      lidwoord: 'het',
+      meervoud: 'waldkornbroden',
+      verkleinwoord: 'waldkornbroodje'
+    },
+    {
+      naam: 'driekoningenbrood',
+      lidwoord: 'het',
+      meervoud: 'driekoningenbroden',
+      verkleinwoord: 'driekoningenbroodje'
+    },
+    {
+      naam: 'worstenbrood',
+      lidwoord: 'het',
+      meervoud: 'worstenbroden',
+      verkleinwoord: 'worstenbroodje'
+    },
+    {
+      naam: 'krentenbrood',
+      lidwoord: 'het',
+      meervoud: 'krentenbroden',
+      verkleinwoord: 'krentenbroodje'
+    },
+    {
+      naam: 'schietlood',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'vulpotlood',
+      lidwoord: 'de',
+      meervoud: 'vulpotloden',
+      verkleinwoord: 'vulpotloodje'
+    },
+    {
+      naam: 'kleurpotlood',
+      lidwoord: 'de',
+      meervoud: 'kleurpotloden',
+      verkleinwoord: 'kleurpotloodje'
+    },
+    {
+      naam: 'aardappelhakker',
+      lidwoord: 'de',
+      meervoud: 'aardappelhakkers',
+      verkleinwoord: 'aardappelhakkertje'
+    },
+    {
+      naam: 'ijsemmer',
+      lidwoord: 'de',
+      meervoud: 'ijsemmers',
+      verkleinwoord: 'ijsemmertje'
     }
   ];

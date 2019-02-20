@@ -62,10 +62,10 @@ export const volkeren: Personage[] = [
     verkleinwoord: 'Afghaantje'
   },
   {
-    naam: 'B-acteur',
+    naam: 'half-jood',
     lidwoord: 'de',
-    meervoud: 'B-acteurs',
-    verkleinwoord: 'B-acteurtje'
+    meervoud: 'half-joden',
+    verkleinwoord: 'half-joodje'
   }
 ];
 
