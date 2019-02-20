@@ -6,6 +6,7 @@ import {dieren} from './dieren';
 import {volkeren} from './nationaliteiten';
 import {hofhouding} from './hofhouding';
 import {voornamen} from './voornamen';
+import {WoordSoort} from '../../enums/woordsoort';
 
 export const personages: Personage[] =
   [
@@ -20,516 +21,602 @@ export const personages: Personage[] =
       naam: 'eskimo',
       lidwoord: 'de',
       meervoud: 'eskimo\'s',
-      verkleinwoord: 'eskimootje'
+      verkleinwoord: 'eskimootje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'holbewoner',
       lidwoord: 'de',
       meervoud: 'holbewoners',
-      verkleinwoord: 'holbewonertje'
+      verkleinwoord: 'holbewonertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'viking',
       lidwoord: 'de',
       meervoud: 'vikings',
-      verkleinwoord: 'vikinkje'
+      verkleinwoord: 'vikinkje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'piraat',
       lidwoord: 'de',
       meervoud: 'piraten',
-      verkleinwoord: 'piraatje'
+      verkleinwoord: 'piraatje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'indiaan',
       lidwoord: 'de',
       meervoud: 'indianen',
-      verkleinwoord: 'indiaantje'
+      verkleinwoord: 'indiaantje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'cowboy',
       lidwoord: 'de',
       meervoud: 'cowboys',
-      verkleinwoord: 'cowboytje'
+      verkleinwoord: 'cowboytje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'pelgrim',
       lidwoord: 'de',
       meervoud: 'pelgrims',
-      verkleinwoord: 'pelgrimpje'
+      verkleinwoord: 'pelgrimpje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'toerist',
       lidwoord: 'de',
       meervoud: 'toeristen',
-      verkleinwoord: 'toeristje'
+      verkleinwoord: 'toeristje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'vogelspotter',
       lidwoord: 'de',
       meervoud: 'vogelspotters',
-      verkleinwoord: 'vogelspottertje'
+      verkleinwoord: 'vogelspottertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'postzegelverzamelaar',
       lidwoord: 'de',
       meervoud: 'postzegelverzamelaars',
-      verkleinwoord: 'postzegelverzamelaartje'
+      verkleinwoord: 'postzegelverzamelaartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'bergbeklimmer',
       lidwoord: 'de',
       meervoud: 'bergbeklimmers',
-      verkleinwoord: 'bergbeklimmertje'
+      verkleinwoord: 'bergbeklimmertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'Kiss-fan',
       lidwoord: 'de',
       meervoud: 'Kiss-fans',
-      verkleinwoord: 'Kiss-fannetje'
+      verkleinwoord: 'Kiss-fannetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'bourgondiër',
       lidwoord: 'de',
       meervoud: 'bourgondiërs',
-      verkleinwoord: 'bourgondiërtje'
+      verkleinwoord: 'bourgondiërtje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'klant',
       lidwoord: 'de',
       meervoud: 'klanten',
-      verkleinwoord: 'klantje'
+      verkleinwoord: 'klantje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'veelvraat',
       lidwoord: 'de',
       meervoud: 'veelvraten',
-      verkleinwoord: 'veelvraatje'
+      verkleinwoord: 'veelvraatje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'leugenaar',
       lidwoord: 'de',
       meervoud: 'leugenaars',
-      verkleinwoord: 'leugenaartje'
+      verkleinwoord: 'leugenaartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'gulzigaard',
       lidwoord: 'de',
       meervoud: 'gulzigaards',
-      verkleinwoord: 'gulzigaardje'
+      verkleinwoord: 'gulzigaardje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'baas',
       lidwoord: 'de',
       meervoud: 'bazen',
-      verkleinwoord: 'baasje'
+      verkleinwoord: 'baasje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'inwijkeling',
       lidwoord: 'de',
       meervoud: 'inwijkelingen',
-      verkleinwoord: 'inwijkelingetje'
+      verkleinwoord: 'inwijkelingetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'optimist',
       lidwoord: 'de',
       meervoud: 'optimisten',
-      verkleinwoord: 'optimistje'
+      verkleinwoord: 'optimistje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'zwerver',
       lidwoord: 'de',
       meervoud: 'zwervers',
-      verkleinwoord: 'zwervertje'
+      verkleinwoord: 'zwervertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'bedelaar',
       lidwoord: 'de',
       meervoud: 'bedelaars',
-      verkleinwoord: 'bedelaartje'
+      verkleinwoord: 'bedelaartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'kandidaat',
       lidwoord: 'de',
       meervoud: 'kandidaten',
-      verkleinwoord: 'kandidaatje'
+      verkleinwoord: 'kandidaatje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'sollicitant',
       lidwoord: 'de',
       meervoud: 'sollicitanten',
-      verkleinwoord: 'sollicitantje'
+      verkleinwoord: 'sollicitantje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'betoger',
       lidwoord: 'de',
       meervoud: 'betogers',
-      verkleinwoord: 'betogertje'
+      verkleinwoord: 'betogertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'zondaar',
       lidwoord: 'de',
       meervoud: 'zondaars',
-      verkleinwoord: 'zondaartje'
+      verkleinwoord: 'zondaartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'laatkomer',
       lidwoord: 'de',
       meervoud: 'laatkomers',
-      verkleinwoord: 'laatkomertje'
+      verkleinwoord: 'laatkomertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'verslaafde',
       lidwoord: 'de',
       meervoud: 'verslaafden',
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'zieke',
       lidwoord: 'de',
       meervoud: 'zieken',
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'arme',
       lidwoord: 'de',
       meervoud: 'armen',
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'rijke',
       lidwoord: 'de',
       meervoud: 'rijken',
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'treuzelaar',
       lidwoord: 'de',
       meervoud: 'treuzelaars',
-      verkleinwoord: 'treuzelaartje'
+      verkleinwoord: 'treuzelaartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'piekeraar',
       lidwoord: 'de',
       meervoud: 'piekeraars',
-      verkleinwoord: 'piekeraartje'
+      verkleinwoord: 'piekeraartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'filosoof',
       lidwoord: 'de',
       meervoud: 'filosofen',
-      verkleinwoord: 'filosoofje'
+      verkleinwoord: 'filosoofje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'betweter',
       lidwoord: 'de',
       meervoud: 'betweters',
-      verkleinwoord: 'betwetertje'
+      verkleinwoord: 'betwetertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'leerling',
       lidwoord: 'de',
       meervoud: 'leerlingen',
-      verkleinwoord: 'leerlingetje'
+      verkleinwoord: 'leerlingetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'winnaar',
       lidwoord: 'de',
       meervoud: 'winnaars',
-      verkleinwoord: 'winnaartje'
+      verkleinwoord: 'winnaartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'verliezer',
       lidwoord: 'de',
       meervoud: 'verliezers',
-      verkleinwoord: 'verliezertje'
+      verkleinwoord: 'verliezertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'crimineel',
       lidwoord: 'de',
       meervoud: 'criminelen',
-      verkleinwoord: 'crimineeltje'
+      verkleinwoord: 'crimineeltje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'stouterik',
       lidwoord: 'de',
       meervoud: 'stouteriken',
-      verkleinwoord: 'stouterikje'
+      verkleinwoord: 'stouterikje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'verleider',
       lidwoord: 'de',
       meervoud: 'verleiders',
-      verkleinwoord: 'verleidertje'
+      verkleinwoord: 'verleidertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'dief',
       lidwoord: 'de',
       meervoud: 'dieven',
-      verkleinwoord: 'diefje'
+      verkleinwoord: 'diefje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'klikspaan',
       lidwoord: 'de',
       meervoud: 'klikspanen',
-      verkleinwoord: 'klikspaantje'
+      verkleinwoord: 'klikspaantje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'dorpsgek',
       lidwoord: 'de',
       meervoud: 'dorpsgekken',
-      verkleinwoord: 'dorpsgekje'
+      verkleinwoord: 'dorpsgekje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'zot',
       lidwoord: 'de',
       meervoud: 'zotten',
-      verkleinwoord: 'zotje'
+      verkleinwoord: 'zotje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'rover',
       lidwoord: 'de',
       meervoud: 'rovers',
-      verkleinwoord: 'rovertje'
+      verkleinwoord: 'rovertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'wijnkenner',
       lidwoord: 'de',
       meervoud: 'wijnkenners',
-      verkleinwoord: 'wijnkennertje'
+      verkleinwoord: 'wijnkennertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'buurman',
       lidwoord: 'de',
       meervoud: 'buurmannen',
-      verkleinwoord: 'buurmannetje'
+      verkleinwoord: 'buurmannetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'buurvrouw',
       lidwoord: 'de',
       meervoud: 'buurvrouwen',
-      verkleinwoord: 'buurvrouwtje'
+      verkleinwoord: 'buurvrouwtje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: '80-jarige',
       lidwoord: 'de',
       meervoud: '80-jarigen',
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'ADHD-kind',
       lidwoord: 'het',
       meervoud: 'ADHD-kinderen',
-      verkleinwoord: 'ADHD-kindje'
+      verkleinwoord: 'ADHD-kindje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'levensgezel',
       lidwoord: 'de',
       meervoud: 'levensgezellen',
-      verkleinwoord: 'levensgezelletje'
+      verkleinwoord: 'levensgezelletje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'levensgezellin',
       lidwoord: 'de',
       meervoud: 'levensgezellinnen',
-      verkleinwoord: 'levensgezellinnetje'
+      verkleinwoord: 'levensgezellinnetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'levensgenieter',
       lidwoord: 'de',
       meervoud: 'levensgenieters',
-      verkleinwoord: 'levensgenietertje'
+      verkleinwoord: 'levensgenietertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lezer',
       lidwoord: 'de',
       meervoud: 'lezers',
-      verkleinwoord: 'lezertje'
+      verkleinwoord: 'lezertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lezeres',
       lidwoord: 'de',
       meervoud: 'lezeressen',
-      verkleinwoord: 'lezeresje'
+      verkleinwoord: 'lezeresje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lezerspanel',
       lidwoord: 'het',
       meervoud: 'lezerspanels',
-      verkleinwoord: 'lezerspaneltje'
+      verkleinwoord: 'lezerspaneltje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'liberaal',
       lidwoord: 'de',
       meervoud: 'liberalen',
-      verkleinwoord: 'liberaaltje'
+      verkleinwoord: 'liberaaltje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lief',
       lidwoord: 'het',
       meervoud: null,
-      verkleinwoord: 'liefje'
+      verkleinwoord: 'liefje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lieveling',
       lidwoord: 'de',
       meervoud: 'lievelingen',
-      verkleinwoord: 'lievelingetje'
+      verkleinwoord: 'lievelingetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lievelingsacteur',
       lidwoord: 'de',
       meervoud: 'lievelingsacteurs',
-      verkleinwoord: 'lievelingsacteurtje'
+      verkleinwoord: 'lievelingsacteurtje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lievelingsschrijver',
       lidwoord: 'de',
       meervoud: 'lievelingsschrijvers',
-      verkleinwoord: 'lievelingsschrijvertje'
+      verkleinwoord: 'lievelingsschrijvertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lievelingszoon',
       lidwoord: 'de',
       meervoud: 'lievelingszonen',
-      verkleinwoord: 'lievelingszoontje'
+      verkleinwoord: 'lievelingszoontje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'lieverd',
       lidwoord: 'de',
       meervoud: 'lieverds',
-      verkleinwoord: 'lieverdje'
+      verkleinwoord: 'lieverdje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'foetelaar',
       lidwoord: 'de',
       meervoud: 'foetelaars',
-      verkleinwoord: 'foetelaartje'
+      verkleinwoord: 'foetelaartje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'kanibaal',
       lidwoord: 'de',
       meervoud: 'kanibalen',
-      verkleinwoord: 'kanibaaltje'
+      verkleinwoord: 'kanibaaltje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'hippie',
       lidwoord: 'de',
       meervoud: 'hippies',
-      verkleinwoord: 'hippietje'
+      verkleinwoord: 'hippietje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'peuter',
       lidwoord: 'de',
       meervoud: 'peuters',
-      verkleinwoord: 'peutertje'
+      verkleinwoord: 'peutertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'kleuter',
       lidwoord: 'de',
       meervoud: 'kleuters',
-      verkleinwoord: 'kleutertje'
+      verkleinwoord: 'kleutertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'pianospeler',
       lidwoord: 'de',
       meervoud: 'pianospelers',
-      verkleinwoord: 'pianospelertje'
+      verkleinwoord: 'pianospelertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'persoon',
       lidwoord: 'de',
       meervoud: 'personen',
-      verkleinwoord: 'persoontje'
+      verkleinwoord: 'persoontje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'personeelslid',
       lidwoord: 'het',
       meervoud: 'personeelsleden',
-      verkleinwoord: 'personeelslidje'
+      verkleinwoord: 'personeelslidje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'klasgenoot',
       lidwoord: 'de',
       meervoud: 'klasgenoten',
-      verkleinwoord: 'klasgenootje'
+      verkleinwoord: 'klasgenootje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'stakker',
       lidwoord: 'de',
       meervoud: 'stakkers',
-      verkleinwoord: 'stakkertje'
+      verkleinwoord: 'stakkertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'wiebelkont',
       lidwoord: 'de',
       meervoud: 'wiebelkonten',
-      verkleinwoord: 'wiebelkontje'
+      verkleinwoord: 'wiebelkontje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'zwemmer',
       lidwoord: 'de',
       meervoud: 'zwemmers',
-      verkleinwoord: 'zwemmertje'
+      verkleinwoord: 'zwemmertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'mopperkont',
       lidwoord: 'de',
       meervoud: 'mopperkonten',
-      verkleinwoord: 'mopperkontje'
+      verkleinwoord: 'mopperkontje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'ware Jozef',
       lidwoord: 'de',
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'ploegmakker',
       lidwoord: 'de',
       meervoud: 'ploegmakkers',
-      verkleinwoord: 'ploegmakkertje'
+      verkleinwoord: 'ploegmakkertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'dorpsgenoot',
       lidwoord: 'de',
       meervoud: 'dorpsgenoten',
-      verkleinwoord: 'dorpsgenootje'
+      verkleinwoord: 'dorpsgenootje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'partijgenoot',
       lidwoord: 'de',
       meervoud: 'partijgenoten',
-      verkleinwoord: 'partijgenootje'
+      verkleinwoord: 'partijgenootje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'werkmakker',
       lidwoord: 'de',
       meervoud: 'werkmakkers',
-      verkleinwoord: 'werkmakkertje'
+      verkleinwoord: 'werkmakkertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'psychoot',
       lidwoord: 'de',
       meervoud: 'psychoten',
-      verkleinwoord: 'psychootje'
+      verkleinwoord: 'psychootje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'ja-stemmer',
       lidwoord: 'de',
       meervoud: 'ja-stemmers',
-      verkleinwoord: 'ja-stemmertje'
+      verkleinwoord: 'ja-stemmertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'strijdmakker',
       lidwoord: 'de',
       meervoud: 'strijdmakkers',
-      verkleinwoord: 'strijdmakkertje'
+      verkleinwoord: 'strijdmakkertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     },
     {
       naam: 'B-acteur',
       lidwoord: 'de',
       meervoud: 'B-acteurs',
-      verkleinwoord: 'B-acteurtje'
+      verkleinwoord: 'B-acteurtje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     }
   ];

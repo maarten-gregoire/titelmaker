@@ -1,4 +1,5 @@
 import {Personage} from '../../models/personage';
+import {WoordSoort} from '../../enums/woordsoort';
 
 export const hofhouding: Personage[] =
   [
@@ -6,54 +7,63 @@ export const hofhouding: Personage[] =
       naam: 'ridder',
       lidwoord: 'de',
       meervoud: 'ridders',
-      verkleinwoord: 'riddertje'
+      verkleinwoord: 'riddertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'baron',
       lidwoord: 'de',
       meervoud: 'barons',
-      verkleinwoord: 'baronnetje'
+      verkleinwoord: 'baronnetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'graaf',
       lidwoord: 'de',
       meervoud: 'grafen',
-      verkleinwoord: 'graafje'
+      verkleinwoord: 'graafje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'koning',
       lidwoord: 'de',
       meervoud: 'koningen',
-      verkleinwoord: 'koninkje'
+      verkleinwoord: 'koninkje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'konigin',
       lidwoord: 'de',
       meervoud: 'koninginnen',
-      verkleinwoord: 'koninginnetje'
+      verkleinwoord: 'koninginnetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'prins',
       lidwoord: 'de',
       meervoud: 'prinsen',
-      verkleinwoord: 'prinsje'
+      verkleinwoord: 'prinsje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'prinses',
       lidwoord: 'de',
       meervoud: 'prinsessen',
-      verkleinwoord: 'prinsesje'
+      verkleinwoord: 'prinsesje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'hofnar',
       lidwoord: 'de',
       meervoud: 'hofnarren',
-      verkleinwoord: 'hofnarretje'
+      verkleinwoord: 'hofnarretje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     },
     {
       naam: 'troonopvolger',
       lidwoord: 'de',
       meervoud: 'troonopvolgers',
-      verkleinwoord: 'troonopvolgertje'
+      verkleinwoord: 'troonopvolgertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_ROYALTIEFIGUUR]
     }
   ];

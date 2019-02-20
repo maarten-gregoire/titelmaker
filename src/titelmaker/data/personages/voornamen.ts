@@ -1,154 +1,181 @@
 import {Personage} from '../../models/personage';
+import {WoordSoort} from '../../enums/woordsoort';
+import {Woord} from '../../models/woord';
 
 export const voornamen: Personage[] = [
   {
     naam: 'Tony',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Tony\'tje'
+    verkleinwoord: 'Tony\'tje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Rudolf',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Rudolfje'
+    verkleinwoord: 'Rudolfje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Romeo',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Romeo\'tje'
+    verkleinwoord: 'Romeo\'tje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Fons',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Fonsje'
+    verkleinwoord: 'Fonsje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Tom',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Tommetje'
+    verkleinwoord: 'Tommetje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Jeroen',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Jeroentje'
+    verkleinwoord: 'Jeroentje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Stijn',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Stijntje'
+    verkleinwoord: 'Stijntje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Lowie',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Lowietje'
+    verkleinwoord: 'Lowietje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Lars',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Larsje'
+    verkleinwoord: 'Larsje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Samuel',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Samuelletje'
+    verkleinwoord: 'Samuelletje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Boris',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Borisje'
+    verkleinwoord: 'Borisje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Achmed',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Achmedje'
+    verkleinwoord: 'Achmedje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Ringo',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Ringo\'tje'
+    verkleinwoord: 'Ringo\'tje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Mario',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Mario\'tje'
+    verkleinwoord: 'Mario\'tje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Wim',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Wimmetje'
+    verkleinwoord: 'Wimmetje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Jozef',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Jozefje'
+    verkleinwoord: 'Jozefje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
     naam: 'Karolien',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Karolientje'
+    verkleinwoord: 'Karolientje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'Lisa',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Lisatje'
+    verkleinwoord: 'Lisatje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'Amber',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Ambertje'
+    verkleinwoord: 'Ambertje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'wendy',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Wendy\'tje'
+    verkleinwoord: 'Wendy\'tje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'Dana',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Danatje'
+    verkleinwoord: 'Danatje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'Natascha',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Natascha\'tje'
+    verkleinwoord: 'Natascha\'tje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'Miranda',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Miranda\'tje'
+    verkleinwoord: 'Miranda\'tje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'Karen',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Karentje'
+    verkleinwoord: 'Karentje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
     naam: 'Inge',
     lidwoord: null,
     meervoud: null,
-    verkleinwoord: 'Ingetje'
+    verkleinwoord: 'Ingetje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   }
 ];

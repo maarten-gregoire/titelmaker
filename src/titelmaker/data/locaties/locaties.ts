@@ -1,4 +1,5 @@
 import {Locatie} from '../../models/locatie';
+import {WoordSoort} from '../../enums/woordsoort';
 
 export const locaties: Locatie[] =
   [
@@ -7,728 +8,832 @@ export const locaties: Locatie[] =
       lidwoord: 'de',
       voorzetsels: ['in', 'op', 'naast', 'bij', 'onder'],
       meervoud: 'kasten',
-      verkleinwoord: 'kastje'
+      verkleinwoord: 'kastje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'huis',
       lidwoord: 'het',
       voorzetsels: ['in', 'op', 'naast', 'bij'],
       meervoud: 'huizen',
-      verkleinwoord: 'huisje'
+      verkleinwoord: 'huisje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'garage',
       lidwoord: 'de',
       voorzetsels: ['in', 'voor', 'naast', 'bij'],
       meervoud: 'garages',
-      verkleinwoord: 'garagetje'
+      verkleinwoord: 'garagetje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Opgrimbie',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Pakistan',
       lidwoord: null,
       voorzetsels: ['in', 'nabij'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'brouwerij',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij'],
       meervoud: 'brouwerijen',
-      verkleinwoord: 'brouwerijtje'
+      verkleinwoord: 'brouwerijtje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'keuken',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'keukens',
-      verkleinwoord: 'keukentje'
+      verkleinwoord: 'keukentje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'hoenderhok',
       lidwoord: 'het',
       voorzetsels: ['in', 'op', 'bij', 'naast'],
       meervoud: 'hoenderhokken',
-      verkleinwoord: 'hoenderhokje'
+      verkleinwoord: 'hoenderhokje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kerk',
       lidwoord: 'de',
       voorzetsels: ['in', 'op', 'bij', 'naast'],
       meervoud: 'kerken',
-      verkleinwoord: 'kerkje'
+      verkleinwoord: 'kerkje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'ijssalon',
       lidwoord: 'het',
       voorzetsels: ['in', 'bij', 'naast'],
       meervoud: 'ijssalons',
-      verkleinwoord: 'ijssalonnetje'
+      verkleinwoord: 'ijssalonnetje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'meubelwinkel',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij', 'naast'],
       meervoud: 'meubelwinkels',
-      verkleinwoord: 'meubelwinkeltje'
+      verkleinwoord: 'meubelwinkeltje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'drukkerij',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij', 'naast'],
       meervoud: 'drukkerijen',
-      verkleinwoord: 'drukkerijtje'
+      verkleinwoord: 'drukkerijtje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'boerderij',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij', 'naast'],
       meervoud: 'boerderijen',
-      verkleinwoord: 'boerderijtje'
+      verkleinwoord: 'boerderijtje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'school',
       lidwoord: 'de',
       voorzetsels: ['in', 'voor', 'naast', 'bij'],
       meervoud: 'scholen',
-      verkleinwoord: 'schooltje'
+      verkleinwoord: 'schooltje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kist',
       lidwoord: 'de',
       voorzetsels: ['in', 'op', 'naast', 'bij'],
       meervoud: 'kisten',
-      verkleinwoord: 'kistje'
+      verkleinwoord: 'kistje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'bruidsboetiek',
       lidwoord: 'de',
       voorzetsels: ['in',  'naast', 'bij'],
       meervoud: 'bruidsboetieken',
-      verkleinwoord: 'bruidsboetiekje'
+      verkleinwoord: 'bruidsboetiekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'orthodont',
       lidwoord: 'de',
       voorzetsels: ['bij', 'vlakbij'],
       meervoud: 'orthodonten',
-      verkleinwoord: 'orthodontje'
+      verkleinwoord: 'orthodontje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'televisiestudio',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij'],
       meervoud: 'televisiestudio\'s',
-      verkleinwoord: 'televisiestudiootje'
+      verkleinwoord: 'televisiestudiootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'ziekenhuis',
       lidwoord: 'het',
       voorzetsels: ['in', 'bij', 'achter', 'naast'],
       meervoud: 'ziekenhuizen',
-      verkleinwoord: 'ziekenhuisje'
+      verkleinwoord: 'ziekenhuisje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Nepal',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Londen',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'bibliotheek',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij', 'naast'],
       meervoud: 'bibliotheken',
-      verkleinwoord: 'bibliotheekje'
+      verkleinwoord: 'bibliotheekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'tandartspraktijk',
       lidwoord: 'de',
       voorzetsels: ['bij', 'aan', 'in'],
       meervoud: 'tandartsen',
-      verkleinwoord: 'tandartsje'
+      verkleinwoord: 'tandartsje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'toilet',
       lidwoord: 'het',
       voorzetsels: ['in', 'op', 'bij', 'naast'],
       meervoud: 'toiletten',
-      verkleinwoord: 'toiletje'
+      verkleinwoord: 'toiletje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'koelkast',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij', 'naast', 'op', 'achter'],
       meervoud: 'koelkasten',
-      verkleinwoord: 'koelkastje'
+      verkleinwoord: 'koelkastje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'combi',
       lidwoord: 'de',
       voorzetsels: ['in', 'naast'],
       meervoud: 'combi\'s',
-      verkleinwoord: 'combietje'
+      verkleinwoord: 'combietje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'vogelnest',
       lidwoord: 'het',
       voorzetsels: ['in'],
       meervoud: 'vogelnesten',
-      verkleinwoord: 'vogelnestje'
+      verkleinwoord: 'vogelnestje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Leuven',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Oostenrijk',
       lidwoord: null,
       voorzetsels: ['in', 'nabij'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'zee',
       lidwoord: 'de',
       voorzetsels: ['in', 'aan'],
       meervoud: 'zeeën',
-      verkleinwoord: 'zeetje'
+      verkleinwoord: 'zeetje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'woonkamer',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'woonkamers',
-      verkleinwoord: 'woonkamertje'
+      verkleinwoord: 'woonkamertje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'hondenhok',
       lidwoord: 'het',
       voorzetsels: ['in', 'op', 'naast'],
       meervoud: 'hondenhokken',
-      verkleinwoord: 'hondenhokje'
+      verkleinwoord: 'hondenhokje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kennel',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij'],
       meervoud: 'kennels',
-      verkleinwoord: 'kenneltje'
+      verkleinwoord: 'kenneltje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'speeltuin',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij'],
       meervoud: 'ijssalons',
-      verkleinwoord: 'speeltuintje'
+      verkleinwoord: 'speeltuintje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kermis',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'kermissen',
-      verkleinwoord: 'kermisje'
+      verkleinwoord: 'kermisje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'avondmarkt',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'avondmarkten',
-      verkleinwoord: 'avondmarktje'
+      verkleinwoord: 'avondmarktje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'veranda',
       lidwoord: 'de',
       voorzetsels: ['in', 'naast'],
       meervoud: 'veranda\'s',
-      verkleinwoord: 'verandaatje'
+      verkleinwoord: 'verandaatje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'pretpark',
       lidwoord: 'het',
       voorzetsels: ['in', 'naast'],
       meervoud: 'pretparken',
-      verkleinwoord: 'pretparkje'
+      verkleinwoord: 'pretparkje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'duikboot',
       lidwoord: 'de',
       voorzetsels: ['in', 'aan', 'naast'],
       meervoud: 'duikboten',
-      verkleinwoord: 'duikbootje'
+      verkleinwoord: 'duikbootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'klaslokaal',
       lidwoord: 'het',
       voorzetsels: ['in', 'naast', 'aan'],
       meervoud: 'klaslokalen',
-      verkleinwoord: 'klaslokaaltje'
+      verkleinwoord: 'klaslokaaltje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'muziekschool',
       lidwoord: 'de',
       voorzetsels: ['aan', 'in'],
       meervoud: 'muziekscholen',
-      verkleinwoord: 'muziekschooltje'
+      verkleinwoord: 'muziekschooltje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'concertzaal',
       lidwoord: 'de',
       voorzetsels: ['in', 'aan'],
       meervoud: 'concertzalen',
-      verkleinwoord: 'concertzaaltje'
+      verkleinwoord: 'concertzaaltje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'voetbalveld',
       lidwoord: 'het',
       voorzetsels: ['op', 'aan', 'naast'],
       meervoud: 'voetbalvelden',
-      verkleinwoord: 'voetbalveldje'
+      verkleinwoord: 'voetbalveldje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'turnzaal',
       lidwoord: 'de',
       voorzetsels: ['in', 'aan', 'achter', 'naast'],
       meervoud: 'turnzalen',
-      verkleinwoord: 'turnzaaltje'
+      verkleinwoord: 'turnzaaltje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'gemeentehuis',
       lidwoord: 'het',
       voorzetsels: ['in', 'naast', 'aan', 'bij'],
       meervoud: 'gemeentehuizen',
-      verkleinwoord: 'gemeentehuisje'
+      verkleinwoord: 'gemeentehuisje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'landsgrens',
       lidwoord: 'de',
       voorzetsels: ['aan', 'op', 'naast', 'bij'],
       meervoud: 'landsgrenzen',
-      verkleinwoord: 'landsgrensje'
+      verkleinwoord: 'landsgrensje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Hong Kong',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'café',
       lidwoord: 'het',
       voorzetsels: ['in', 'aan', 'bij', 'achter', 'naast'],
       meervoud: 'cafés',
-      verkleinwoord: 'cafeetje'
+      verkleinwoord: 'cafeetje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kelder',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'kelders',
-      verkleinwoord: 'keldertje'
+      verkleinwoord: 'keldertje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'discotheek',
       lidwoord: 'de',
       voorzetsels: ['in', 'naast', 'achter'],
       meervoud: 'discotheken',
-      verkleinwoord: 'discotheekje'
+      verkleinwoord: 'discotheekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'woonboot',
       lidwoord: 'de',
       voorzetsels: ['in', 'op', 'naast'],
       meervoud: 'woonboten',
-      verkleinwoord: 'woonbootje'
+      verkleinwoord: 'woonbootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'motorboot',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'motorboten',
-      verkleinwoord: 'motorbootje'
+      verkleinwoord: 'motorbootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'zeilboot',
       lidwoord: 'de',
       voorzetsels: ['in', 'op'],
       meervoud: 'zeilboten',
-      verkleinwoord: 'zeilbootje'
+      verkleinwoord: 'zeilbootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'roeiboot',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'roeiboten',
-      verkleinwoord: 'roeibootje'
+      verkleinwoord: 'roeibootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kano',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'kano\'s',
-      verkleinwoord: 'kanootje'
+      verkleinwoord: 'kanootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'schip',
       lidwoord: 'het',
       voorzetsels: ['in', 'op', 'naast'],
       meervoud: 'schepen',
-      verkleinwoord: 'scheepje'
+      verkleinwoord: 'scheepje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kraaiennest',
       lidwoord: 'het',
       voorzetsels: ['in'],
       meervoud: 'kraaiennesten',
-      verkleinwoord: 'kraaiennestje'
+      verkleinwoord: 'kraaiennestje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'dek',
       lidwoord: 'het',
       voorzetsels: ['op'],
       meervoud: 'dekken',
-      verkleinwoord: 'dekje'
+      verkleinwoord: 'dekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kajuit',
       lidwoord: 'de',
       voorzetsels: ['in', 'aan'],
       meervoud: 'kajuiten',
-      verkleinwoord: 'kajuitje'
+      verkleinwoord: 'kajuitje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'loopplank',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'loopplanken',
-      verkleinwoord: 'looopplankje'
+      verkleinwoord: 'looopplankje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'land',
       lidwoord: 'het',
       voorzetsels: ['in', 'op'],
       meervoud: 'landen',
-      verkleinwoord: 'landje'
+      verkleinwoord: 'landje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'eiland',
       lidwoord: 'het',
       voorzetsels: ['op', 'boven', 'naast'],
       meervoud: 'eilanden',
-      verkleinwoord: 'eilandje'
+      verkleinwoord: 'eilandje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'palmboom',
       lidwoord: 'de',
       voorzetsels: ['in', 'onder'],
       meervoud: 'palmbomen',
-      verkleinwoord: 'palmboompje'
+      verkleinwoord: 'palmboompje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'zeebodem',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'zeebodems',
-      verkleinwoord: 'zeebodempje'
+      verkleinwoord: 'zeebodempje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'vindplaats',
       lidwoord: 'de',
       voorzetsels: ['op', 'bij', 'aan'],
       meervoud: 'vindplaatsen',
-      verkleinwoord: 'vindplaatsje'
+      verkleinwoord: 'vindplaatsje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'zwembad',
       lidwoord: 'het',
       voorzetsels: ['in', 'bij', 'aan'],
       meervoud: 'zwembaden',
-      verkleinwoord: 'zwembadje'
+      verkleinwoord: 'zwembadje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'gevangenis',
       lidwoord: 'de',
       voorzetsels: ['in', 'naast', 'bij'],
       meervoud: 'gevangenissen',
-      verkleinwoord: 'gevangenisje'
+      verkleinwoord: 'gevangenisje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'vensterbank',
       lidwoord: 'de',
       voorzetsels: ['naast', 'op'],
       meervoud: 'vensterbanken',
-      verkleinwoord: 'vensterbankje'
+      verkleinwoord: 'vensterbankje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'vuilnisbak',
       lidwoord: 'de',
       voorzetsels: ['op', 'in', 'naast'],
       meervoud: 'vuilnisbakken',
-      verkleinwoord: 'vuiinisbakje'
+      verkleinwoord: 'vuiinisbakje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'bos',
       lidwoord: 'het',
       voorzetsels: ['in', 'bij'],
       meervoud: 'bossen',
-      verkleinwoord: 'bosje'
+      verkleinwoord: 'bosje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'hol',
       lidwoord: 'het',
       voorzetsels: ['in'],
       meervoud: 'hollen',
-      verkleinwoord: 'holletje'
+      verkleinwoord: 'holletje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'hoofdkwartier',
       lidwoord: 'het',
       voorzetsels: ['in'],
       meervoud: 'hoofdkwartieren',
-      verkleinwoord: 'hoofdkwartiertje'
+      verkleinwoord: 'hoofdkwartiertje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'restaurant',
       lidwoord: 'het',
       voorzetsels: ['in'],
       meervoud: 'restaurants',
-      verkleinwoord: 'restaurantje'
+      verkleinwoord: 'restaurantje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Absurdistan',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'liedjesfestival',
       lidwoord: 'het',
       voorzetsels: ['op'],
       meervoud: 'liedjesfestivallen',
-      verkleinwoord: 'liedjesfestivalletje'
+      verkleinwoord: 'liedjesfestivalletje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'liedjesprogramma',
       lidwoord: 'het',
       voorzetsels: ['in'],
       meervoud: 'liedjesprogramma\'s',
-      verkleinwoord: 'liedjesprogrammaatje'
+      verkleinwoord: 'liedjesprogrammaatje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'pensenkermis',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'pensenkermissen',
-      verkleinwoord: 'pensenkermisje'
+      verkleinwoord: 'pensenkermisje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'perron',
       lidwoord: 'het',
       voorzetsels: ['op'],
       meervoud: 'perronnen',
-      verkleinwoord: 'perronnetje'
+      verkleinwoord: 'perronnetje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'piramide',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'piramides',
-      verkleinwoord: 'piramidetje'
+      verkleinwoord: 'piramidetje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'huis',
       lidwoord: 'het',
       voorzetsels: ['in'],
       meervoud: 'huizen',
-      verkleinwoord: 'huisje'
+      verkleinwoord: 'huisje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'lichtstad',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'speelplaats',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: null,
-      verkleinwoord: 'speelplaatsje'
+      verkleinwoord: 'speelplaatsje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'speeltuin',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: 'speeltuintje'
+      verkleinwoord: 'speeltuintje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'jungle',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: 'jugnletje'
+      verkleinwoord: 'jugnletje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'maan',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Afrika',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'boom',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij'],
       meervoud: 'bomen',
-      verkleinwoord: 'boompje'
+      verkleinwoord: 'boompje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'waterput',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij'],
       meervoud: 'waterputten',
-      verkleinwoord: 'waterputje'
+      verkleinwoord: 'waterputje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'straat',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'straten',
-      verkleinwoord: 'straatje'
+      verkleinwoord: 'straatje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'snelweg',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'snelwegen',
-      verkleinwoord: 'snelwegje'
+      verkleinwoord: 'snelwegje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'trein',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'treinen',
-      verkleinwoord: 'treintje'
+      verkleinwoord: 'treintje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'spoor',
       lidwoord: 'het',
       voorzetsels: ['op'],
       meervoud: 'sporen',
-      verkleinwoord: 'spoortje'
+      verkleinwoord: 'spoortje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'wei',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: 'weien',
-      verkleinwoord: 'weitje'
+      verkleinwoord: 'weitje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'kruispunt',
       lidwoord: 'het',
       voorzetsels: ['op'],
       meervoud: 'kruispunten',
-      verkleinwoord: 'kruispuntje'
+      verkleinwoord: 'kruispuntje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'grasveld',
       lidwoord: 'het',
       voorzetsels: ['op'],
       meervoud: 'grasvelden',
-      verkleinwoord: 'grasveldje'
+      verkleinwoord: 'grasveldje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Duitsland',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'België',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'Nederland',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'boot',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'boten',
-      verkleinwoord: 'bootje'
+      verkleinwoord: 'bootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'akker',
       lidwoord: 'het',
       voorzetsels: ['op'],
       meervoud: 'akkers',
-      verkleinwoord: 'akkertje'
+      verkleinwoord: 'akkertje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'veerpont',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: null,
-      verkleinwoord: null
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'wedstrijdboot',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'wedstrijdboten',
-      verkleinwoord: 'wedstrijdbootje'
+      verkleinwoord: 'wedstrijdbootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'speedboot',
       lidwoord: 'de',
       voorzetsels: ['op'],
       meervoud: 'speedboten',
-      verkleinwoord: 'speedbootje'
+      verkleinwoord: 'speedbootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
       naam: 'sloot',
       lidwoord: 'de',
       voorzetsels: ['in'],
       meervoud: null,
-      verkleinwoord: 'slootje'
+      verkleinwoord: 'slootje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     }
   ];
 
