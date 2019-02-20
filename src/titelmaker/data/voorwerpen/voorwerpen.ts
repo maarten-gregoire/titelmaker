@@ -992,6 +992,12 @@ export const voorwerpen: Voorwerp[] =
       meervoud: 'perenbomen',
       verkleinwoord: 'perenboompje'
     },
+     {
+      naam: 'golf',
+      lidwoord: 'de',
+      meervoud: 'golven',
+      verkleinwoord: 'golfje'
+    },
     {
       naam: 'pergola',
       lidwoord: 'de',

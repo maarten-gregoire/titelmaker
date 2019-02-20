@@ -122,13 +122,6 @@ export const locaties: Locatie[] =
       verkleinwoord: 'orthodontje'
     },
     {
-      naam: 'waarzegger',
-      lidwoord: 'de',
-      voorzetsels: ['bij', 'vlakbij'],
-      meervoud: 'waarzeggers',
-      verkleinwoord: 'waarzeggertje'
-    },
-    {
       naam: 'televisiestudio',
       lidwoord: 'de',
       voorzetsels: ['in', 'bij'],
@@ -184,13 +177,6 @@ export const locaties: Locatie[] =
       meervoud: 'koelkasten',
       verkleinwoord: 'koelkastje'
     },
-    /* {
-       naam: 'boek',
-       lidwoord: 'het',
-       voorzetsels: ['in', 'op', 'naast', 'bij', 'onder'],
-       meervoud: 'boeken',
-       verkleinwoord: 'boekje'
-     },*/
     {
       naam: 'combi',
       lidwoord: 'de',
@@ -408,13 +394,6 @@ export const locaties: Locatie[] =
       meervoud: 'schepen',
       verkleinwoord: 'scheepje'
     },
-    /*{
-      naam: 'roer',
-      lidwoord: 'het',
-      voorzetsels: ['aan'],
-      meervoud: 'roeren',
-      verkleinwoord: 'roertje'
-    },*/
     {
       naam: 'kraaiennest',
       lidwoord: 'het',
@@ -471,13 +450,6 @@ export const locaties: Locatie[] =
       meervoud: 'zeebodems',
       verkleinwoord: 'zeebodempje'
     },
-    /* {
-       naam: 'golf',
-       lidwoord: 'de',
-       voorzetsels: ['op'],
-       meervoud: 'golven',
-       verkleinwoord: 'golfje'
-     },*/
     {
       naam: 'vindplaats',
       lidwoord: 'de',
@@ -626,7 +598,7 @@ export const locaties: Locatie[] =
       verkleinwoord: null
     },
     {
-      naam: 'afrika',
+      naam: 'Afrika',
       lidwoord: null,
       voorzetsels: ['in'],
       meervoud: null,
@@ -694,6 +666,27 @@ export const locaties: Locatie[] =
       voorzetsels: ['op'],
       meervoud: 'grasvelden',
       verkleinwoord: 'grasveldje'
+    },
+    {
+      naam: 'Duitsland',
+      lidwoord: null,
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'België',
+      lidwoord: null,
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: null
+    },
+    {
+      naam: 'Nederland',
+      lidwoord: null,
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: null
     }
   ];
 
