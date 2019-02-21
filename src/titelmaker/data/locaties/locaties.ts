@@ -834,6 +834,118 @@ export const locaties: Locatie[] =
       meervoud: null,
       verkleinwoord: 'slootje',
       woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'terras',
+      lidwoord: 'het',
+      voorzetsels: ['op'],
+      meervoud: 'terrassen',
+      verkleinwoord: 'terrasje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'surfplas',
+      lidwoord: 'de',
+      voorzetsels: ['op'],
+      meervoud: 'surfplassen',
+      verkleinwoord: 'surfplasje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'Wemmel',
+      lidwoord: null,
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'ontbijthoek',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'ontbijthoeken',
+      verkleinwoord: 'ontbijthoekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'basiliek',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'basilieken',
+      verkleinwoord: 'basiliekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'vakantievilla',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'vakantievilla\'s',
+      verkleinwoord: 'vakantievillaatje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'hoek',
+      lidwoord: 'de',
+      voorzetsels: ['in', 'op'],
+      meervoud: 'hoeken',
+      verkleinwoord: 'hoekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'leeshoek',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'leeshoeken',
+      verkleinwoord: 'leeshoekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'villa',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'villa\'s',
+      verkleinwoord: 'villaatje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'Andes',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'plas',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'plassen',
+      verkleinwoord: 'plasje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'klas',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'klassen',
+      verkleinwoord: 'klasje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'frietkot',
+      lidwoord: 'het',
+      voorzetsels: ['in'],
+      meervoud: 'frietkoten',
+      verkleinwoord: 'frietkotje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'kiekenkot',
+      lidwoord: 'het',
+      voorzetsels: ['in'],
+      meervoud: 'kiekenkoten',
+      verkleinwoord: 'kiekenkotje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     }
   ];
 
