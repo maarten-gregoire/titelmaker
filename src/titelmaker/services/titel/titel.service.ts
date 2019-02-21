@@ -80,44 +80,29 @@ export class TitelService {
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
-    let magBijAlsVoorzetselGebruiken = true;
-    if (titelConfiguratie.aantalVoorwerpen > 0) {
-      magBijAlsVoorzetselGebruiken = false;
-    }
-    if (Randoms.maakRandomGetalTussenEnInbegrepen(0, 10) >= 1) {
-      if (titelConfiguratie.aantalLocaties > 1 || !magBijAlsVoorzetselGebruiken) {
-        locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
-          .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
-        );
-        if (!locatie) {
-          this.recenteLocaties.maakLeeg();
-        }
-      } else {
-        const beroep: Personage = Arrays.bepaalWillekeurigElemntUitRij(beroepen.filter(b => !this.recentePersonages.zitWoordInLijst(b)));
-        locatie = {
-
-          naam: beroep.naam,
-          lidwoord: beroep.lidwoord,
-          voorzetsels: ['bij'],
-          meervoud: beroep.meervoud,
-          verkleinwoord: beroep.verkleinwoord,
-          woordsoorten: beroep.woordsoorten
-
-        };
+    if (titelConfiguratie.aantalLocaties > 0) {
+      locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
+        .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
+      );
+      if (!locatie) {
+        this.recenteLocaties.maakLeeg();
       }
-
+      let magBijAlsVoorzetselGebruiken = true;
+      if (titelConfiguratie.aantalVoorwerpen > 0) {
+        magBijAlsVoorzetselGebruiken = false;
+      }
       locatieString = StringMaker.locatieAlsString(locatie, magBijAlsVoorzetselGebruiken);
     }
 
     this.updateRecenteWoorden(locatie, personage, bijvoeglijkNaamwoord, voorwerp);
 
     const titel = (personageString ? personageString : '') +
-      (personageString && koppelingString ? ' ' : '') +
-      (koppelingString ? koppelingString : '') +
-      (koppelingString && voorwerpString ? ' ' : '') +
-      (voorwerpString ? voorwerpString : '') +
-      ((voorwerpString && locatieString) || (personageString && locatieString) ? ' ' : '') +
-      (locatieString ? locatieString : '');
+    (personageString && koppelingString ? ' ' : '') +
+    (koppelingString ? koppelingString : '') +
+    (koppelingString && voorwerpString ? ' ' : '') +
+    (voorwerpString ? voorwerpString : '') +
+    ((voorwerpString && locatieString) || (personageString && locatieString) ? ' ' : '') +
+    (locatieString ? locatieString : '');
     if (!titel || titel === '') {
       return of('Er gaat iets mis');
     }
