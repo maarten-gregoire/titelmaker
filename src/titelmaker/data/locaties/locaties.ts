@@ -946,6 +946,22 @@ export const locaties: Locatie[] =
       meervoud: 'kiekenkoten',
       verkleinwoord: 'kiekenkotje',
       woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'kaasfabriek',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'kaasfabrieken',
+      verkleinwoord: 'kaasfabriekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
+    },
+    {
+      naam: 'koekjesfabriek',
+      lidwoord: 'de',
+      voorzetsels: ['in'],
+      meervoud: 'koekjesfabrieken',
+      verkleinwoord: 'koekjesfabriekje',
+      woordsoorten: [WoordSoort.ZNW_LOCATIE]
     }
   ];
 

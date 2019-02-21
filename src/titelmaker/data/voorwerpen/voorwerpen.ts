@@ -1710,5 +1710,453 @@ export const voorwerpen: Voorwerp[] =
       meervoud: 'ijsemmers',
       verkleinwoord: 'ijsemmertje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'ananas',
+      lidwoord: 'de',
+      meervoud: 'ananassen',
+      verkleinwoord: 'ananasje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'vod',
+      lidwoord: 'de',
+      meervoud: 'vodden',
+      verkleinwoord: 'vodje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'verbod',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'contrabas',
+      lidwoord: 'de',
+      meervoud: 'contrabassen',
+      verkleinwoord: 'contrabasje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'kras',
+      lidwoord: 'de',
+      meervoud: 'krassen',
+      verkleinwoord: 'krasje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'tuinkabouter',
+      lidwoord: 'de',
+      meervoud: 'tuinkabouters',
+      verkleinwoord: 'tuinkaboutertje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'ommekeer',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'eendenveer',
+      lidwoord: 'de',
+      meervoud: 'eendenveren',
+      verkleinwoord: 'eendenveertje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'hertenleer',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'hertenleer',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'staat',
+      lidwoord: 'de',
+      meervoud: 'staten',
+      verkleinwoord: 'staatje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'vaat',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'autopech',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'swag',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'pech',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'aalbes',
+      lidwoord: 'de',
+      meervoud: 'aalbessen',
+      verkleinwoord: 'aalbesje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'vlierbes',
+      lidwoord: 'de',
+      meervoud: 'vlierbessen',
+      verkleinwoord: 'vlierbesje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'bosbes',
+      lidwoord: 'de',
+      meervoud: 'bosbessen',
+      verkleinwoord: 'bosbesje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'riek',
+      lidwoord: 'de',
+      meervoud: 'rieken',
+      verkleinwoord: 'riekje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'kriek',
+      lidwoord: 'de',
+      meervoud: 'krieken',
+      verkleinwoord: 'kriekje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'glas',
+      lidwoord: 'het',
+      meervoud: 'glazen',
+      verkleinwoord: 'glaasje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'boerka',
+      lidwoord: 'de',
+      meervoud: 'boerka\'s',
+      verkleinwoord: 'boerka\'tje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'prostaat',
+      lidwoord: 'de',
+      meervoud: 'prostaten',
+      verkleinwoord: 'prostaatje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'scheenbeen',
+      lidwoord: 'het',
+      meervoud: 'scheenbenen',
+      verkleinwoord: 'scheenbeentje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'teen',
+      lidwoord: 'de',
+      meervoud: 'tenen',
+      verkleinwoord: 'teentje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'gebod',
+      lidwoord: 'het',
+      meervoud: 'geboden',
+      verkleinwoord: 'gebodje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'kattekwaad',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'verraad',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'bil',
+      lidwoord: 'de',
+      meervoud: 'billen',
+      verkleinwoord: 'billetje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'haarsnit',
+      lidwoord: 'de',
+      meervoud: 'haarsnits',
+      verkleinwoord: 'haarsnitje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'schil',
+      lidwoord: 'de',
+      meervoud: 'schillen',
+      verkleinwoord: 'schilletje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'bananenschil',
+      lidwoord: 'de',
+      meervoud: 'bananenschillen',
+      verkleinwoord: 'bananenschilletje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'boog',
+      lidwoord: 'de',
+      meervoud: 'bogen',
+      verkleinwoord: 'boogje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'knipoog',
+      lidwoord: 'de',
+      meervoud: 'knipogen',
+      verkleinwoord: 'knipoogje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'tortilla',
+      lidwoord: 'de',
+      meervoud: 'tortilla\'s',
+      verkleinwoord: 'tortillaatje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'guerilla',
+      lidwoord: 'de',
+      meervoud: 'guerilla\'s',
+      verkleinwoord: 'guerillaatje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'tequila',
+      lidwoord: 'de',
+      meervoud: 'tequeilla\'s',
+      verkleinwoord: 'tequillaatje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'adres',
+      lidwoord: 'het',
+      meervoud: 'adressen',
+      verkleinwoord: 'adresje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'kopstoot',
+      lidwoord: 'de',
+      meervoud: 'kopstoten',
+      verkleinwoord: 'kopstootje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'etensrest',
+      lidwoord: 'de',
+      meervoud: 'etensresten',
+      verkleinwoord: 'etensrestje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'betoog',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: 'betoogje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'stengel',
+      lidwoord: 'de',
+      meervoud: 'stengels',
+      verkleinwoord: 'stengeltje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'keramiek',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'turf',
+      lidwoord: 'de',
+      meervoud: 'turven',
+      verkleinwoord: 'turfje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'plastiek',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: 'plastiekje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'muziek',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: 'muziekje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'zakdoek',
+      lidwoord: 'de',
+      meervoud: 'zakdoeken',
+      verkleinwoord: 'zakdoekje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'zwembroek',
+      lidwoord: 'de',
+      meervoud: 'zwembroeken',
+      verkleinwoord: 'zwembroekje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'geodriehoek',
+      lidwoord: 'de',
+      meervoud: 'geodriehoeken',
+      verkleinwoord: 'geodriehoekje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'pret',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: 'pretje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'ballet',
+      lidwoord: 'het',
+      meervoud: 'balletten',
+      verkleinwoord: 'balletje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'pallet',
+      lidwoord: 'het',
+      meervoud: 'palletten',
+      verkleinwoord: 'palletje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'raket',
+      lidwoord: 'de',
+      meervoud: 'raketten',
+      verkleinwoord: 'raketje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'tennisracket',
+      lidwoord: 'de',
+      meervoud: 'tennisrackets',
+      verkleinwoord: 'tennisracketje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'baguette',
+      lidwoord: 'de',
+      meervoud: 'baguettes',
+      verkleinwoord: 'baguetje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'sneeuwpret',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'asbest',
+      lidwoord: 'het',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'verschil',
+      lidwoord: 'het',
+      meervoud: 'verschillen',
+      verkleinwoord: 'verschilletje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'steen',
+      lidwoord: 'de',
+      meervoud: 'stenen',
+      verkleinwoord: 'steentje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'gebed',
+      lidwoord: 'het',
+      meervoud: 'gebeden',
+      verkleinwoord: 'gebedje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'bed',
+      lidwoord: 'het',
+      meervoud: 'bedden',
+      verkleinwoord: 'bedje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'waterbed',
+      lidwoord: 'het',
+      meervoud: 'waterbedden',
+      verkleinwoord: 'waterbedje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'reddingsvest',
+      lidwoord: 'de',
+      meervoud: 'reddingsvesten',
+      verkleinwoord: 'reddingsvestje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'teddybeer',
+      lidwoord: 'de',
+      meervoud: 'teddyberen',
+      verkleinwoord: 'teddybeertje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
     }
   ];
