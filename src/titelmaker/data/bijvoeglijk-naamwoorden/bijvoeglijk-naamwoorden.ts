@@ -423,5 +423,90 @@ export const bijvoeglijkNaamwoorden: BijvoeglijkNaamwoord[] = [
     woord: 'lieftallig',
     tweedeVorm: 'lieftallige',
     toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'aangeboden',
+    tweedeVorm: 'aangeboden',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'verboden',
+    tweedeVorm: 'verboden',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'pril',
+    tweedeVorm: 'prille',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'stout',
+    tweedeVorm: 'stoute',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'fout',
+    tweedeVorm: 'foute',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'stil',
+    tweedeVorm: 'stille',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'droog',
+    tweedeVorm: 'droge',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'kil',
+    tweedeVorm: 'kille',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'bemeste',
+    tweedeVorm: 'bemeste',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'generiek',
+    tweedeVorm: 'generieke',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'wit',
+    tweedeVorm: 'witte',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'ziek',
+    tweedeVorm: 'zieke',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE]
+  },
+  {
+    woord: 'vet',
+    tweedeVorm: 'vette',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'analoog',
+    tweedeVorm: 'analoge',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP]
+  },
+  {
+    woord: 'ludiek',
+    tweedeVorm: 'ludieke',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'hoog',
+    tweedeVorm: 'hoge',
+    toepasbaarOp: [WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
+  },
+  {
+    woord: 'chique',
+    tweedeVorm: 'chique',
+    toepasbaarOp: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORWERP, WoordSoort.ZNW_LOCATIE]
   }
 ];
