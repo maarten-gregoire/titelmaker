@@ -88,6 +88,20 @@ export const voornamen: Personage[] = [
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
   },
   {
+    naam: 'Andres',
+    lidwoord: null,
+    meervoud: null,
+    verkleinwoord: 'Andresje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
+  },
+  {
+    naam: 'Wouter',
+    lidwoord: null,
+    meervoud: null,
+    verkleinwoord: 'Woutertje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
+  },
+  {
     naam: 'Ringo',
     lidwoord: null,
     meervoud: null,
@@ -176,6 +190,27 @@ export const voornamen: Personage[] = [
     lidwoord: null,
     meervoud: null,
     verkleinwoord: 'Ingetje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
+  },
+  {
+    naam: 'Veronique',
+    lidwoord: null,
+    meervoud: null,
+    verkleinwoord: 'Veroniqueje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
+  },
+  {
+    naam: 'Karin',
+    lidwoord: null,
+    meervoud: null,
+    verkleinwoord: 'Karintje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
+  },
+  {
+    naam: 'Priscilla',
+    lidwoord: null,
+    meervoud: null,
+    verkleinwoord: 'Priscilla\'tje',
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   }
 ];

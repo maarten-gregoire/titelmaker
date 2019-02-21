@@ -204,5 +204,48 @@ export const dieren: Personage[] = [
     meervoud: 'duizendpoten',
     verkleinwoord: 'duizendpootje',
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_DIER]
+  },
+  {
+    naam: 'marmot',
+    lidwoord: 'de',
+    meervoud: 'marmotten',
+    verkleinwoord: 'marmotje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_DIER]
+  },
+  {
+    naam: 'koekoek',
+    lidwoord: 'de',
+    meervoud: 'koekoekken',
+    verkleinwoord: 'koekoekje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_DIER]
+  },
+  {
+    naam: 'mot',
+    lidwoord: 'de',
+    meervoud: 'motten',
+    verkleinwoord: 'motje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_DIER]
+  },
+  {
+    naam: 'wasbeer',
+    lidwoord: 'de',
+    meervoud: 'wasberen',
+    verkleinwoord: 'wasbeertje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_DIER]
+  },
+  {
+    naam: 'pandabeer',
+    lidwoord: 'de',
+    meervoud: 'pandaberen',
+    verkleinwoord: 'pandabeertje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_DIER]
+  },
+  {
+    naam: 'chincilla',
+    lidwoord: 'de',
+    meervoud: 'chinchilla\'s',
+    verkleinwoord: 'chinchillaatje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_DIER]
   }
+
 ];

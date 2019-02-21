@@ -78,6 +78,13 @@ export const volkeren: Personage[] = [
     meervoud: 'half-joden',
     verkleinwoord: 'half-joodje',
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_NATIONALITEIT]
+  },
+  {
+    naam: 'half-Griek',
+    lidwoord: 'de',
+    meervoud: 'Grieken',
+    verkleinwoord: 'Griekje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_NATIONALITEIT]
   }
 ];
 

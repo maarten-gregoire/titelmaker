@@ -618,5 +618,75 @@ export const personages: Personage[] =
       meervoud: 'B-acteurs',
       verkleinwoord: 'B-acteurtje',
       woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'grapjas',
+      lidwoord: 'de',
+      meervoud: 'grapjassen',
+      verkleinwoord: 'grapjasje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'bendelid',
+      lidwoord: 'de',
+      meervoud: 'bendeleden',
+      verkleinwoord: 'bendelidje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'speler',
+      lidwoord: 'de',
+      meervoud: 'spelers',
+      verkleinwoord: 'spelertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'basketbalspeler',
+      lidwoord: 'de',
+      meervoud: 'basketbalspelers',
+      verkleinwoord: 'basketbalspelertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'vriendin',
+      lidwoord: 'de',
+      meervoud: 'vriendinnen',
+      verkleinwoord: 'vriendinnetje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'dromer',
+      lidwoord: 'de',
+      meervoud: 'dromers',
+      verkleinwoord: 'dromertje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'bengel',
+      lidwoord: 'de',
+      meervoud: 'bengels',
+      verkleinwoord: 'bengeltje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'leerlingenraad',
+      lidwoord: 'de',
+      meervoud: null,
+      verkleinwoord: null,
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'halfgod',
+      lidwoord: 'de',
+      meervoud: 'halfgoden',
+      verkleinwoord: 'halfgodje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'vrouwenzot',
+      lidwoord: 'de',
+      meervoud: 'vrouwenzotten',
+      verkleinwoord: 'vrouwenzotje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
     }
   ];

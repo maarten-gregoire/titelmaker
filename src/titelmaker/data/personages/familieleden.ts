@@ -112,5 +112,12 @@ export const familieleden = [
     meervoud: 'moeders',
     verkleinwoord: 'moedertje',
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_FAMILIELID]
+  },
+  {
+    naam: 'kid',
+    lidwoord: 'de',
+    meervoud: 'kids',
+    verkleinwoord: null,
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_FAMILIELID]
   }
 ];
