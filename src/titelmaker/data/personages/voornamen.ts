@@ -151,7 +151,7 @@ export const voornamen: Personage[] = [
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   },
   {
-    naam: 'wendy',
+    naam: 'Wendy',
     lidwoord: null,
     meervoud: null,
     verkleinwoord: 'Wendy\'tje',
