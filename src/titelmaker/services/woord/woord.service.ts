@@ -2,24 +2,12 @@ import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {locaties} from '../../data/locaties/locaties';
 import {voorwerpen} from '../../data/voorwerpen/voorwerpen';
-import {StringMaker} from '../../util/string-maker';
 import {Arrays} from '../../util/arrays';
-import {Strings} from '../../util/strings';
-import {Randoms} from '../../util/randoms';
 import {personages} from '../../data/personages/personages';
-import {voorwerpKoppelingen} from '../../data/koppelingen';
-import {TitelConfiguratie} from '../../configuraties/titelConfiguratie';
-import {Vorm} from '../../enums/vorm';
-import {Personage} from '../../models/personage';
-import {Koppeling} from '../../models/koppeling';
-import {Voorwerp} from '../../models/voorwerp';
-import {Locatie} from '../../models/locatie';
-import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
-import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
 import {WoordSoort} from '../../enums/woordsoort';
 import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
-import {Woord} from '../../models/woord';
 import {ZelfstandigNaamwoord} from '../../models/zelfstandig-naamwoord';
+import {Personage} from '../../models/personage';
 
 @Injectable({
   providedIn: 'root'
@@ -33,13 +21,31 @@ export class WoordService {
   geefWillekeurigWoord(): Observable<string> {
     let woord: ZelfstandigNaamwoord;
     do {
-    woord = Arrays.bepaalWillekeurigElemntUitRij([...locaties, ...voorwerpen, ...personages]
+      const personagesZonderVoornamen: Personage[] = personages.filter(p =>
+        this.isGeenVoornaam(p));
+      woord = Arrays.bepaalWillekeurigElemntUitRij([...locaties, ...voorwerpen, ...personagesZonderVoornamen]
       .filter(w => !this.recenteWoorden.zitWoordInLijst(w)));
-    if (!woord) {
+      if (!woord) {
       this.recenteWoorden.maakLeeg();
     }
     } while (!woord);
     this.recenteWoorden.voegWoordToe(woord);
     return of(woord.naam);
+  }
+
+  private isGeenVoornaam(p): boolean {
+    return (p.woordsoorten.filter(ws => this.isVoornaam(ws))).length < 1;
+  }
+
+  private isVoornaam(ws) {
+    return this.isMannenVoornaam(ws) || this.isVrouwenVoornaam(ws);
+  }
+
+  private isVrouwenVoornaam(ws) {
+    return ws === WoordSoort.ZNW_VOORNAAM_VROUW;
+  }
+
+  private isMannenVoornaam(ws) {
+    return ws === WoordSoort.ZNW_VOORNAAM_MAN;
   }
 }
