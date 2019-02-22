@@ -1180,13 +1180,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'persboycot',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'pistachenoot',
       lidwoord: 'de',
       meervoud: 'pistachenoten',
@@ -1226,13 +1219,6 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'perzikpitten',
       verkleinwoord: 'perzikpitje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'persoonlijkheidsstoornis',
-      lidwoord: 'de',
-      meervoud: 'persoonlijkheidsstoornissen',
-      verkleinwoord: 'persoonlijkheidsstoornisje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
@@ -1635,13 +1621,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'zwaveluitstoot',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'volkorenbrood',
       lidwoord: 'het',
       meervoud: 'volkorenbroden',
@@ -1754,13 +1733,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'ommekeer',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'eendenveer',
       lidwoord: 'de',
       meervoud: 'eendenveren',
@@ -1782,35 +1754,7 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'staat',
-      lidwoord: 'de',
-      meervoud: 'staten',
-      verkleinwoord: 'staatje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'vaat',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'autopech',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'swag',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'pech',
       lidwoord: 'de',
       meervoud: null,
       verkleinwoord: null,
@@ -1894,20 +1838,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'kattekwaad',
-      lidwoord: 'het',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'verraad',
-      lidwoord: 'het',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'bil',
       lidwoord: 'de',
       meervoud: 'billen',
@@ -1943,13 +1873,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'knipoog',
-      lidwoord: 'de',
-      meervoud: 'knipogen',
-      verkleinwoord: 'knipoogje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'tortilla',
       lidwoord: 'de',
       meervoud: 'tortilla\'s',
@@ -1971,13 +1894,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'adres',
-      lidwoord: 'het',
-      meervoud: 'adressen',
-      verkleinwoord: 'adresje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'kopstoot',
       lidwoord: 'de',
       meervoud: 'kopstoten',
@@ -1989,13 +1905,6 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'etensresten',
       verkleinwoord: 'etensrestje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'betoog',
-      lidwoord: 'het',
-      meervoud: null,
-      verkleinwoord: 'betoogje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
@@ -2055,13 +1964,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'pret',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: 'pretje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'ballet',
       lidwoord: 'het',
       meervoud: 'balletten',
@@ -2097,13 +1999,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'sneeuwpret',
-      lidwoord: 'de',
-      meervoud: null,
-      verkleinwoord: null,
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'asbest',
       lidwoord: 'het',
       meervoud: null,
@@ -2111,24 +2006,10 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'verschil',
-      lidwoord: 'het',
-      meervoud: 'verschillen',
-      verkleinwoord: 'verschilletje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'steen',
       lidwoord: 'de',
       meervoud: 'stenen',
       verkleinwoord: 'steentje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'gebed',
-      lidwoord: 'het',
-      meervoud: 'gebeden',
-      verkleinwoord: 'gebedje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {

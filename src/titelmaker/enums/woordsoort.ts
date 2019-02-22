@@ -10,4 +10,5 @@ export enum WoordSoort {
   ZNW_PERSONAGE,
   ZNW_BEROEP,
   ZNW_VOORWERP,
+  ZNW_BEGRIP
 }
