@@ -8,6 +8,7 @@ import {Personage} from '../../models/personage';
 import {personages} from '../../data/personages/personages';
 import {Locatie} from '../../models/locatie';
 import {locaties} from '../../data/locaties/locaties';
+import {StringMaker} from '../../util/string-maker';
 
 @Injectable({
   providedIn: 'root'
@@ -21,12 +22,12 @@ export class LocatieService {
   geefWillekeurigeLocatie(): Observable<string> {
     let locatie: Locatie;
     do {
-    locatie = Arrays.bepaalWillekeurigElemntUitRij(locaties.filter(l => !this.recenteLocaties.zitWoordInLijst(l)));
-    if (!locatie) {
-      this.recenteLocaties.maakLeeg();
-    }
+      locatie = Arrays.bepaalWillekeurigElemntUitRij(locaties.filter(l => !this.recenteLocaties.zitWoordInLijst(l)));
+      if (!locatie) {
+        this.recenteLocaties.maakLeeg();
+      }
     } while (!locatie);
     this.recenteLocaties.voegWoordToe(locatie);
-    return of(locatie.naam);
+    return of(StringMaker.locatieAlsString(locatie, true));
   }
 }
