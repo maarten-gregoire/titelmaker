@@ -628,7 +628,7 @@ export const personages: Personage[] =
     },
     {
       naam: 'bendelid',
-      lidwoord: 'de',
+      lidwoord: 'het',
       meervoud: 'bendeleden',
       verkleinwoord: 'bendelidje',
       woordsoorten: [WoordSoort.ZNW_PERSONAGE]

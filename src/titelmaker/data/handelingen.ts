@@ -122,7 +122,7 @@ export const handelingen: Handeling[] = [
     infinitief: 'soep maken'
   },
   {
-    infinitief: 'soep groenten snijden'
+    infinitief: 'groenten snijden'
   },
   {
     infinitief: 'fietsen'

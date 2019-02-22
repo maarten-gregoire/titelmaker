@@ -118,7 +118,7 @@ export const locaties: Locatie[] =
     {
       naam: 'kist',
       lidwoord: 'de',
-      voorzetsels: ['in', 'op', 'naast', 'bij'],
+      voorzetsels: ['in', 'op'],
       meervoud: 'kisten',
       verkleinwoord: 'kistje',
       woordsoorten: [WoordSoort.ZNW_LOCATIE]
@@ -129,14 +129,6 @@ export const locaties: Locatie[] =
       voorzetsels: ['in',  'naast', 'bij'],
       meervoud: 'bruidsboetieken',
       verkleinwoord: 'bruidsboetiekje',
-      woordsoorten: [WoordSoort.ZNW_LOCATIE]
-    },
-    {
-      naam: 'orthodont',
-      lidwoord: 'de',
-      voorzetsels: ['bij', 'vlakbij'],
-      meervoud: 'orthodonten',
-      verkleinwoord: 'orthodontje',
       woordsoorten: [WoordSoort.ZNW_LOCATIE]
     },
     {
@@ -494,7 +486,7 @@ export const locaties: Locatie[] =
     {
       naam: 'eiland',
       lidwoord: 'het',
-      voorzetsels: ['op', 'boven', 'naast'],
+      voorzetsels: ['op', 'naast'],
       meervoud: 'eilanden',
       verkleinwoord: 'eilandje',
       woordsoorten: [WoordSoort.ZNW_LOCATIE]

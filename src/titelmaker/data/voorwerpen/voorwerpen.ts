@@ -1419,7 +1419,7 @@ export const voorwerpen: Voorwerp[] =
     },
     {
       naam: 'kaktus',
-      lidwoord: 'het',
+      lidwoord: 'de',
       meervoud: 'kaktussen',
       verkleinwoord: 'kaktusje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
