@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OverDezeAppComponent } from './over-deze-app.component';
+import { GebruikstipsComponent } from './gebruikstips.component';
 
 describe('GebruikstipsComponent', () => {
-  let component: OverDezeAppComponent;
-  let fixture: ComponentFixture<OverDezeAppComponent>;
+  let component: GebruikstipsComponent;
+  let fixture: ComponentFixture<GebruikstipsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OverDezeAppComponent ]
+      declarations: [ GebruikstipsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OverDezeAppComponent);
+    fixture = TestBed.createComponent(GebruikstipsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -36,16 +36,23 @@
           Bulkgenerator
           <span *ngIf="chosenPageIs('bulkgenerator')" class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item" [ngClass]="activeIfPageIs('overdezeapp')">
-        <a class="nav-link waves-effect waves-light" routerLink="/overdezeapp"
-           (click)="setChosenPage('overdezeapp')"
-         title="Krijg informatie over de app">
-          Over deze app
+      <li class="nav-item" [ngClass]="activeIfPageIs('gebruikstips')">
+        <a class="nav-link waves-effect waves-light" routerLink="/gebruikstips"
+           (click)="setChosenPage('gebruikstips')"
+           title="Krijg tips over hoe je deze app kan gebruiken">
+          Gebruikstips
         </a>
       </li>
       <li class="nav-item" [ngClass]="activeIfPageIs('feedback')">
         <a class="nav-link waves-effect waves-light" routerLink="/feedback"
            (click)="setChosenPage('feedback')" title="Geef feedback over de app">Feedback
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="activeIfPageIs('overdezeapp')">
+        <a class="nav-link waves-effect waves-light" routerLink="/overdezeapp"
+           (click)="setChosenPage('overdezeapp')"
+           title="Krijg informatie over de app">
+          Over deze app
         </a>
       </li>
     </ul>

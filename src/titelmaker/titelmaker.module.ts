@@ -10,15 +10,17 @@ import { FeedbackComponent } from './paginas/feedback/feedback.component';
 import { SuggereerderComponent } from './paginas/suggereerder/suggereerder.component';
 import { BulkGeneratorComponent } from './paginas/bulk-generator/bulk-generator.component';
 import { OverDezeAppComponent } from './paginas/over-deze-app/over-deze-app.component';
+import {GebruikstipsComponent} from './paginas/gebruikstips/gebruikstips.component';
 
 @NgModule({
   declarations: [
     TitelmakerComponent,
     TitelgeneratorComponent,
     WoordenspammerComponent,
-    FeedbackComponent,
     SuggereerderComponent,
     BulkGeneratorComponent,
+    GebruikstipsComponent,
+    FeedbackComponent,
     OverDezeAppComponent
   ],
   imports: [
