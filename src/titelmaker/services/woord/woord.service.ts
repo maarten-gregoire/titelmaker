@@ -63,7 +63,7 @@ export class WoordService {
   private maakOnbestaandWoord(): string {
     const mogelijkeWoordStarters: string[] = this.bepaalWoordStarters();
     const mogelijkeWoordEindes: string[] = this.bepaalWoordEindes();
-    const mogelijkeWoordMiddens: string[] = ['rte', 'ka', 'taa'];
+    const mogelijkeWoordMiddens: string[] = ['-'];
 
     const gekozenWoordStarter: string = Arrays.bepaalWillekeurigElemntUitRij(mogelijkeWoordStarters);
     const gekozenWoordEinde: string = Arrays.bepaalWillekeurigElemntUitRij(mogelijkeWoordEindes);
@@ -77,12 +77,20 @@ export class WoordService {
   }
 
   private bepaalWoordStarters() {
+    return Array.from(new Set(this.woordStrings.map(ws => this.bepaalWoordStarter(ws))));
+  }
 
-    return ['bra', 'sta', 'ge'];
+  private bepaalWoordStarter(woord: string): string {
+    const eindpositieWoordStarter = this.bepaalEindpositieEersteKlinkersGroepje(woord);
+    if (eindpositieWoordStarter < 0 || eindpositieWoordStarter >= woord.length) {
+      return  woord + this.bepaalWillekeurigeKlinker();
+    }
+
+    return woord.substring(0, eindpositieWoordStarter);
   }
 
   private combineerWoordDelen(woordStarter: string, woordMiddens: string[], woordEinde: string): string {
-    return woordStarter + woordMiddens + woordEinde;
+    return woordStarter /*+ woordMiddens*/ + woordEinde;
 
   }
 
@@ -98,26 +106,51 @@ export class WoordService {
 
   private bepaalBeginpositieLaatsteMedeklinkersGroepje(woord: string): number {
     let i = woord.length;
-    let gevonden = false;
-    while (i > 0 && !gevonden) {
+    let medeKlinkerGevonden = false;
+    while (i > 0 && !medeKlinkerGevonden) {
       i--;
       if (this.isMedeklinker(woord.charAt(i))) {
-        gevonden = true;
+        medeKlinkerGevonden = true;
       }
     }
     let j = i;
     let klinkerGevonden = false;
     while (j > 0 && !klinkerGevonden) {
       j--;
-      if (!this.isMedeklinker(woord.charAt(j))) {
+      if (this.isKlinker(woord.charAt(j))) {
         klinkerGevonden = true;
       }
     }
 
     i = j + 1;
 
-    if (i > woord.length) {
-      i = woord.length - 1;
+    return medeKlinkerGevonden && klinkerGevonden ? i : -1;
+  }
+
+
+  private bepaalEindpositieEersteKlinkersGroepje(woord: string): number {
+
+    let i = -1;
+    let gevonden = false;
+    while (i < woord.length && !gevonden) {
+      i++;
+      if (this.isKlinker(woord.charAt(i))) {
+        gevonden = true;
+      }
+    }
+    let j = i;
+    let medeKlinkerGevonden = false;
+    while (j < woord.length - 1 && !medeKlinkerGevonden) {
+      j++;
+      if (this.isMedeklinker(woord.charAt(j))) {
+        medeKlinkerGevonden = true;
+      }
+    }
+
+    i = j;
+
+    if (i < 0) {
+      i = 0;
     }
     return gevonden ? i : -1;
   }
@@ -127,12 +160,15 @@ export class WoordService {
   }
 
   private isKlinker(letter: string): boolean {
-    return ['a', 'e', 'i', 'o', 'u'].indexOf(letter.toLowerCase()) !== -1;
+    return ['a', 'e', 'i', 'o', 'u', 'y', '-'].indexOf(letter.toLowerCase()) !== -1;
   }
 
   private bepaalWillekeurigeMedeklinker(): string {
     return Arrays.bepaalWillekeurigElemntUitRij(['b', 'c', 'd', 'f', 'g', 'h', 'j',
       'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'z']);
+  }
+  private bepaalWillekeurigeKlinker() {
+    return Arrays.bepaalWillekeurigElemntUitRij(['a', 'e', 'i', 'o', 'u']);
   }
 }
 
