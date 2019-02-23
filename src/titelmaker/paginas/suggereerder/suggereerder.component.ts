@@ -5,6 +5,7 @@ import {LocatieService} from '../../services/locatie/locatie.service';
 import {VoorwerpService} from '../../services/voorwerp/voorwerp.service';
 import {CategorieService} from '../../services/categorie/categorie.service';
 import {HandelingService} from '../../services/handeling/handeling.service';
+import {WoordService} from '../../services/woord/woord.service';
 
 @Component({
   selector: 'tm-suggereerder',
@@ -20,7 +21,8 @@ export class SuggereerderComponent implements OnInit {
 
   constructor(private personageService: PersonageService, private bijvoeglijknaamwoordService: BijvoeglijkNaamwoordService,
               private locatieService: LocatieService, private voorwerpService: VoorwerpService,
-              private categorieService: CategorieService, private handelingService: HandelingService) { }
+              private categorieService: CategorieService, private handelingService: HandelingService,
+              private woordService: WoordService) { }
 
   ngOnInit() {
   }
@@ -105,13 +107,6 @@ export class SuggereerderComponent implements OnInit {
     this.achtergrondkleur = 'bg-primary';
   }
 
-  reset() {
-    this.suggestie = '';
-    this.gevraagdeSuggestie = '';
-    this.icoon = '';
-    this.achtergrondkleur = '';
-  }
-
   genereerHandeling() {
     this.handelingService.geefWillekeurigeLocatie().subscribe( b => {
       this.suggestie = b;
@@ -120,5 +115,22 @@ export class SuggereerderComponent implements OnInit {
     this.gevraagdeSuggestie = 'Handeling';
     this.icoon = 'batch-icon-wave';
     this.achtergrondkleur = 'bg-handeling';
+  }
+
+  genereerOnbestaandWoord() {
+    this.woordService.geefOnbestaandWoord().subscribe( b => {
+      this.suggestie = b;
+    });
+
+    this.gevraagdeSuggestie = 'Onbestaand woord';
+    this.icoon = 'batch-icon-mail-alt';
+    this.achtergrondkleur = 'bg-onbestaand-woord';
+  }
+
+  reset() {
+    this.suggestie = '';
+    this.gevraagdeSuggestie = '';
+    this.icoon = '';
+    this.achtergrondkleur = '';
   }
 }
