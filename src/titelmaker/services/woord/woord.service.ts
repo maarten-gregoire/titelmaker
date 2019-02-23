@@ -21,9 +21,8 @@ export class WoordService {
   geefWillekeurigWoord(): Observable<string> {
     let woord: ZelfstandigNaamwoord;
     do {
-      const personagesZonderVoornamen: Personage[] = personages.filter(p =>
-        this.isGeenVoornaam(p));
-      woord = Arrays.bepaalWillekeurigElemntUitRij([...locaties, ...voorwerpen, ...personagesZonderVoornamen]
+      woord = Arrays.bepaalWillekeurigElemntUitRij([...locaties, ...voorwerpen, ...personages.filter(p =>
+        this.isGeenVoornaam(p))]
       .filter(w => !this.recenteWoorden.zitWoordInLijst(w)));
       if (!woord) {
       this.recenteWoorden.maakLeeg();
