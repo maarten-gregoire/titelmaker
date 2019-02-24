@@ -12,7 +12,9 @@ export class LaatstGebruikteWoordenLijst {
   }
 
   public voegWoordToe(woord: Woord) {
-    this.woordenLijst[this.woordenLijst.length] = woord;
+    if (woord) {
+      this.woordenLijst[this.woordenLijst.length] = woord;
+    }
     this.verwijderOudsteWoordIndienNodig();
   }
 

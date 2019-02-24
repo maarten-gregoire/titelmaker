@@ -44,23 +44,8 @@ export class TitelService {
     let locatie: Locatie;
     let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
-      personage = Arrays.bepaalWillekeurigElementUitRij<Personage>(personages
-        .filter(p => !this.recentePersonages.zitWoordInLijst(p))
-      );
-      if (!personage) {
-        this.recentePersonages.maakLeeg();
-      }
-      if (titelConfiguratie.aantalBijvoeglijkNaamwoorden > 0) {
-        bijvoeglijkNaamwoord =
-          Arrays.bepaalWillekeurigElementUitRij<BijvoeglijkNaamwoord>(
-            bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
-              t === WoordSoort.ZNW_PERSONAGE).length >= 1)
-              .filter(b => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(b))
-          );
-        if (!bijvoeglijkNaamwoord) {
-          this.recenteBijvoeglijkNaamwoorden.maakLeeg();
-        }
-      }
+      personage = this.bepaalPersonage();
+      bijvoeglijkNaamwoord = this.maakBijvoeglijkNaamwoordIndienNodig(titelConfiguratie.aantalBijvoeglijkNaamwoorden);
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         voorwerpKoppeling = Arrays.bepaalWillekeurigElementUitRij<Koppeling>(voorwerpKoppelingen);
@@ -94,19 +79,75 @@ export class TitelService {
       locatieString = StringMaker.locatieAlsString(locatie, magBijAlsVoorzetselGebruiken);
     }
 
+    let titel = this.combineerTotTitel(personageString, koppelingString, voorwerpString, locatieString);
+    titel = this.maakFallbacktitelIndienTitelGenererenMisluktIs(titel);
+
     this.updateRecenteWoorden(locatie, personage, bijvoeglijkNaamwoord, voorwerp);
 
-    const titel = (personageString ? personageString : '') +
-    (personageString && koppelingString ? ' ' : '') +
-    (koppelingString ? koppelingString : '') +
-    (koppelingString && voorwerpString ? ' ' : '') +
-    (voorwerpString ? voorwerpString : '') +
-    ((voorwerpString && locatieString) || (personageString && locatieString) ? ' ' : '') +
-    (locatieString ? locatieString : '');
+    return of(titel);
+  }
+
+  private maakFallbacktitelIndienTitelGenererenMisluktIs(titel) {
     if (!titel || titel === '') {
-      return of('Er gaat iets mis');
+      titel = 'De luie man in het witte huis';
     }
-    return of(Strings.maakHoofdletterVanEersteLetter(titel));
+    return titel;
+  }
+
+  private combineerTotTitel(personageString: string, koppelingString: string, voorwerpString: string, locatieString: string) {
+    return Strings.maakHoofdletterVanEersteLetter((personageString ? personageString : '') +
+      (personageString && koppelingString ? ' ' : '') +
+      (koppelingString ? koppelingString : '') +
+      (koppelingString && voorwerpString ? ' ' : '') +
+      (voorwerpString ? voorwerpString : '') +
+      ((voorwerpString && locatieString) || (personageString && locatieString) ? ' ' : '') +
+      (locatieString ? locatieString : ''));
+  }
+
+  private bepaalPersonage() {
+    let personage: Personage;
+    do {
+      personage = Arrays.bepaalWillekeurigElementUitRij<Personage>(personages
+        .filter(p => !this.recentePersonages.zitWoordInLijst(p))
+      );
+      if (!personage) {
+        this.recentePersonages.maakLeeg();
+      }
+    } while (!personage);
+    return personage;
+  }
+
+  private maakBijvoeglijkNaamwoordIndienNodig(aantalBijvoeglijkNaamwoorden) {
+    let bijvoeglijkNaamwoord: BijvoeglijkNaamwoord;
+    if (aantalBijvoeglijkNaamwoorden > 0) {
+      do {
+        bijvoeglijkNaamwoord = this.bepaalBijvoeglijkNaamwoord();
+        this.maakRecenteBijvoeglijkNaamwoordenLeegIndienErGeenOptiesMeerZijn(bijvoeglijkNaamwoord);
+      } while (!bijvoeglijkNaamwoord);
+    }
+    return bijvoeglijkNaamwoord;
+  }
+
+  private maakRecenteBijvoeglijkNaamwoordenLeegIndienErGeenOptiesMeerZijn(bijvoeglijkNaamwoord: BijvoeglijkNaamwoord) {
+    if (!bijvoeglijkNaamwoord) {
+      this.recenteBijvoeglijkNaamwoorden.maakLeeg();
+    }
+  }
+
+  private bepaalBijvoeglijkNaamwoord() {
+    return Arrays.bepaalWillekeurigElementUitRij<BijvoeglijkNaamwoord>(
+      this.bepaalMogelijkeBijvoeglijkNaamwoorden()
+    );
+  }
+
+  private bepaalMogelijkeBijvoeglijkNaamwoorden() {
+    return this.getBijvoeglijkNaamwoordenDieOpPersonagesToepasbaarZijn()
+      .filter(b => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(b));
+  }
+
+  private getBijvoeglijkNaamwoordenDieOpPersonagesToepasbaarZijn() {
+    return bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
+      t === WoordSoort.ZNW_PERSONAGE).length >= 1);
   }
 
   maakWillekeurigeTitelConfiguratie() {
