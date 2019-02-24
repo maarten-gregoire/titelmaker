@@ -17,7 +17,7 @@ export class VoorwerpService {
   geefWillekeurigVoorwerp(): Observable<string> {
     let voorwerp: Voorwerp;
     do {
-    voorwerp = Arrays.bepaalWillekeurigElemntUitRij(voorwerpen.filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
+    voorwerp = Arrays.bepaalWillekeurigElementUitRij(voorwerpen.filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
     if (!voorwerp) {
       this.recenteVoorwerpen.maakLeeg();
     }

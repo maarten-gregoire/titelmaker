@@ -27,11 +27,11 @@ export class StringMaker {
   }
 
   static locatieAlsString(locatie: Locatie, magBijAlsVoorzetselGebruiken: boolean): string {
-    let voorzetsel: string = Arrays.bepaalWillekeurigElemntUitRij(locatie.voorzetsels);
+    let voorzetsel: string = Arrays.bepaalWillekeurigElementUitRij(locatie.voorzetsels);
 
     if (!magBijAlsVoorzetselGebruiken) {
       while (voorzetsel === 'bij') {
-        voorzetsel = Arrays.bepaalWillekeurigElemntUitRij(locatie.voorzetsels);
+        voorzetsel = Arrays.bepaalWillekeurigElementUitRij(locatie.voorzetsels);
       }
     }
     return voorzetsel +

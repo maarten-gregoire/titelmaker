@@ -19,7 +19,7 @@ export class HandelingService {
   geefWillekeurigeLocatie(): Observable<string> {
     let handeling: Handeling;
     do {
-      handeling = Arrays.bepaalWillekeurigElemntUitRij(handelingen.filter(l => !this.recenteHandelingen.zitWoordInLijst(l)));
+      handeling = Arrays.bepaalWillekeurigElementUitRij(handelingen.filter(l => !this.recenteHandelingen.zitWoordInLijst(l)));
       if (!handeling) {
         this.recenteHandelingen.maakLeeg();
       }

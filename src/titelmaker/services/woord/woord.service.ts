@@ -29,7 +29,7 @@ export class WoordService {
   geefWillekeurigWoord(): Observable<string> {
     let woord: ZelfstandigNaamwoord;
     do {
-      woord = Arrays.bepaalWillekeurigElemntUitRij([...locaties, ...voorwerpen, ...personages.filter(p =>
+      woord = Arrays.bepaalWillekeurigElementUitRij([...locaties, ...voorwerpen, ...personages.filter(p =>
         this.isGeenVoornaam(p))]
       .filter(w => !this.recenteWoorden.zitWoordInLijst(w)));
       if (!woord) {
@@ -65,9 +65,9 @@ export class WoordService {
     const mogelijkeWoordEindes: string[] = this.bepaalWoordEindes();
     const mogelijkeWoordMiddens: string[] = ['-'];
 
-    const gekozenWoordStarter: string = Arrays.bepaalWillekeurigElemntUitRij(mogelijkeWoordStarters);
-    const gekozenWoordEinde: string = Arrays.bepaalWillekeurigElemntUitRij(mogelijkeWoordEindes);
-    const gekozenWoordMiddens: string[] = [Arrays.bepaalWillekeurigElemntUitRij(mogelijkeWoordMiddens)];
+    const gekozenWoordStarter: string = Arrays.bepaalWillekeurigElementUitRij(mogelijkeWoordStarters);
+    const gekozenWoordEinde: string = Arrays.bepaalWillekeurigElementUitRij(mogelijkeWoordEindes);
+    const gekozenWoordMiddens: string[] = [Arrays.bepaalWillekeurigElementUitRij(mogelijkeWoordMiddens)];
 
     return this.combineerWoordDelen(gekozenWoordStarter, gekozenWoordMiddens, gekozenWoordEinde);
   }
@@ -164,11 +164,11 @@ export class WoordService {
   }
 
   private bepaalWillekeurigeMedeklinker(): string {
-    return Arrays.bepaalWillekeurigElemntUitRij(['b', 'c', 'd', 'f', 'g', 'h', 'j',
+    return Arrays.bepaalWillekeurigElementUitRij(['b', 'c', 'd', 'f', 'g', 'h', 'j',
       'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'z']);
   }
   private bepaalWillekeurigeKlinker() {
-    return Arrays.bepaalWillekeurigElemntUitRij(['a', 'e', 'i', 'o', 'u']);
+    return Arrays.bepaalWillekeurigElementUitRij(['a', 'e', 'i', 'o', 'u']);
   }
 }
 

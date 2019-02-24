@@ -23,7 +23,7 @@ export class PersonageService {
   geefWillekeurigPersonage(): Observable<string> {
     let personage: Personage;
     do {
-    personage = Arrays.bepaalWillekeurigElemntUitRij(personages.filter(p => !this.recentePersonages.zitWoordInLijst(p)));
+    personage = Arrays.bepaalWillekeurigElementUitRij(personages.filter(p => !this.recentePersonages.zitWoordInLijst(p)));
     if (!personage) {
       this.recentePersonages.maakLeeg();
     }
@@ -35,7 +35,7 @@ export class PersonageService {
   geefWillekeurigBeroep(): Observable<string> {
     let beroep: Personage;
     do {
-      beroep = Arrays.bepaalWillekeurigElemntUitRij(beroepen.filter(p => !this.recenteBeroepen.zitWoordInLijst(p)));
+      beroep = Arrays.bepaalWillekeurigElementUitRij(beroepen.filter(p => !this.recenteBeroepen.zitWoordInLijst(p)));
       if (!beroep) {
         this.recenteBeroepen.maakLeeg();
       }
@@ -47,7 +47,7 @@ export class PersonageService {
   geefWillekeurigDier(): Observable<string> {
     let dier: Personage;
     do {
-      dier = Arrays.bepaalWillekeurigElemntUitRij(dieren.filter(p => !this.recenteDieren.zitWoordInLijst(p)));
+      dier = Arrays.bepaalWillekeurigElementUitRij(dieren.filter(p => !this.recenteDieren.zitWoordInLijst(p)));
       if (!dier) {
         this.recenteDieren.maakLeeg();
       }

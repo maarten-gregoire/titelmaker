@@ -25,7 +25,7 @@ export class CategorieService {
 
   private bepaalCategorieMetVoldoendeAfwisseling(categorie: Categorie) {
     do {
-      categorie = Arrays.bepaalWillekeurigElemntUitRij<Categorie>(categorieen.filter(c => !this.recenteCategorieen.zitWoordInLijst(c)));
+      categorie = Arrays.bepaalWillekeurigElementUitRij<Categorie>(categorieen.filter(c => !this.recenteCategorieen.zitWoordInLijst(c)));
       if (!categorie) {
         this.recenteCategorieen.maakLeeg();
       }
@@ -41,20 +41,20 @@ export class CategorieService {
   }
 
   private voegEmotiesToe(categorie: string): string {
-      const emotiesVoorVierkant: BijvoeglijkNaamwoord[] = [Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(emoties)];
+      const emotiesVoorVierkant: BijvoeglijkNaamwoord[] = [Arrays.bepaalWillekeurigElementUitRij<BijvoeglijkNaamwoord>(emoties)];
 
       do {
-        emotiesVoorVierkant[1] = Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(emoties);
+        emotiesVoorVierkant[1] = Arrays.bepaalWillekeurigElementUitRij<BijvoeglijkNaamwoord>(emoties);
       } while (emotiesVoorVierkant[1] === emotiesVoorVierkant[0]);
 
       do {
-        emotiesVoorVierkant[2] = Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(emoties);
+        emotiesVoorVierkant[2] = Arrays.bepaalWillekeurigElementUitRij<BijvoeglijkNaamwoord>(emoties);
       } while (emotiesVoorVierkant[2] === emotiesVoorVierkant[0] ||
         emotiesVoorVierkant[2] === emotiesVoorVierkant[1]
         );
 
       do {
-        emotiesVoorVierkant[3] = Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(emoties);
+        emotiesVoorVierkant[3] = Arrays.bepaalWillekeurigElementUitRij<BijvoeglijkNaamwoord>(emoties);
       } while (emotiesVoorVierkant[3] === emotiesVoorVierkant[0] ||
       emotiesVoorVierkant[3] === emotiesVoorVierkant[1] ||
       emotiesVoorVierkant[3] === emotiesVoorVierkant[2]);

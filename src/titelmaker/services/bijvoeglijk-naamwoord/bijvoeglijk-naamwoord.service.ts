@@ -24,7 +24,7 @@ export class BijvoeglijkNaamwoordService {
   geefWillekeurigBijvoeglijkNaamwoord(): Observable<string> {
     let bijvoeglijkNaamwoord: BijvoeglijkNaamwoord;
     do {
-      bijvoeglijkNaamwoord = Arrays.bepaalWillekeurigElemntUitRij(bijvoeglijkNaamwoorden.filter(
+      bijvoeglijkNaamwoord = Arrays.bepaalWillekeurigElementUitRij(bijvoeglijkNaamwoorden.filter(
         p => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(p)));
       if (!bijvoeglijkNaamwoord) {
         this.recenteBijvoeglijkNaamwoorden.maakLeeg();
@@ -37,7 +37,7 @@ export class BijvoeglijkNaamwoordService {
   geefWillekeurigeEmotie(): Observable<string> {
     let emotie: BijvoeglijkNaamwoord;
     do {
-      emotie = Arrays.bepaalWillekeurigElemntUitRij(emoties.filter(p => !this.recenteEmoties.zitWoordInLijst(p)));
+      emotie = Arrays.bepaalWillekeurigElementUitRij(emoties.filter(p => !this.recenteEmoties.zitWoordInLijst(p)));
       if (!emotie) {
         this.recenteEmoties.maakLeeg();
       }

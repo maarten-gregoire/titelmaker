@@ -44,7 +44,7 @@ export class TitelService {
     let locatie: Locatie;
     let voorwerpKoppeling: Koppeling;
     if (titelConfiguratie.aantalPersonages > 0) {
-      personage = Arrays.bepaalWillekeurigElemntUitRij<Personage>(personages
+      personage = Arrays.bepaalWillekeurigElementUitRij<Personage>(personages
         .filter(p => !this.recentePersonages.zitWoordInLijst(p))
       );
       if (!personage) {
@@ -52,7 +52,7 @@ export class TitelService {
       }
       if (titelConfiguratie.aantalBijvoeglijkNaamwoorden > 0) {
         bijvoeglijkNaamwoord =
-          Arrays.bepaalWillekeurigElemntUitRij<BijvoeglijkNaamwoord>(
+          Arrays.bepaalWillekeurigElementUitRij<BijvoeglijkNaamwoord>(
             bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
               t === WoordSoort.ZNW_PERSONAGE).length >= 1)
               .filter(b => !this.recenteBijvoeglijkNaamwoorden.zitWoordInLijst(b))
@@ -63,16 +63,16 @@ export class TitelService {
       }
       personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
-        voorwerpKoppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
+        voorwerpKoppeling = Arrays.bepaalWillekeurigElementUitRij<Koppeling>(voorwerpKoppelingen);
         if (voorwerpKoppeling.koppeling === 'zonder' && Randoms.maakRandomGetalTussenEnInbegrepen(1, 10) > 3) {
-          voorwerpKoppeling = Arrays.bepaalWillekeurigElemntUitRij<Koppeling>(voorwerpKoppelingen);
+          voorwerpKoppeling = Arrays.bepaalWillekeurigElementUitRij<Koppeling>(voorwerpKoppelingen);
         }
         koppelingString = StringMaker.koppelingAlsString(voorwerpKoppeling);
       }
     }
 
     if (titelConfiguratie.aantalVoorwerpen > 0) {
-      voorwerp = Arrays.bepaalWillekeurigElemntUitRij<Voorwerp>(voorwerpen
+      voorwerp = Arrays.bepaalWillekeurigElementUitRij<Voorwerp>(voorwerpen
         .filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
       if (!voorwerp) {
         this.recenteVoorwerpen.maakLeeg();
@@ -81,7 +81,7 @@ export class TitelService {
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
     if (titelConfiguratie.aantalLocaties > 0) {
-      locatie = Arrays.bepaalWillekeurigElemntUitRij<Locatie>(locaties
+      locatie = Arrays.bepaalWillekeurigElementUitRij<Locatie>(locaties
         .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
       );
       if (!locatie) {

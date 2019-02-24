@@ -22,7 +22,7 @@ export class LocatieService {
   geefWillekeurigeLocatie(): Observable<string> {
     let locatie: Locatie;
     do {
-      locatie = Arrays.bepaalWillekeurigElemntUitRij(locaties.filter(l => !this.recenteLocaties.zitWoordInLijst(l)));
+      locatie = Arrays.bepaalWillekeurigElementUitRij(locaties.filter(l => !this.recenteLocaties.zitWoordInLijst(l)));
       if (!locatie) {
         this.recenteLocaties.maakLeeg();
       }
