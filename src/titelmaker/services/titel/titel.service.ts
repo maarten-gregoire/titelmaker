@@ -57,21 +57,23 @@ export class TitelService {
     }
 
     if (titelConfiguratie.aantalVoorwerpen > 0) {
-      voorwerp = Arrays.bepaalWillekeurigElementUitRij<Voorwerp>(voorwerpen
-        .filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
-      if (!voorwerp) {
-        this.recenteVoorwerpen.maakLeeg();
-      }
+      do {
+
+        voorwerp = this.bepaalVoorwerp();
+        if (!voorwerp) {
+          this.recenteVoorwerpen.maakLeeg();
+        }
+      } while (!voorwerp);
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
     if (titelConfiguratie.aantalLocaties > 0) {
-      locatie = Arrays.bepaalWillekeurigElementUitRij<Locatie>(locaties
-        .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
-      );
-      if (!locatie) {
-        this.recenteLocaties.maakLeeg();
-      }
+      do {
+        locatie = this.bepaalLocatie();
+        if (!locatie) {
+          this.recenteLocaties.maakLeeg();
+        }
+      } while (!locatie);
       let magBijAlsVoorzetselGebruiken = true;
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         magBijAlsVoorzetselGebruiken = false;
@@ -85,6 +87,17 @@ export class TitelService {
     this.updateRecenteWoorden(locatie, personage, bijvoeglijkNaamwoord, voorwerp);
 
     return of(titel);
+  }
+
+  private bepaalLocatie() {
+    return Arrays.bepaalWillekeurigElementUitRij<Locatie>(locaties
+      .filter(l => !this.recenteLocaties.zitWoordInLijst(l))
+    );
+  }
+
+  private bepaalVoorwerp() {
+    return Arrays.bepaalWillekeurigElementUitRij<Voorwerp>(voorwerpen
+      .filter(v => !this.recenteVoorwerpen.zitWoordInLijst(v)));
   }
 
   private maakFallbacktitelIndienTitelGenererenMisluktIs(titel) {
