@@ -123,4 +123,18 @@ export const begrippen: Begrip[] =
       verkleinwoord: null,
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
+    {
+      naam: 'lied',
+      lidwoord: 'het',
+      meervoud: 'liedjes',
+      verkleinwoord: 'liedje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'gebod',
+      lidwoord: 'het',
+      meervoud: 'geboden',
+      verkleinwoord: 'gebodje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
   ];

@@ -1082,13 +1082,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'lied',
-      lidwoord: 'het',
-      meervoud: 'liedjes',
-      verkleinwoord: 'liedje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'lievelingsboek',
       lidwoord: 'het',
       meervoud: 'lievelingsboeken',
@@ -1671,7 +1664,7 @@ export const voorwerpen: Voorwerp[] =
     },
     {
       naam: 'kleurpotlood',
-      lidwoord: 'de',
+      lidwoord: 'het',
       meervoud: 'kleurpotloden',
       verkleinwoord: 'kleurpotloodje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
@@ -1828,13 +1821,6 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'tenen',
       verkleinwoord: 'teentje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'gebod',
-      lidwoord: 'het',
-      meervoud: 'geboden',
-      verkleinwoord: 'gebodje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
