@@ -137,4 +137,18 @@ export const begrippen: Begrip[] =
       verkleinwoord: 'gebodje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
+    {
+      naam: 'kopstoot',
+      lidwoord: 'de',
+      meervoud: 'kopstoten',
+      verkleinwoord: 'kopstootje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
+    {
+      naam: 'golf',
+      lidwoord: 'de',
+      meervoud: 'golven',
+      verkleinwoord: 'golfje',
+      woordsoorten: [WoordSoort.ZNW_VOORWERP]
+    },
   ];

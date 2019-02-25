@@ -1151,13 +1151,6 @@ export const voorwerpen: Voorwerp[] =
       verkleinwoord: 'perenboompje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
-     {
-      naam: 'golf',
-      lidwoord: 'de',
-      meervoud: 'golven',
-      verkleinwoord: 'golfje',
-       woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
     {
       naam: 'pergola',
       lidwoord: 'de',
@@ -1877,13 +1870,6 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'tequeilla\'s',
       verkleinwoord: 'tequillaatje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'kopstoot',
-      lidwoord: 'de',
-      meervoud: 'kopstoten',
-      verkleinwoord: 'kopstootje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
