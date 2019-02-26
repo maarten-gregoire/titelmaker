@@ -4,9 +4,9 @@ import {Locatie} from '../models/locatie';
 import {Personage} from '../models/personage';
 import {Koppeling} from '../models/koppeling';
 import {ZelfstandigNaamwoord} from '../models/zelfstandig-naamwoord';
-import {Randoms} from './randoms';
 import {Arrays} from './arrays';
 import {BijvoeglijkNaamwoord} from '../models/bijvoeglijk-naamwoord';
+import {WoordSoort} from '../enums/woordsoort';
 
 export class StringMaker {
 
@@ -26,14 +26,20 @@ export class StringMaker {
     return (lidwoord ? lidwoord + ' ' : '') + voorwerpString;
   }
 
-  static locatieAlsString(locatie: Locatie, magBijAlsVoorzetselGebruiken: boolean): string {
-    let voorzetsel: string = Arrays.bepaalWillekeurigElementUitRij(locatie.voorzetselsPersonage);
+  static locatieAlsString(locatie: Locatie, onderwerp: WoordSoort): string {
+    let voorzetsel: string;
 
-    if (!magBijAlsVoorzetselGebruiken) {
-      while (voorzetsel === 'bij') {
+    switch (onderwerp) {
+      case WoordSoort.ZNW_VOORWERP:
+        voorzetsel = Arrays.bepaalWillekeurigElementUitRij(locatie.voorzetselsVoorwerp);
+        break;
+      case WoordSoort.ZNW_PERSONAGE:
         voorzetsel = Arrays.bepaalWillekeurigElementUitRij(locatie.voorzetselsPersonage);
-      }
+        break;
+      default:
+        voorzetsel = Arrays.bepaalWillekeurigElementUitRij([...locatie.voorzetselsPersonage, ...locatie.voorzetselsVoorwerp]);
     }
+
     return voorzetsel +
       (locatie.lidwoord !== undefined && locatie.lidwoord !== null
       && locatie.lidwoord !== '' ? ' ' + locatie.lidwoord : '') + ' ' + locatie.naam;

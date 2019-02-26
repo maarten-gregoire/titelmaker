@@ -18,7 +18,6 @@ import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
 import {WoordSoort} from '../../enums/woordsoort';
 import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
-import {beroepen} from '../../data/personages/beroepen';
 
 @Injectable({
   providedIn: 'root'
@@ -67,6 +66,7 @@ export class TitelService {
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
       voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
     }
+
     if (titelConfiguratie.aantalLocaties > 0) {
       do {
         locatie = this.bepaalLocatie();
@@ -78,7 +78,8 @@ export class TitelService {
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         magBijAlsVoorzetselGebruiken = false;
       }
-      locatieString = StringMaker.locatieAlsString(locatie, magBijAlsVoorzetselGebruiken);
+      const onderwerp: WoordSoort = this.bepaalOnderwerp();
+      locatieString = StringMaker.locatieAlsString(locatie, onderwerp);
     }
 
     let titel = this.combineerTotTitel(personageString, koppelingString, voorwerpString, locatieString);
@@ -200,5 +201,9 @@ export class TitelService {
     this.recenteVoorwerpen.voegWoordToe(voorwerp);
     this.recentePersonages.voegWoordToe(personage);
     this.recenteBijvoeglijkNaamwoorden.voegWoordToe(bijvoeglijkNaamwoord);
+  }
+
+  private bepaalOnderwerp(): WoordSoort {
+    return WoordSoort.ZNW_PERSONAGE;
   }
 }
