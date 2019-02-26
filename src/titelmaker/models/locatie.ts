@@ -1,5 +1,6 @@
 import {ZelfstandigNaamwoord} from './zelfstandig-naamwoord';
 
-export class Locatie extends ZelfstandigNaamwoord{
-  voorzetsels: string[];
+export class Locatie extends ZelfstandigNaamwoord {
+  voorzetselsPersonage: string[];
+  voorzetselsVoorwerp: string[];
 }
