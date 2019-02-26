@@ -1516,13 +1516,6 @@ export const voorwerpen: Voorwerp[] =
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {
-      naam: 'bofkont',
-      lidwoord: 'de',
-      meervoud: 'bofkonten',
-      verkleinwoord: 'bofkontje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
       naam: 'klont',
       lidwoord: 'de',
       meervoud: 'klonten',
@@ -1933,13 +1926,6 @@ export const voorwerpen: Voorwerp[] =
       lidwoord: 'de',
       meervoud: 'geodriehoeken',
       verkleinwoord: 'geodriehoekje',
-      woordsoorten: [WoordSoort.ZNW_VOORWERP]
-    },
-    {
-      naam: 'ballet',
-      lidwoord: 'het',
-      meervoud: 'balletten',
-      verkleinwoord: 'balletje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },
     {

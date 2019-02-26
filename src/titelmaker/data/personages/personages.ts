@@ -688,5 +688,19 @@ export const personages: Personage[] =
       meervoud: 'vrouwenzotten',
       verkleinwoord: 'vrouwenzotje',
       woordsoorten: [WoordSoort.ZNW_PERSONAGE]
-    }
+    },
+    {
+    naam: 'ballet',
+    lidwoord: 'het',
+    meervoud: 'balletten',
+    verkleinwoord: 'balletje',
+    woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
+    {
+      naam: 'bofkont',
+      lidwoord: 'de',
+      meervoud: 'bofkonten',
+      verkleinwoord: 'bofkontje',
+      woordsoorten: [WoordSoort.ZNW_PERSONAGE]
+    },
   ];
