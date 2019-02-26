@@ -8,6 +8,7 @@ import {Personage} from '../../models/personage';
 import {personages} from '../../data/personages/personages';
 import {beroepen} from '../../data/personages/beroepen';
 import {dieren} from '../../data/personages/dieren';
+import {mannenvoornamen, vrouwenvoornamen} from '../../data/personages/voornamen';
 
 @Injectable({
   providedIn: 'root'
@@ -23,10 +24,34 @@ export class PersonageService {
   geefWillekeurigPersonage(): Observable<string> {
     let personage: Personage;
     do {
-    personage = Arrays.bepaalWillekeurigElementUitRij(personages.filter(p => !this.recentePersonages.zitWoordInLijst(p)));
-    if (!personage) {
-      this.recentePersonages.maakLeeg();
-    }
+      personage = Arrays.bepaalWillekeurigElementUitRij(personages.filter(p => !this.recentePersonages.zitWoordInLijst(p)));
+      if (!personage) {
+        this.recentePersonages.maakLeeg();
+      }
+    } while (!personage);
+    this.recentePersonages.voegWoordToe(personage);
+    return of(personage.naam);
+  }
+
+  geefWillekeurigeMannenvoornaam(): Observable<string> {
+    let personage: Personage;
+    do {
+      personage = Arrays.bepaalWillekeurigElementUitRij(mannenvoornamen.filter(p => !this.recentePersonages.zitWoordInLijst(p)));
+      if (!personage) {
+        this.recentePersonages.maakLeeg();
+      }
+    } while (!personage);
+    this.recentePersonages.voegWoordToe(personage);
+    return of(personage.naam);
+  }
+
+  geefWillekeurigeVrouwenvoornaam(): Observable<string> {
+    let personage: Personage;
+    do {
+      personage = Arrays.bepaalWillekeurigElementUitRij(vrouwenvoornamen.filter(p => !this.recentePersonages.zitWoordInLijst(p)));
+      if (!personage) {
+        this.recentePersonages.maakLeeg();
+      }
     } while (!personage);
     this.recentePersonages.voegWoordToe(personage);
     return of(personage.naam);
@@ -55,4 +80,5 @@ export class PersonageService {
     this.recenteDieren.voegWoordToe(dier);
     return of(dier.naam);
   }
+
 }

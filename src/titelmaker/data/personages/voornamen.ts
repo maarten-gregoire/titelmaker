@@ -2,7 +2,7 @@ import {Personage} from '../../models/personage';
 import {WoordSoort} from '../../enums/woordsoort';
 import {Woord} from '../../models/woord';
 
-export const voornamen: Personage[] = [
+export const mannenvoornamen: Personage[] = [
   {
     naam: 'Tony',
     lidwoord: null,
@@ -128,7 +128,10 @@ export const voornamen: Personage[] = [
     meervoud: null,
     verkleinwoord: 'Jozefje',
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_MAN]
-  },
+  }
+];
+
+export const vrouwenvoornamen: Personage[] = [
   {
     naam: 'Karolien',
     lidwoord: null,
@@ -213,4 +216,8 @@ export const voornamen: Personage[] = [
     verkleinwoord: 'Priscilla\'tje',
     woordsoorten: [WoordSoort.ZNW_PERSONAGE, WoordSoort.ZNW_VOORNAAM_VROUW]
   }
+];
+
+export const voornamen: Personage[] = [
+  ...mannenvoornamen, ...vrouwenvoornamen
 ];

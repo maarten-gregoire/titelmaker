@@ -29,6 +29,50 @@
   transition: width 0.3s ease-in-out;
 }
 
+.bg-mannenvoornaam.bg-gradient {
+  color: #FFFFFF !important;
+  background: #10198e;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #10198e 0%, #3f6dff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #10198e 0%, #3f6dff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0024ff 0%, #10198e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$qp-color-1, endColorstr=$qp-color-2,GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.bg-vrouwenvoornaam.bg-gradient {
+  color: #FFFFFF !important;
+  background: #872574;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #872574 0%, #fbbfff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #872574 0%, #fbbfff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #872574 0%, #fbbfff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$qp-color-1, endColorstr=$qp-color-2,GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
 .bg-locatie.bg-gradient {
   color: #FFFFFF !important;
   background: #2f06a4;

@@ -37,6 +37,26 @@ export class SuggereerderComponent implements OnInit {
     this.achtergrondkleur = 'bg-personage';
   }
 
+  genereerMannenvoornaam() {
+    this.personageService.geefWillekeurigeMannenvoornaam().subscribe(v => {
+      this.suggestie = v;
+    });
+
+    this.gevraagdeSuggestie = 'mannenvoornaam';
+    this.icoon = 'batch-icon-user-alt';
+    this.achtergrondkleur = 'bg-manenvoornaam';
+  }
+
+  genereerVrouwenvoornaam() {
+    this.personageService.geefWillekeurigeVrouwenvoornaam().subscribe(v => {
+      this.suggestie = v;
+    });
+
+    this.gevraagdeSuggestie = 'vrouwenvoornaam';
+    this.icoon = 'batch-icon-user-alt';
+    this.achtergrondkleur = 'bg-vrouwenvoornaam';
+  }
+
   genereerLocatie() {
     this.locatieService.geefWillekeurigeLocatie().subscribe(l => {
       this.suggestie = l;
