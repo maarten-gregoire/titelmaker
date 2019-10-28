@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {PersonageService} from '../../services/personage/personage.service';
 import {BijvoeglijkNaamwoordService} from '../../services/bijvoeglijk-naamwoord/bijvoeglijk-naamwoord.service';
 import {LocatieService} from '../../services/locatie/locatie.service';
 import {VoorwerpService} from '../../services/voorwerp/voorwerp.service';
 import {CategorieService} from '../../services/categorie/categorie.service';
 import {HandelingService} from '../../services/handeling/handeling.service';
+import {RelatieService} from '../../services/relatie/relatie.service';
 import {WoordService} from '../../services/woord/woord.service';
+import {WoordSoort} from '../../enums/woordsoort';
 
 @Component({
   selector: 'tm-suggereerder',
@@ -22,7 +24,7 @@ export class SuggereerderComponent implements OnInit {
   constructor(private personageService: PersonageService, private bijvoeglijknaamwoordService: BijvoeglijkNaamwoordService,
               private locatieService: LocatieService, private voorwerpService: VoorwerpService,
               private categorieService: CategorieService, private handelingService: HandelingService,
-              private woordService: WoordService) { }
+              private relatieService: RelatieService, private woordService: WoordService) { }
 
   ngOnInit() {
   }
@@ -58,7 +60,11 @@ export class SuggereerderComponent implements OnInit {
   }
 
   genereerLocatie() {
-    this.locatieService.geefWillekeurigeLocatie().subscribe(l => {
+    this.genereerLocatieVoorWoordsoort(WoordSoort.ZNW_LOCATIE);
+  }
+
+  genereerLocatieVoorWoordsoort(onderwerp: WoordSoort) {
+    this.locatieService.geefWillekeurigeLocatie(onderwerp).subscribe(l => {
       this.suggestie = l;
     });
 
@@ -128,13 +134,23 @@ export class SuggereerderComponent implements OnInit {
   }
 
   genereerHandeling() {
-    this.handelingService.geefWillekeurigeLocatie().subscribe( b => {
+    this.handelingService.geefWillekeurigeHandeling().subscribe(b => {
       this.suggestie = b;
     });
 
     this.gevraagdeSuggestie = 'Handeling';
     this.icoon = 'batch-icon-wave';
     this.achtergrondkleur = 'bg-handeling';
+  }
+
+  genereerRelatie() {
+    this.relatieService.geefWillekeurigeRelatie().subscribe( b => {
+      this.suggestie = b;
+    });
+
+    this.gevraagdeSuggestie = 'Relatie';
+    this.icoon = 'batch-icon-wave';
+    this.achtergrondkleur = 'bg-relatie';
   }
 
   genereerOnbestaandWoord() {

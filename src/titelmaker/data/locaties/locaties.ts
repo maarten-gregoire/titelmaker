@@ -249,7 +249,7 @@ export const locaties: Locatie[] =
     {
       naam: 'Oostenrijk',
       lidwoord: null,
-      voorzetselsPersonage: ['in', 'nabij'],
+      voorzetselsPersonage: ['in'],
       voorzetselsVoorwerp: ['in'],
       meervoud: null,
       verkleinwoord: null,
@@ -492,7 +492,7 @@ export const locaties: Locatie[] =
     {
       naam: 'schip',
       lidwoord: 'het',
-      voorzetselsPersonage: ['in', 'op', 'naast'],
+      voorzetselsPersonage: ['op', 'naast'],
       voorzetselsVoorwerp: ['op'],
       meervoud: 'schepen',
       verkleinwoord: 'scheepje',
@@ -592,7 +592,7 @@ export const locaties: Locatie[] =
       naam: 'gevangenis',
       lidwoord: 'de',
       voorzetselsPersonage: ['in', 'naast', 'bij'],
-      voorzetselsVoorwerp: [],
+      voorzetselsVoorwerp: ['bij'],
       meervoud: 'gevangenissen',
       verkleinwoord: 'gevangenisje',
       woordsoorten: [WoordSoort.ZNW_LOCATIE]
@@ -988,7 +988,7 @@ export const locaties: Locatie[] =
       naam: 'hoek',
       lidwoord: 'de',
       voorzetselsPersonage: ['in', 'op'],
-      voorzetselsVoorwerp: ['in'],
+      voorzetselsVoorwerp: ['in', 'op'],
       meervoud: 'hoeken',
       verkleinwoord: 'hoekje',
       woordsoorten: [WoordSoort.ZNW_LOCATIE]

@@ -1,4 +1,5 @@
 import {Vorm} from '../enums/vorm';
+import {LidwoordSoort} from '../enums/lidwoordsoort';
 
 export class TitelConfiguratie {
   aantalBijvoeglijkNaamwoorden: number;
@@ -8,4 +9,5 @@ export class TitelConfiguratie {
   vormPersonages: Vorm;
   vormVoorwerpen: Vorm;
   vormLocaties: Vorm;
+  lidwoordSoort: LidwoordSoort;
 }

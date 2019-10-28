@@ -1413,7 +1413,7 @@ export const voorwerpen: Voorwerp[] =
     {
       naam: 'schuurmachine',
       lidwoord: 'de',
-      meervoud: 'schurmachines',
+      meervoud: 'schuurmachines',
       verkleinwoord: 'schuurmachinetje',
       woordsoorten: [WoordSoort.ZNW_VOORWERP]
     },

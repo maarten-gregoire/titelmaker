@@ -183,28 +183,6 @@
   transition: width 0.3s ease-in-out;
 }
 
-.bg-dier.bg-gradient {
-  color: #FFFFFF !important;
-  background: #9e9d72;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #9e9d72 0%, #ffc975 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #9e9d72 0%, #ffc975 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #9e9d72 0%, #ffc975 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$qp-color-1, endColorstr=$qp-color-2,GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  -webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
-  -o-transition: opacity 0.2s ease-out;
-  transition: opacity 0.2s ease-out;
-  -webkit-transition: width 0.3s ease-in-out;
-  -moz-transition: width 0.3s ease-in-out;
-  -o-transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
-}
-
 .bg-bijvoeglijk-naamwoord.bg-gradient {
   color: #FFFFFF !important;
   background: #132a5b;
@@ -268,15 +246,15 @@
   -o-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out; }
 
-.bg-handeling.bg-gradient {
+.bg-relatie.bg-gradient {
   color: #FFFFFF !important;
   background: #649e84;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #649e84 0%, #93ff89 100%);
+  background: -moz-linear-gradient(-45deg, #880e4f 0%, #700000 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #649e84 0%, #93ff89 100%);
+  background: -webkit-linear-gradient(-45deg, #880e4f 0%, #700000 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #649e84 0%, #93ff89 100%);
+  background: linear-gradient(135deg, #880e4f 0%, #700000 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$qp-color-1, endColorstr=$qp-color-2,GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */

@@ -7,14 +7,15 @@ import {ZelfstandigNaamwoord} from '../models/zelfstandig-naamwoord';
 import {Arrays} from './arrays';
 import {BijvoeglijkNaamwoord} from '../models/bijvoeglijk-naamwoord';
 import {WoordSoort} from '../enums/woordsoort';
+import {LidwoordSoort} from '../enums/lidwoordsoort';
 
 export class StringMaker {
 
-  static voorwerpAlsString(voorwerp: Voorwerp, vorm: Vorm, isLidwoordVerboden: boolean): string {
+  static voorwerpAlsString(voorwerp: Voorwerp, vorm: Vorm, isLidwoordVerboden: boolean, lidwoordSoort: LidwoordSoort): string {
     let lidwoord: string;
     let voorwerpString: string;
     if (StringMaker.juisteVormBestaat(voorwerp, vorm)) {
-      lidwoord = StringMaker.bepaalLidwoord(vorm, voorwerp.lidwoord);
+      lidwoord = StringMaker.bepaalLidwoord(vorm, voorwerp.lidwoord, lidwoordSoort);
       voorwerpString = StringMaker.bepaalZelfstandigNaamwoordInJuisteVorm(vorm, voorwerp);
     } else {
       lidwoord = voorwerp.lidwoord;
@@ -31,9 +32,18 @@ export class StringMaker {
 
     switch (onderwerp) {
       case WoordSoort.ZNW_VOORWERP:
+      case WoordSoort.ZNW_BEGRIP:
         voorzetsel = Arrays.bepaalWillekeurigElementUitRij(locatie.voorzetselsVoorwerp);
         break;
       case WoordSoort.ZNW_PERSONAGE:
+      case WoordSoort.ZNW_VOORNAAM_MAN:
+      case WoordSoort.ZNW_VOORNAAM_VROUW:
+      case WoordSoort.ZNW_NATIONALITEIT:
+      case WoordSoort.ZNW_ROYALTIEFIGUUR:
+      case WoordSoort.ZNW_FANTASIEFIGUUR:
+      case WoordSoort.ZNW_FAMILIELID:
+      case WoordSoort.ZNW_DIER:
+      case WoordSoort.ZNW_BEROEP:
         voorzetsel = Arrays.bepaalWillekeurigElementUitRij(locatie.voorzetselsPersonage);
         break;
       default:
@@ -45,12 +55,13 @@ export class StringMaker {
       && locatie.lidwoord !== '' ? ' ' + locatie.lidwoord : '') + ' ' + locatie.naam;
   }
 
-  static personageAlsString(personage: Personage, vorm: Vorm, bijvoeglijkNaamwoord: BijvoeglijkNaamwoord): string {
+  static personageAlsString(personage: Personage, vorm: Vorm,
+                            bijvoeglijkNaamwoord: BijvoeglijkNaamwoord, lidwoordSoort: LidwoordSoort): string {
     let lidwoord: string;
     let personageString: string;
     let bijvoeglijkNaamwoordString: string;
     if (StringMaker.juisteVormBestaat(personage, vorm)) {
-      lidwoord = StringMaker.bepaalLidwoord(vorm, personage.lidwoord);
+      lidwoord = StringMaker.bepaalLidwoord(vorm, personage.lidwoord, lidwoordSoort);
       personageString = StringMaker.bepaalZelfstandigNaamwoordInJuisteVorm(vorm, personage);
 
     } else {
@@ -77,18 +88,30 @@ export class StringMaker {
     return koppeling.koppeling;
   }
 
-  static bepaalLidwoord(vorm: Vorm, enkelvoudLidwoord: string): string {
+  static bepaalLidwoord(vorm: Vorm, enkelvoudLidwoord: string, lidwoordSoort: LidwoordSoort): string {
     let lidwoord: string;
     if (enkelvoudLidwoord) {
       switch (vorm) {
         case Vorm.MEERVOUD :
-          lidwoord = 'de';
-          break;
+         // if (lidwoordSoort === LidwoordSoort.BEPAALD) {
+            lidwoord = 'de';
+        /*  } else {
+            lidwoord = '';
+          }*/
+            break;
         case Vorm.VERKLEINWOORD :
-          lidwoord = 'het';
-          break;
+         // if (lidwoordSoort === LidwoordSoort.BEPAALD) {
+            lidwoord = 'het';
+        /*  } else {
+            lidwoord = 'het';
+          }*/
+            break;
         default:
-          lidwoord = enkelvoudLidwoord;
+        //  if (lidwoordSoort === LidwoordSoort.BEPAALD) {
+            lidwoord = enkelvoudLidwoord;
+        /*  } else {
+            lidwoord = 'een';
+          }*/
       }
     }
     return lidwoord;

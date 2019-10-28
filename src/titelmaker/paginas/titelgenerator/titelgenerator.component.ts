@@ -21,8 +21,8 @@ export class TitelgeneratorComponent implements OnInit {
 
   genereerSuggestie() {
     this.genereerTitel();
-    this.bepaalCategorie();
-    this.bepaalDuur();
+   /* this.bepaalCategorie();
+    this.bepaalDuur();*/
   }
 
   genereerTitel() {

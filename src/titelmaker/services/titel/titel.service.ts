@@ -18,6 +18,7 @@ import {BijvoeglijkNaamwoord} from '../../models/bijvoeglijk-naamwoord';
 import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeglijk-naamwoorden';
 import {WoordSoort} from '../../enums/woordsoort';
 import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
+import {LidwoordSoort} from '../../enums/lidwoordsoort';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +30,8 @@ export class TitelService {
   recentePersonages: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
   recenteBijvoeglijkNaamwoorden: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
 
-  constructor() { }
+  constructor() {
+  }
 
   maaktitel(): Observable<string> {
     const titelConfiguratie: TitelConfiguratie = this.maakWillekeurigeTitelConfiguratie();
@@ -45,7 +47,8 @@ export class TitelService {
     if (titelConfiguratie.aantalPersonages > 0) {
       personage = this.bepaalPersonage();
       bijvoeglijkNaamwoord = this.maakBijvoeglijkNaamwoordIndienNodig(titelConfiguratie.aantalBijvoeglijkNaamwoorden);
-      personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord);
+      personageString = StringMaker.personageAlsString(personage, titelConfiguratie.vormPersonages, bijvoeglijkNaamwoord,
+        titelConfiguratie.lidwoordSoort);
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         voorwerpKoppeling = Arrays.bepaalWillekeurigElementUitRij<Koppeling>(voorwerpKoppelingen);
         if (voorwerpKoppeling.koppeling === 'zonder' && Randoms.maakRandomGetalTussenEnInbegrepen(1, 10) > 3) {
@@ -64,7 +67,8 @@ export class TitelService {
         }
       } while (!voorwerp);
       const isLidwoordVerboden = !voorwerpKoppeling ? false : voorwerpKoppeling.isLidwoordVerboden;
-      voorwerpString = StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden);
+      voorwerpString =
+        StringMaker.voorwerpAlsString(voorwerp, titelConfiguratie.vormVoorwerpen, isLidwoordVerboden, titelConfiguratie.lidwoordSoort);
     }
 
     if (titelConfiguratie.aantalLocaties > 0) {
@@ -78,7 +82,7 @@ export class TitelService {
       if (titelConfiguratie.aantalVoorwerpen > 0) {
         magBijAlsVoorzetselGebruiken = false;
       }
-      const onderwerp: WoordSoort = this.bepaalOnderwerp();
+      const onderwerp: WoordSoort = this.bepaalOnderwerp(titelConfiguratie);
       locatieString = StringMaker.locatieAlsString(locatie, onderwerp);
     }
 
@@ -172,7 +176,8 @@ export class TitelService {
       aantalLocaties: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
       vormPersonages: Randoms.bepaalRandomEnumValue(Vorm),
       vormVoorwerpen: Randoms.bepaalRandomEnumValue(Vorm),
-      vormLocaties: Randoms.bepaalRandomEnumValue(Vorm)
+      vormLocaties: Randoms.bepaalRandomEnumValue(Vorm),
+      lidwoordSoort: Randoms.bepaalRandomEnumValue(LidwoordSoort)
     };
 
     if (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties < 2) {
@@ -193,6 +198,21 @@ export class TitelService {
       }
     }
 
+    while (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties > 2) {
+      switch (Randoms.maakRandomGetalTussenEnInbegrepen(1, 3)) {
+        case 1:
+          configuratie.aantalLocaties = 0;
+          break;
+        case 2:
+          configuratie.aantalVoorwerpen = 0;
+          break;
+        case 3:
+        default:
+          configuratie.aantalPersonages = 0;
+          break;
+      }
+    }
+
     return configuratie;
   }
 
@@ -203,7 +223,11 @@ export class TitelService {
     this.recenteBijvoeglijkNaamwoorden.voegWoordToe(bijvoeglijkNaamwoord);
   }
 
-  private bepaalOnderwerp(): WoordSoort {
-    return WoordSoort.ZNW_PERSONAGE;
+  private bepaalOnderwerp(titelConfiguratie: TitelConfiguratie): WoordSoort {
+    if (titelConfiguratie.aantalPersonages > 1) {
+      return WoordSoort.ZNW_PERSONAGE;
+    } else {
+      return WoordSoort.ZNW_VOORWERP;
+    }
   }
 }

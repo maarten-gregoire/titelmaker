@@ -16,7 +16,7 @@ export class LocatieService {
 
   constructor() { }
 
-  geefWillekeurigeLocatie(): Observable<string> {
+  geefWillekeurigeLocatie(onderwerp: WoordSoort): Observable<string> {
     let locatie: Locatie;
     do {
       locatie = Arrays.bepaalWillekeurigElementUitRij(locaties.filter(l => !this.recenteLocaties.zitWoordInLijst(l)));
@@ -25,6 +25,6 @@ export class LocatieService {
       }
     } while (!locatie);
     this.recenteLocaties.voegWoordToe(locatie);
-    return of(StringMaker.locatieAlsString(locatie, WoordSoort.ZNW_LOCATIE));
+    return of(StringMaker.locatieAlsString(locatie, onderwerp));
   }
 }
