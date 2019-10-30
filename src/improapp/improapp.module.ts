@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { TitelmakerRoutingModule } from './titelmaker-routing.module';
-import { TitelmakerComponent } from './titelmaker.component';
+import { ImproappRoutingModule } from './improapp-routing.module';
+import { ImproappComponent } from './improapp.component';
 import { TitelgeneratorComponent } from './paginas/titelgenerator/titelgenerator.component';
 import {ServicesModule} from './services/services.module';
 import {WoordenspammerComponent} from './paginas/woordenspammer/woordenspammer.component';
@@ -14,7 +14,7 @@ import {GebruikstipsComponent} from './paginas/gebruikstips/gebruikstips.compone
 
 @NgModule({
   declarations: [
-    TitelmakerComponent,
+    ImproappComponent,
     TitelgeneratorComponent,
     WoordenspammerComponent,
     SuggereerderComponent,
@@ -25,10 +25,10 @@ import {GebruikstipsComponent} from './paginas/gebruikstips/gebruikstips.compone
   ],
   imports: [
     BrowserModule,
-    TitelmakerRoutingModule,
+    ImproappRoutingModule,
     ServicesModule
   ],
   providers: [],
-  bootstrap: [TitelmakerComponent]
+  bootstrap: [ImproappComponent]
 })
-export class TitelmakerModule { }
+export class ImproappModule { }

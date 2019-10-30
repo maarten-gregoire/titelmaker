@@ -1,12 +1,12 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { TitelmakerModule } from './titelmaker/titelmaker.module';
+import { ImproappModule } from './improapp/improapp.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(TitelmakerModule)
+platformBrowserDynamic().bootstrapModule(ImproappModule)
   .catch(err => console.error(err));

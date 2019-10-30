@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'tm-root',
-  templateUrl: './titelmaker.component.html',
-  styleUrls: ['./titelmaker.component.css']
+  templateUrl: './imroapp.component.html',
+  styleUrls: ['./improapp.component.css']
 })
-export class TitelmakerComponent {
+export class ImproappComponent {
   title = 'titelmaker';
   chosenPage = 'titelmaker';
 

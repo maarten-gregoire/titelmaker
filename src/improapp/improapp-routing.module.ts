@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {TitelmakerComponent} from './titelmaker.component';
+import {ImproappComponent} from './improapp.component';
 import {TitelgeneratorComponent} from './paginas/titelgenerator/titelgenerator.component';
 import {WoordenspammerComponent} from './paginas/woordenspammer/woordenspammer.component';
 import {SuggereerderComponent} from './paginas/suggereerder/suggereerder.component';
@@ -23,4 +23,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class TitelmakerRoutingModule { }
+export class ImproappRoutingModule { }
