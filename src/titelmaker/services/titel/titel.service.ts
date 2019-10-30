@@ -19,6 +19,7 @@ import {bijvoeglijkNaamwoorden} from '../../data/bijvoeglijk-naamwoorden/bijvoeg
 import {WoordSoort} from '../../enums/woordsoort';
 import {LaatstGebruikteWoordenLijst} from '../laatst-gebruikte-woorden-lijst';
 import {LidwoordSoort} from '../../enums/lidwoordsoort';
+import {TitelConfiguratieService} from './titel.configuratie.service';
 
 @Injectable({
   providedIn: 'root'
@@ -30,11 +31,11 @@ export class TitelService {
   recentePersonages: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
   recenteBijvoeglijkNaamwoorden: LaatstGebruikteWoordenLijst = new LaatstGebruikteWoordenLijst(20);
 
-  constructor() {
+  constructor(private titelConfiguratieService: TitelConfiguratieService) {
   }
 
   maaktitel(): Observable<string> {
-    const titelConfiguratie: TitelConfiguratie = this.maakWillekeurigeTitelConfiguratie();
+    const titelConfiguratie: TitelConfiguratie = this.titelConfiguratieService.maakWillekeurigeTitelConfiguratie();
     let personageString: string;
     let koppelingString: string;
     let voorwerpString: string;
@@ -166,54 +167,6 @@ export class TitelService {
   private getBijvoeglijkNaamwoordenDieOpPersonagesToepasbaarZijn() {
     return bijvoeglijkNaamwoorden.filter((b) => b.toepasbaarOp.filter((t) =>
       t === WoordSoort.ZNW_PERSONAGE).length >= 1);
-  }
-
-  maakWillekeurigeTitelConfiguratie() {
-    const configuratie: TitelConfiguratie = {
-      aantalBijvoeglijkNaamwoorden: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
-      aantalPersonages: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
-      aantalVoorwerpen: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
-      aantalLocaties: Randoms.maakRandomGetalTussenEnInbegrepen(0, 1),
-      vormPersonages: Randoms.bepaalRandomEnumValue(Vorm),
-      vormVoorwerpen: Randoms.bepaalRandomEnumValue(Vorm),
-      vormLocaties: Randoms.bepaalRandomEnumValue(Vorm),
-      lidwoordSoort: Randoms.bepaalRandomEnumValue(LidwoordSoort)
-    };
-
-    if (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties < 2) {
-      for (let i = 0; i < 2; i++) {
-        switch (Randoms.maakRandomGetalTussenEnInbegrepen(1, 3)) {
-          case 1:
-            configuratie.aantalLocaties = 1;
-            break;
-          case 2:
-            configuratie.aantalVoorwerpen = 1;
-            break;
-          case 3:
-            configuratie.aantalPersonages = 1;
-            break;
-          default:
-            configuratie.aantalVoorwerpen = 1;
-        }
-      }
-    }
-
-    while (configuratie.aantalPersonages + configuratie.aantalVoorwerpen + configuratie.aantalLocaties > 2) {
-      switch (Randoms.maakRandomGetalTussenEnInbegrepen(1, 3)) {
-        case 1:
-          configuratie.aantalLocaties = 0;
-          break;
-        case 2:
-          configuratie.aantalVoorwerpen = 0;
-          break;
-        case 3:
-        default:
-          configuratie.aantalPersonages = 0;
-          break;
-      }
-    }
-
-    return configuratie;
   }
 
   private updateRecenteWoorden(locatie: Locatie, personage: Personage, bijvoeglijkNaamwoord: BijvoeglijkNaamwoord, voorwerp: Voorwerp) {
